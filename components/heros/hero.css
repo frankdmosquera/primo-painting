@@ -1,0 +1,18 @@
+.swiper-pagination .swiper-pagination-bullet {
+    width: 20px;
+    height: 4px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 2px;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #00bcd4; /* Active bullet color (line) */
+  }
+
+  
+  .custom-slide {
+    width: 100% !important;  /* Override the default width */
+    margin-right: 0 !important;  /* Remove the margin-right */
+  }

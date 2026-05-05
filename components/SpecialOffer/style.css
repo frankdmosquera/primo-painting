@@ -1,0 +1,104 @@
+/* New-code */
+.title1 {
+  font-weight: 500;
+  font-size: 22px;
+}
+/* swiper-slide .titleHp {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+} */
+
+/* .offer_bg {
+  background-color: black;
+  padding: 20px;
+  margin-top: 50px;
+} */
+
+.offer_bg h5 {
+  color: white;
+  font-size: 26px;
+}
+.offer_bg p {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+/* .offer_slider .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.titleH5 {
+  color: #fff;
+
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.offer-card-bg-content {
+  background: rgba(13, 55, 141, 0.24);
+  backdrop-filter: blur(7.849999904632568px);
+}
+
+.offer-card-content {
+  position: absolute;
+  bottom: 10px;
+}
+
+.offer-card-content p {
+  padding: 10px;
+}
+
+.offer-card-bg-content {
+  padding: 10px;
+  margin: 1px;
+}
+
+.ribbon {
+  width: 180px;
+  height: auto;
+  padding-left: 15px;
+  position: absolute;
+  right: 1px;
+  top: 10px;
+  background: #0d378d;
+  padding: 11px;
+}
+
+.ribbon:after {
+  content: '';
+  position: absolute;
+  height: 0px;
+  width: 0;
+  left: -33px;
+  border-left: 22px solid #0d378d;
+  border-right: 24px solid #0d378d;
+  border-bottom: 24px solid transparent;
+  transform: rotate(90deg);
+  top: 12px;
+  margin-top: -1px;
+}
+
+@media (max-width: 768px) {
+  .titleH5 {
+    margin-top: 20px;
+    font-size: 20px !important; /* Adjust font size for smaller screens */
+  }
+  .titleHp {
+    color: #fff;
+
+    font-size: 14px;
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

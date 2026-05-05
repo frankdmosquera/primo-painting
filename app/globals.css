@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #ffffff;
+  --blueButtonColor: #2f60ab;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #ededed;
+  }
+}
+
+.text-blue {
+  color: blue;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@keyframes bgReveal {
+  0% {
+    background-size: 0% 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.bg-reveal {
+  background-image: linear-gradient(to right, #0d378d, #0d378d);
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: 0% 100%;
+  animation: bgReveal 2s ease-out forwards;
+  color: white;
+  padding: 0 4px;
+}
+.embla__slide.is-selected {
+  opacity: 1 !important;
+}

@@ -1,0 +1,107 @@
+
+/* Gallery-css-start */
+.gallery-slide-start{
+    display: flex;
+    gap: 20px;
+}
+
+.gallery-slide{
+    flex: 1;
+    transition: 1s;
+}
+
+.gallery-slide img{
+    height: 610px;
+    object-fit: cover;
+}
+
+.gallery-slide:hover{
+    flex: 4;
+}
+
+
+
+.view-btn{
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: #0d378d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    border: 2px solid #cadbff;
+    margin-left: auto;
+    width: 8%;
+}
+
+  
+  .gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    position: relative;
+  }
+  
+  .carousel-image-container {
+    transition: transform 0.3s ease, flex-grow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; 
+  
+    height: 500px; 
+  }
+  
+  .carousel-image-container.enlarged {
+    flex-grow: 2; 
+    z-index: 1; 
+  }
+  
+  .offer-cards {
+    width: 100%; 
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+  }
+  
+  .offer-image {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
+  }
+  
+  @media (max-width: 751px) {
+    .gallery-slide:hover {
+      flex: 1;
+    }
+  
+    .gallery-slide-start {
+      flex-direction: column;
+    }
+  
+    .gallery-slide img {
+      height: 300px;
+    }
+  }
+
+
+  @media (max-width: 300px) {
+    .gallery-slide:hover {
+      flex: 1;
+    }
+  
+    .gallery-slide-start {
+      flex-direction: column;
+    }
+  
+    .gallery-slide img {
+      height: 300px;
+    }
+  }
