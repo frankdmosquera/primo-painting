@@ -17,7 +17,7 @@ export const CalgaryPainting = () => {
             </h3>
 
             <p className="mb-8 text-sm md:text-base">
-              Primo Painters is your trusted partner in Calgary,
+              Primo Painting is your trusted partner in Calgary,
               offering detailed estimates and unparalleled{" "}
               <a
                 href="https://www.albertacolourpainting.com/services"

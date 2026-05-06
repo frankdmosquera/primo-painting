@@ -21,23 +21,23 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: " Painting Services in Calgary | Primo Painters",
+  title: " Painting Services in Calgary | Primo Painting",
   description:
-    "Explore top-quality residential & commercial painting services with Primo Painters. Interior, exterior & custom solutions tailored to your unique needs.",
+    "Explore top-quality residential & commercial painting services with Primo Painting. Interior, exterior & custom solutions tailored to your unique needs.",
   alternates: {
-    canonical: "https://www.primopainters.ca/services",
+    canonical: "https://www.primopainting.ca/services",
   },
   openGraph: {
     title: "Need Calgary Painters?",
     description:
-      "Book your free estimate today with Primo Painters, the top-rated painting company in Calgary.",
+      "Book your free estimate today with Primo Painting, the top-rated painting company in Calgary.",
     images: [
       {
         url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
       },
     ],
-    url: "https://www.primopainters.ca/services",
-    siteName: "Primo Painters",
+    url: "https://www.primopainting.ca/services",
+    siteName: "Primo Painting",
     type: "website",
   },
 };

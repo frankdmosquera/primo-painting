@@ -40,7 +40,7 @@ export default function AboutusHome() {
             TRUSTED BY LOCALS
           </p>
           <p className="text-black mb-6 text-[14px] lg:text-[16px]">
-            We started with a vision that something as simple as a paint job should be nothing short of extraordinary. Because the space you live or work in should reflect your vibe. And just "okay" doesn't cut it. Rookies can't  give you that same touch of perfection that only experience can bring. That's why, at Alberta Colour Painting, we take pride in our team of expert Calgary painters with years of hands-on experience handling projects of every size and style.
+            We started with a vision that something as simple as a paint job should be nothing short of extraordinary. Because the space you live or work in should reflect your vibe. And just "okay" doesn't cut it. Rookies can't  give you that same touch of perfection that only experience can bring. That's why, at Primo Painting, we take pride in our team of expert Calgary painters with years of hands-on experience handling projects of every size and style.
           </p>
 
           <p className="text-black mb-6 text-[14px] lg:text-[16px]">

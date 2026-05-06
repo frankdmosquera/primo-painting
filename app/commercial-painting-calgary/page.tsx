@@ -16,22 +16,22 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Top Commercial Painters in Calgary | Best Painting Company",
   description:
-    "Alberta Colour Painting is one of the leading commercial painting companies in Calgary, providing expert interior & exterior painting with the best results.",
+    "Primo Painting is one of the leading commercial painting companies in Calgary, providing expert interior & exterior painting with the best results.",
   alternates: {
     canonical:
-      "https://www.albertacolourpainting.com/commercial-painting-calgary",
+      "https://www.primopainting.ca/commercial-painting-calgary",
   },
   openGraph: {
     title: "Need Calgary Painters?",
     description:
-      "Book your free estimate today with Alberta Colour Painting, the top-rated painting company in Calgary.",
+      "Book your free estimate today with Primo Painting, the top-rated painting company in Calgary.",
     images: [
       {
-        url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
+        url: "https://res.cloudinary.com/primo-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
       },
     ],
-    url: "https://www.albertacolourpainting.com/commercial-painting-calgary",
-    siteName: "Alberta Colour Painting",
+    url: "https://www.primopainting.ca/commercial-painting-calgary",
+    siteName: "Primo Painting",
     type: "website",
   },
 };
@@ -79,7 +79,7 @@ export default function commercialPaintingCalgary() {
               job can make all the difference. If you want people to feel
               welcomed and your company to look its best, then commercial
               <a
-                href="https://www.albertacolourpainting.com/"
+                href="https://www.primopainting.ca/"
                 className="text-blue"
               >
                 {" "}
@@ -98,7 +98,7 @@ export default function commercialPaintingCalgary() {
               identity.
             </p>
             <p>
-              At Alberta Colour Painting, we've worked with numerous businesses
+              At Primo Painting, we've worked with numerous businesses
               of different sizes, helping them bring their brand vision to life
               through high-quality commercial painting. Whether it's an office,
               retail store, restaurant, or warehouse, our commercial painters in
@@ -115,7 +115,7 @@ export default function commercialPaintingCalgary() {
           <Image
             src={AboutUs}
             alt="commercial painting companies"
-            fill
+         
             className="max-sm:pr-[20px] object-cover lg:absolute  "
             width={400} height={300} priority
           />
@@ -142,7 +142,7 @@ export default function commercialPaintingCalgary() {
           <p className="text-black  ">
             Our{" "}
             <a
-              href="https://www.albertacolourpainting.com/commercial-painting-calgary"
+              href="https://www.primopainting.ca/commercial-painting-calgary"
               className="text-blue"
             >
               commercial painters in Calgary
@@ -218,7 +218,7 @@ export default function commercialPaintingCalgary() {
           <p className="text-black   ">
             Our commercial{" "}
             <a
-              href="https://www.albertacolourpainting.com/services"
+              href="https://www.primopainting.ca/commercial-painting-calgary"
               className="text-blue"
             >
               painting services in Calgary

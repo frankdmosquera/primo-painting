@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   description:
     "Our expert painters deliver top-quality interior, exterior & wallpaper removal services for your home or business. We've got all your painting needs covered.",
   alternates: {
-    canonical: "https://www.primopainters.ca/about",
+    canonical: "https://www.primopainting.ca/about",
   },
   openGraph: {
     title: "Need Calgary Painters?",
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
         url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
       },
     ],
-    url: "https://www.primopainters.ca/about",
-    siteName: "Primo Painters",
+    url: "https://www.primopainting.ca/about",
+    siteName: "Primo Painting",
     type: "website",
   },
 };

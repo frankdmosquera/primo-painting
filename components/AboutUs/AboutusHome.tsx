@@ -37,7 +37,7 @@ export default function AboutusHome() {
           </p>
           <p className="text-black mb-6 text-[14px] lg:text-[16px]">
             Anyone can paint walls, but only the finest painters understand that
-            every single stroke of colour matters. At Primo Painters,
+            every single stroke of colour matters. At Primo Painting,
             thats exactly what we do. With years of expertise in creating
             stunning spaces, we are your trusted partners for professional
             interior and exterior painting services. Our team has the finest

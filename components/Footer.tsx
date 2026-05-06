@@ -102,7 +102,7 @@ export default function Footer() {
                 <div className="flex items-center gap-2 text-white cursor-pointer">
                   <Link
                     href="tel:+587-966-6547"
-                    aria-label="Primo Painters at 587-966-6547"
+                    aria-label="Primo Painting at 587-966-6547"
                   >
                     <svg
                       width="19"
@@ -131,8 +131,8 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center gap-2 text-wrap break-all text-white  cursor-pointer ">
                   <Link
-                    href="mailto:info@primopainters.ca"
-                    aria-label="Mail Primo Painters at info@primopainters.ca"
+                    href="mailto:info@primopainting.com"
+                    aria-label="Mail Primo Painting at info@primopainting.com"
                   >
                     <svg
                       width="21"
@@ -147,9 +147,9 @@ export default function Footer() {
                       />
                     </svg>
                   </Link>
-                  <Link href="mailto:info@primopainters.ca">
+                  <Link href="mailto:info@primopainting.com">
                     <span className="font-[500]">
-                      info@primopainters.ca
+                      info@primopainting.com
                     </span>
                   </Link>
                 </div>
@@ -177,20 +177,20 @@ export default function Footer() {
                 </Link>
                 <div className="flex flex-row gap-5 mt-2">
                   <Link
-                    href="https://www.instagram.com/primopainters/"
-                    aria-label="Visit Primo Painters on Instagram"
+                    href="https://www.instagram.com/primopainting/"
+                    aria-label="Visit Primo Painting on Instagram"
                   >
                     <Instagram className="text-[#0D378D] text-2xl" />
                   </Link>
                   <Link
-                    href="https://www.facebook.com/primopainters"
-                    aria-label="Visit Primo Painters on Facebook"
+                    href="https://www.facebook.com/primopainting"
+                    aria-label="Visit Primo Painting on Facebook"
                   >
                     <Facebook className="text-[#0D378D] text-2xl" />
                   </Link>
                   <Link
-                    href="https://www.youtube.com/@primopainters"
-                    aria-label="Visit Primo Painters on YouTube"
+                    href="https://www.youtube.com/@primopainting"
+                    aria-label="Visit Primo Painting on YouTube"
                   >
                     <Youtube className="text-[#0D378D] text-2xl" />
                   </Link>
@@ -200,7 +200,7 @@ export default function Footer() {
           </div>
           <div className="border-t  mt-8 pt-4 text-center text-xs text-gray-700">
             <p className="text-white">
-              © 2026 Primo Painters. 
+              © 2026 Primo Painting. 
             </p>
           </div>
         </div>

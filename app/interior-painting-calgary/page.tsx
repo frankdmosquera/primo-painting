@@ -17,19 +17,19 @@ export const metadata: Metadata = {
     "Looking for expert interior painting in Calgary? We offer professional interior house painting in Calgary for flawless home transformations.",
   alternates: {
     canonical:
-      "https://www.albertacolourpainting.com/interior-painting-calgary",
+      "https://www.primopainting.ca/interior-painting-calgary",
   },
   openGraph: {
     title: "Need Calgary Painters?",
     description:
-      "Book your free estimate today with Alberta Colour Painting, the top-rated painting company in Calgary.",
+      "Book your free estimate today with Primo Painting, the top-rated painting company in Calgary.",
     images: [
       {
         url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
       },
     ],
-    url: "https://www.albertacolourpainting.com/interior-painting-calgary",
-    siteName: "Alberta Colour Painting",
+    url: "https://www.primopainting.ca/interior-painting-calgary",
+    siteName: "Primo Painting",
     type: "website",
   },
 };
@@ -90,7 +90,7 @@ export default function interiorPaintingCalgary() {
               Whether you're updating your living space, revamping your dining
               hall, or want to infuse a new feel into your bedroom, our skilled
               <a
-                href="https://www.albertacolourpainting.com/interior-painting-calgary"
+                href="https://www.primopainting.ca/interior-painting-calgary"
                 className="text-blue"
               >
                 {" "}
@@ -130,7 +130,7 @@ export default function interiorPaintingCalgary() {
           <p className="text-black mb-4   ">
             At our
             <a
-              href="https://www.albertacolourpainting.com"
+              href="https://www.primopainting.ca/interior-painting-calgary"
               className="text-blue"
             >
               {" "}

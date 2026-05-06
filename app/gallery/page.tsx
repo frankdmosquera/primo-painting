@@ -6,9 +6,9 @@ export const viewport: Viewport = {
   initialScale: 1.0,
 };
 export const metadata: Metadata = {
-  title: "Gallery | Primo painters – House & Commercial Painting",
+  title: "Gallery | Primo Painting – House & Commercial Painting",
   description:
-    "Explore our professional painting projects across Calgary. The Primo painters gallery features stunning interior & exterior transformations.",
+    "Explore our professional painting projects across Calgary. The Primo Painting gallery features stunning interior & exterior transformations.",
   viewport: "width=device-width, initial-scale=1.0",
   keywords: [
     "calgary painters",
@@ -22,19 +22,19 @@ export const metadata: Metadata = {
     "alberta painting contractors calgary",
   ],
   alternates: {
-    canonical: "https://www.primopainters.ca/gallery",
+    canonical: "https://www.primopainting.ca/gallery",
   },
   openGraph: {
     title: "Need Calgary Painters?",
     description:
-      "Book your free estimate today with Primo painters, the top-rated painting company in Calgary.",
+      "Book your free estimate today with Primo Painting, the top-rated painting company in Calgary.",
     images: [
       {
         url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
       },
     ],
-    url: "https://www.primopainters.ca",
-    siteName: "Primo painters",
+    url: "https://www.primopainting.ca",
+    siteName: "Primo Painting",
     type: "website",
   },
 };
@@ -76,7 +76,7 @@ export default function ProjectGalleryPage() {
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           Explore some of the residential and{" "}
           <a
-            href="https://www.primopainters.ca/commercial-painting-calgary"
+            href="https://www.primopainting.ca/commercial-painting-calgary"
             className="text-blue"
           >
             commercial painting

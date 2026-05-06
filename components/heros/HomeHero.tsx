@@ -1,4 +1,4 @@
-import React from "react";
+
 import TrustBadges from "../trust-badges";
 import HeroPhoneMobile from "./HeroPhoneMobile";
 import Image from "next/image";

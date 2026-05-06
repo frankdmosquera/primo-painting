@@ -14,24 +14,24 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Expert Exterior House Painters Calgary | Alberta Colour Painting",
+  title: "Expert Exterior House Painters Calgary | Primo Painting",
   description:
     "Looking for the best exterior house painting in Calgary? We’re one of the top exterior painting companies, with skilled painters ready to transform your home.",
   alternates: {
     canonical:
-      "https://www.albertacolourpainting.com/exterior-painting-calgary",
+      "https://www.primopainting.ca/exterior-painting-calgary",
   },
   openGraph: {
     title: "Need Calgary Painters?",
     description:
-      "Book your free estimate today with Alberta Colour Painting, the top-rated painting company in Calgary.",
+      "Book your free estimate today with Primo Painting, the top-rated painting company in Calgary.",
     images: [
       {
-        url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
+        url: "https://res.cloudinary.com/primo-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
       },
     ],
-    url: "https://www.albertacolourpainting.com/exterior-painting-calgary",
-    siteName: "Alberta Colour Painting",
+    url: "https://www.primopainting.ca/exterior-painting-calgary",
+    siteName: "Primo Painting",
     type: "website",
   },
 };
@@ -89,13 +89,13 @@ export default function exteriorPaintingCalgary() {
               home is very important.
             </p>
             <p>
-              At Alberta Colour Painting, we're here to give your home that
+              At primo Painting, we're here to give your home that
               fresh and transformed look so that it looks stylish,
               well-maintained, and stands the test of time. We use premium and
               certified paints to ensure your home's exterior meets the city’s
               harsh climatic conditions. Our exterior{" "}
               <a
-                href="https://www.albertacolourpainting.com"
+                href="https://www.primopainting.ca"
                 className="text-blue"
               >
                 house painting in Calgary{" "}
@@ -155,7 +155,7 @@ export default function exteriorPaintingCalgary() {
           <p>
             Our{" "}
             <a
-              href="https://www.albertacolourpainting.com/exterior-painting-calgary"
+              href="https://www.primopainting.ca/exterior-painting-calgary"
               className="text-blue"
             >
               exterior painters in Calgary{" "}

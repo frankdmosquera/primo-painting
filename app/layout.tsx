@@ -38,8 +38,8 @@ export default function RootLayout({
       "https://www.albertacolourpainting.com/images/bbb-A+-alberta-colour-painting.webp",
       "https://www.albertacolourpainting.com/images/google-reviews-4.9-rating.png",
     ],
-    "@id": "https://www.albertacolourpainting.com/",
-    name: "Alberta Colour Painting Ltd",
+    "@id": "https://www.primopainting.com/",
+    name: "Primo Painting",
     hasMap:
       "https://www.google.com/maps/place/Alberta+Colour+Painting+Ltd./@50.9240786-113.9508035,15z/data=!4m6!3m5!1s0x5371773f98224b4f:0xb012918acd574a36!8m2!3d50.9240786!4d-113.9508035!16s%2Fg%2F11h1dpzfmw?hl=en&entry=ttu",
     address: {
@@ -71,7 +71,7 @@ export default function RootLayout({
         closes: "16:00",
       },
     ],
-    url: "https://www.albertacolourpainting.com/",
+    url: "https://www.primopainting.com/",
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",
@@ -140,10 +140,10 @@ export default function RootLayout({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "HousePainter",
-            name: "Alberta colour Painting",
-            image: "https://www.albertacolourpainting.com/logo.svg",
+            name: "Primo Painting",
+            image: "https://www.primopainting.com/logo.svg",
             "@id": "",
-            url: "https://www.albertacolourpainting.com/",
+            url: "https://www.primopainting.com/",
             telephone: "+1 587-966-6547",
             address: {
               "@type": "PostalAddress",

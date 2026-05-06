@@ -7,12 +7,9 @@ import BgBackground2 from "@/public/above-gallery-bg-line.svg";
 import AboutUs from "@/public/services/cabinet.webp";
 import DotFranks from "@/components/ui/DotFranks";
 import {
-  cabinetPaintingServiceImg,
   ServicescabinetPaintingImg,
 } from "@/data/images";
 import type { Metadata, Viewport } from "next";
-import Link from "next/link";
-import Head from "next/head";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1.0,
@@ -21,7 +18,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Cabinet Painting in Calgary | Bathroom & Kitchen Cabinet Painters",
   description:
-    "Alberta Colour Painting offers expert cabinet painting in Calgary. Our skilled painters transform kitchen or bathroom cabinets with style and precision.",
+    "Primo Painting offers expert cabinet painting in Calgary. Our skilled painters transform kitchen or bathroom cabinets with style and precision.",
   keywords: [
     "cabinet painting calgary",
     "kitchen cabinet painting calgary",
@@ -29,19 +26,19 @@ export const metadata: Metadata = {
     "cabinet painters calgary",
   ],
   alternates: {
-    canonical: "https://www.albertacolourpainting.com/cabinet-painting-calgary",
+    canonical: "https://www.primopainting.ca/cabinet-painting-calgary",
   },
   openGraph: {
     title: "Need Calgary Painters?",
     description:
-      "Book your free estimate today with Alberta Colour Painting, the top-rated painting company in Calgary.",
+      "Book your free estimate today with Primo Painting, the top-rated painting company in Calgary.",
     images: [
       {
         url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
       },
     ],
-    url: "https://www.albertacolourpainting.com/cabinet-painting-calgary",
-    siteName: "Alberta Colour Painting",
+    url: "https://www.primopainting.ca/cabinet-painting-calgary",
+    siteName: "Primo Painting",
     type: "website",
   },
 };
@@ -74,7 +71,7 @@ export default function cabinetPaintingPage() {
             <Image
               src={ServicescabinetPaintingImg.src}
               alt={ServicescabinetPaintingImg.alt}
-              fill
+            
               className="md:object-cover sm:object-contain"
               width={400} height={300}
               priority
@@ -101,7 +98,7 @@ export default function cabinetPaintingPage() {
               Your space should speak volumes of your style and vibe, and that
               is why we offer{" "}
               <a
-                href="https://www.albertacolourpainting.com/cabinet-painting-calgary"
+                href="https://www.primopainting.ca/cabinet-painting-calgary"
                 className="text-blue"
               >
                 {" "}
@@ -118,7 +115,7 @@ export default function cabinetPaintingPage() {
             <p>
               Don't settle for outdated, dull cabinets, and elevate your space's
               vibe and feel with our top-quality cabinet painting in Calgary.
-              Contact Alberta Colour Painting today and give your space the
+              Contact Primo Painting today and give your space the
               makeover it deserves!
             </p>
           </div>
@@ -131,9 +128,10 @@ export default function cabinetPaintingPage() {
           <Image
             src={AboutUs}
             alt="Elegant interior with staircase"
-            fill
+            // fill
             className="max-sm:pr-[20px] object-cover lg:absolute  "
-            width={400} height={300} priority
+            width={400} height={300} 
+            priority
           />
         </div>
 

@@ -101,12 +101,12 @@ const ContactForm = () => {
             className='text-base mb-6 text-black flex flex-row items-center'
             style={{ fontWeight: '500' }}>
             <span className='mr-2'>
-              <Link href='mailto:info@primopainters.ca'>
+              <Link href='mailto:info@primopainting.ca'>
                 <Image src={email} alt='email' />
               </Link>
             </span>
-            <Link href='mailto:info@primopainters.ca'>
-              info@primopainters.ca
+            <Link href='mailto:info@primopainting.ca'>
+              info@primopainting.ca
             </Link>
           </p>
           <p

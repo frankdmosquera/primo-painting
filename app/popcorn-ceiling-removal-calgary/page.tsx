@@ -18,19 +18,19 @@ export const metadata: Metadata = {
     "Want ceiling popcorn removal services in Calgary? We transform popcorn ceilings into smooth surfaces. Contact us today to schedule your home renovation consultation!",
   alternates: {
     canonical:
-      "https://www.albertacolourpainting.com/popcorn-ceiling-removal-calgary",
+      "https://www.primopainting.ca/popcorn-ceiling-removal-calgary",
   },
   openGraph: {
     title: "Need Calgary Painters?",
     description:
-      "Book your free estimate today with Alberta Colour Painting, the top-rated painting company in Calgary.",
+      "Book your free estimate today with Primo Painting, the top-rated painting company in Calgary.",
     images: [
       {
         url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
       },
     ],
-    url: "https://www.albertacolourpainting.com/popcorn-ceiling-removal-calgary",
-    siteName: "Alberta Colour Painting",
+    url: "https://www.primopainting/popcorn-ceiling-removal-calgary",
+    siteName: "Primo Painting",
     type: "website",
   },
 };
@@ -78,14 +78,14 @@ export default function popcornCeilingRemovalPage() {
               our popcorn ceiling removal in Calgary is exactly what you need!
             </p>
             <p>
-              At Alberta Colour Painting, we specialise in safe and mess-free
+              At Primo Painting, we specialise in safe and mess-free
               popcorn ceiling removal, leaving your space with a smooth, stylish
               finish that quickly transforms the overall look. Whether you're
               renovating, selling your home, or just tired of the bumpy,
               textured look, we've got you covered.
             </p>
             <p>
-              At Alberta Colour Painting, we provide complete popcorn ceiling
+              At Primo Painting, we provide complete popcorn ceiling
               removal services in Calgary, handling everything from start to
               finish. Our process includes removing the textured ceiling,
               applying multiple coats of mud for a smooth finish, followed by
@@ -96,7 +96,7 @@ export default function popcornCeilingRemovalPage() {
             </p>
             <p>
               We are dedicated to delivering services that exceed your
-              expectations. Contact Alberta Colour Painting today to transform
+              expectations. Contact Primo Painting today to transform
               your space with a brand new ceiling.
             </p>
           </div>

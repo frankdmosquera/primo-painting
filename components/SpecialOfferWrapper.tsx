@@ -95,7 +95,7 @@ const SpecialOfferWrapper = () => {
                       offer.
                     </p>
                     <p className="text-white p-4">
-                      10% OFF - Interior Painting
+                      15% OFF - Ceiling Painting
                     </p>
                   </div>
                 </div>
@@ -110,12 +110,11 @@ const SpecialOfferWrapper = () => {
           {/* Text content section */}
           <div className="w-full lg:w-2/5 pr-5 flex flex-col justify-center ">
             <p className=" lg:text-xl  text-[20px]  mb-5">
-              For a limited time, Primo Painters is offering exclusive
+              For a limited time, Primo Painting is offering exclusive
               discounts to help you refresh your space at an unbeatable price!
             </p>
             <p className="text-[14px] lg:text-[16px] font-light">
-              Discover a variety of discounts and special deals at Primo Painters, tailored to help you save on your Calgary house
-              painting projects throughout the year. Explore ongoing promotions
+              Discover a variety of discounts and special deals at Primo Painting, tailored to help you save on your Calgary house painting projects throughout the year. Explore ongoing promotions
               for both standard and specialty wall painting services, and ensure
               you get the best value by visiting our offers page.
             </p>

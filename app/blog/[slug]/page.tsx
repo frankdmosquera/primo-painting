@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${post?.metaTitle}`,
     description: `${post?.metaDescription}`,
     alternates: {
-      canonical: `https://www.albertacolourpainting.com/blog/${slug}`,
+      canonical: `https://www.primopainting.ca/blog/${slug}`,
     },
   };
 }

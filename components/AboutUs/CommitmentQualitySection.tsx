@@ -28,7 +28,7 @@ export default function CommitmentQualitySection() {
 
         <div className="space-y-4 text-black lg:text-[16px] text-[14px]">
           <p>
-            At Priomo Painters, we're committed to making a positive impact on
+            At Primo Painting, we're committed to making a positive impact on
             the environment. That's why we use zero to low-VOC paints, creating
             healthier spaces for our clients, painters, and the planet!
           </p>
