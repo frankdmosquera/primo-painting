@@ -18,6 +18,9 @@ import SpecialOfferWrapper from "@/components/SpecialOfferWrapper";
 import FaqSection from "@/components/Faq";
 import { blogPosts } from "@/lib/blog-data";
 import { fakeReviews } from "@/data/fakeGoolgeReviews";
+import GoogleReviews from "@/components/GoogleReviews";
+import ServiceSection from "@/components/service-section";
+import Reviews from "@/components/Reviews";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1.0,
@@ -83,10 +86,12 @@ export default async function Home() {
           </div>
           <HomeBanner />
         </div>
+        <Reviews/>
         <SpecialOfferWrapper />
-        <GallerySection />
         <CalgaryPainting />
-        <ReviewsCarousel newestGoogleReviews={newestGoogleReviews} />
+           
+         <GallerySection />
+
         <FaqSection />
         <section className="container mx-auto px-4 py-8 ">
           <div className="text-center  mb-10">

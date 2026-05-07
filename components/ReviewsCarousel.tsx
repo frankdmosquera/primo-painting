@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "swiper/css";
+// import "swiper/css";
 import "./ReviewsCarousel.css";
 import ServiceSection from "./service-section";
 import ReviewsToggler from "./ReviewsToggler";

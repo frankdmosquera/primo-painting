@@ -25,12 +25,13 @@ export function Navbar() {
           <div className="flex items-center">
             <Link href="/">
               <Image
-                src="/logo.svg"
-                alt="Alberta Color Painting"
-                title="Alberta Color Painting"
+                // src="/logo.svg"
+                src="/primo-painting-calgary-logo.png"
+                alt="Primo Painting"
+                title="Primo Painting"
                 width={150}
-                height={40}
-                className="h-auto"
+                height={60}
+                // className="h-auto"
               />
             </Link>
           </div>
@@ -104,7 +105,7 @@ export function Navbar() {
               <div className="bg-blue-100 rounded-full p-2 mr-2 border-2 shadow-2xl">
                 <Link
                   href="tel:+1587-466-6647"
-                  aria-label="Call Alberta Global Painting at 587-466-6647"
+                  aria-label="Call Primo Painting at 587-466-6647"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -130,7 +131,7 @@ export function Navbar() {
               </div>
               <Link
                 href="tel:+1587-466-6647"
-                aria-label="Call Alberta Global Painting at 587-466-6647"
+                aria-label="Call Primo Painting at 587-466-6647"
               >
                 <span className="text-black font-medium">587-966-6547</span>
               </Link>

@@ -50,11 +50,14 @@ export default function Footer() {
 
               <Link href="/">
                 <Image
-                  src={logo}
+                  // src={logo}
                   alt="Primo Painters Logo"
                   width={180}
                   height={60}
                   className="object-contain"
+                     src="/primo-painting-calgary-logo.png"
+              
+              
                 />
               </Link>
               {/* </div> */}
@@ -131,8 +134,8 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center gap-2 text-wrap break-all text-white  cursor-pointer ">
                   <Link
-                    href="mailto:info@primopainting.com"
-                    aria-label="Mail Primo Painting at info@primopainting.com"
+                    href="mailto:info@primopainting.ca"
+                    aria-label="Mail Primo Painting at info@primopainting.ca"
                   >
                     <svg
                       width="21"
@@ -147,9 +150,9 @@ export default function Footer() {
                       />
                     </svg>
                   </Link>
-                  <Link href="mailto:info@primopainting.com">
+                  <Link href="mailto:info@primopainting.ca">
                     <span className="font-[500]">
-                      info@primopainting.com
+                      info@primopainting.ca
                     </span>
                   </Link>
                 </div>
