@@ -7,19 +7,12 @@ import ContactFormSection from "@/components/ContactFormSection";
 import BlogGrid from "@/components/blog-grid";
 import HomeBanner from "@/components/HomeBanner/home-banner";
 import Link from "next/link";
-
-import ReviewsCarousel from "@/components/ReviewsCarousel";
 import HomeHero from "@/components/heros/HomeHero";
-import { ReviewsGoogleType } from "@/types/review";
-
 import AboutusHome from "@/components/AboutUs/AboutusHome";
 import GallerySection from "@/components/gallery/GallerySection";
 import SpecialOfferWrapper from "@/components/SpecialOfferWrapper";
 import FaqSection from "@/components/Faq";
 import { blogPosts } from "@/lib/blog-data";
-import { fakeReviews } from "@/data/fakeGoolgeReviews";
-import GoogleReviews from "@/components/GoogleReviews";
-import ServiceSection from "@/components/service-section";
 import Reviews from "@/components/Reviews";
 export const viewport: Viewport = {
   width: "device-width",
@@ -27,9 +20,9 @@ export const viewport: Viewport = {
 };
 export const metadata: Metadata = {
   title:
-    "Expert Calgary Painters for Interior and Exterior House Painting Services",
+    "Expert Calgary Painters for Exteriod and Interior House Painting Services",
   description:
-    "Looking for affordable Calgary painters? Our top-rated house painting company in Calgary offers professional interior and exterior painting services to meet all your needs.",
+    "Looking for affordable Calgary painters? Our top-rated house painting company in Calgary offers professional exterior and  interior painting services to meet all your needs.",
   keywords: [
     "calgary painters",
     "painting companies calgary",
@@ -71,8 +64,6 @@ export default async function Home() {
   // const data = await res.json();
   // const allGoogleReviews: ReviewsGoogleType = await data.result?.reviews;
   // newestGoogleReviews = allGoogleReviews.slice(0, 6);
- 
-  let newestGoogleReviews = fakeReviews.slice(0, 6);
 
   return (
     <>
@@ -80,18 +71,16 @@ export default async function Home() {
       <AboutusHome />
       <OurServices />
       <div className="flex flex-col ">
+        <Reviews />
         <div className="relative">
           <div className="absolute top-[-30px]">
             <Image src={BgBackground} alt="bg-Image" />
           </div>
           <HomeBanner />
         </div>
-        <Reviews/>
         <SpecialOfferWrapper />
+        <GallerySection />
         <CalgaryPainting />
-           
-         <GallerySection />
-
         <FaqSection />
         <section className="container mx-auto px-4 py-8 ">
           <div className="text-center  mb-10">

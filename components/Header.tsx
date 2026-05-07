@@ -104,8 +104,8 @@ export function Navbar() {
             <div className="flex items-center">
               <div className="bg-blue-100 rounded-full p-2 mr-2 border-2 shadow-2xl">
                 <Link
-                  href="tel:+1587-466-6647"
-                  aria-label="Call Primo Painting at 587-466-6647"
+                  href="tel:+14039037517"
+                  aria-label="Call Primo Painting at 403-903-7517"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -130,10 +130,10 @@ export function Navbar() {
                 </Link>
               </div>
               <Link
-                href="tel:+1587-466-6647"
-                aria-label="Call Primo Painting at 587-466-6647"
+                href="tel:+14039037517"
+                aria-label="Call Primo Painting at 403-903-7517"
               >
-                <span className="text-black font-medium">587-966-6547</span>
+                <span className="text-black font-medium">403-903-7517</span>
               </Link>
             </div>
             <Link

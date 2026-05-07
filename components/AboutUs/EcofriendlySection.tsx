@@ -29,10 +29,7 @@ export default function EcofriendlySection() {
             paint and take it to our shop, ensuring it gets properly recycled
             instead of wasted. Plus, all materials from our projects, like
             garbage, cardboard, and plastics,Our
-            <a
-              href="https://www.primopainting.com/"
-              className="text-blue"
-            >
+            <a href="https://www.primopainting.ca/" className="text-blue">
               {" "}
               painting company in Calgary{" "}
             </a>
@@ -42,8 +39,8 @@ export default function EcofriendlySection() {
 
           <div className="pt-4">
             <p className="lg:text-[20px] text-[18px] text-black">
-              By choosing Primo Painters, you are making an eco-friendly
-              choice that benefits your home and the planet.
+              By choosing Primo Painters, you are making an eco-friendly choice
+              that benefits your home and the planet.
             </p>
           </div>
         </div>

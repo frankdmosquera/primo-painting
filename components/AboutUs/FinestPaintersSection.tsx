@@ -28,10 +28,7 @@ export default function FinestPaintersSection() {
           </p>
           <p className=" text-black z-20">
             Our skilled{" "}
-            <a
-              href="https://www.primopainters.ca/"
-              className="text-blue"
-            >
+            <a href="https://www.primopainting.ca/" className="text-blue">
               Calgary painters
             </a>{" "}
             bring attention to detail to every brushstroke, ensuring a smooth

@@ -9,15 +9,17 @@ import { AboutUsImg } from "@/data/images";
 
 export default function AboutusHome() {
   return (
-    <div className="w-full mb-0 lg:mt-24 my-10 relative">
+    <div className="hidden w-full mb-0 lg:mt-24 my-10 relative">
       <div className="absolute top-[-390px] z-[-1]">
         <Image src={BgBackground} alt="bg-Image" />
       </div>
       <div className=" flex flex-col lg:flex-row  lg:h-[38rem]">
         {/* Left side with image */}
         <div className="relative w-full lg:w-[50%]">
-          <div className="absolute top-10 left-0 z-50 bg-blue-900 text-white py-3 px-4">
-            <p className="text-[16px] font-semibold">Over 10 Years of Experience</p>
+          <div className="absolute bottom-4 left-0 z-50 bg-blue-900 text-white py-3 px-4">
+            <p className="text-[16px] font-semibold">
+              Over 10 Years of Experience
+            </p>
           </div>
           <Image
             src={AboutUsImg.src}
@@ -37,12 +39,12 @@ export default function AboutusHome() {
           </p>
           <p className="text-black mb-6 text-[14px] lg:text-[16px]">
             Anyone can paint walls, but only the finest painters understand that
-            every single stroke of colour matters. At Primo Painting,
-            thats exactly what we do. With years of expertise in creating
-            stunning spaces, we are your trusted partners for professional
-            interior and exterior painting services. Our team has the finest
-            painters in Calgary, who ensure that every brushstroke makes your
-            space look fresh, stylish, and downright amazing.
+            every single stroke of colour matters. At Primo Painting, thats
+            exactly what we do. With years of expertise in creating stunning
+            spaces, we are your trusted partners for professional interior and
+            exterior painting services. Our team has the finest painters in
+            Calgary, who ensure that every brushstroke makes your space look
+            fresh, stylish, and downright amazing.
           </p>
 
           <p className="text-black mb-6 text-[14px] lg:text-[16px]">

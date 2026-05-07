@@ -30,7 +30,7 @@ export default function ServiceHero({
         </div>
         <div className="md:hidden absolute top-4  right-[-70] transform -translate-x-1/2 z-10">
           <a
-            href="tel:587-966-6547"
+            href="tel:14039037517"
             className="flex items-center   text-white rounded-full p-2"
           >
             <svg
@@ -113,7 +113,7 @@ export default function ServiceHero({
               </defs>
             </svg>
 
-            <span className="font-medium">587-966-6547</span>
+            <span className="font-medium">403-903-7517</span>
           </a>
         </div>
         <div className="relative h-full flex flex-col items-center justify-center text-center px-4 gap-4">

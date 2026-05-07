@@ -55,14 +55,13 @@ export default function Footer() {
                   width={180}
                   height={60}
                   className="object-contain"
-                     src="/primo-painting-calgary-logo.png"
-              
-              
+                  src="/primo-painting-calgary-logo.png"
                 />
               </Link>
               {/* </div> */}
               <p className="text-sm text-white leading-relaxed mt-10">
-                We offer professional exterior and interior painting services in Calgary and surroundings. 
+                We offer professional exterior and interior painting services in
+                Calgary and surroundings.
               </p>
             </div>
 
@@ -85,8 +84,8 @@ export default function Footer() {
                           item === "Home"
                             ? "/"
                             : item === "Blog"
-                            ? "/blogs"
-                            : `/${item.toLowerCase()}`
+                              ? "/blogs"
+                              : `/${item.toLowerCase()}`
                         }
                         className="text-white hover:text-white transition-colors"
                       >
@@ -104,8 +103,8 @@ export default function Footer() {
               <div className="space-y-5 ">
                 <div className="flex items-center gap-2 text-white cursor-pointer">
                   <Link
-                    href="tel:+587-966-6547"
-                    aria-label="Primo Painting at 587-966-6547"
+                    href="tel:+14039037517"
+                    aria-label="Primo Painting at 403-903-7517"
                   >
                     <svg
                       width="19"
@@ -128,8 +127,8 @@ export default function Footer() {
                       />
                     </svg>
                   </Link>
-                  <Link href="tel:+1(587)966-6547">
-                    <span className="font-[500]">+1 587-966-6547</span>
+                  <Link href="tel:+14039037517">
+                    <span className="font-[500]">+1 403-903-7517</span>
                   </Link>
                 </div>
                 <div className="flex items-center gap-2 text-wrap break-all text-white  cursor-pointer ">
@@ -151,9 +150,7 @@ export default function Footer() {
                     </svg>
                   </Link>
                   <Link href="mailto:info@primopainting.ca">
-                    <span className="font-[500]">
-                      info@primopainting.ca
-                    </span>
+                    <span className="font-[500]">info@primopainting.ca</span>
                   </Link>
                 </div>
                 <Link target="_blank" href="https://g.co/kgs/Wm9YRbr">
@@ -202,9 +199,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="border-t  mt-8 pt-4 text-center text-xs text-gray-700">
-            <p className="text-white">
-              © 2026 Primo Painting. 
-            </p>
+            <p className="text-white">© 2026 Primo Painting.</p>
           </div>
         </div>
       </div>
