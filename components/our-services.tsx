@@ -34,14 +34,14 @@ export default function OurServices() {
         <TabsList
           className="
       flex 
-    flex-wrap 
-    gap-2 
-    px-2 
-    mb-32 md:mb-16 lg:mb-8
-    w-full 
-    justify-center 
-    whitespace-nowrap
-  "
+      flex-wrap 
+      gap-2 
+      px-2 
+      mb-32 md:mb-16 lg:mb-8
+      w-full 
+      justify-center 
+      whitespace-nowrap
+     "
           style={{ scrollBehavior: "smooth", scrollSnapType: "none" }}
         >
           {categories.map((cat) => (

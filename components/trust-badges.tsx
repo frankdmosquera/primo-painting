@@ -18,6 +18,7 @@ export default function TrustBadges() {
               title="Google Reviews"
               width={120}
               height={50}
+              priority
               className="h-auto"
             />
           </div>
@@ -30,6 +31,7 @@ export default function TrustBadges() {
               width={120}
               height={50}
               className="h-auto"
+              priority
             />
           </div>
 
@@ -41,6 +43,7 @@ export default function TrustBadges() {
               width={120}
               height={50}
               className="h-auto"
+              priority
             />
           </div>
 
@@ -52,6 +55,7 @@ export default function TrustBadges() {
               width={100}
               height={50}
               className="h-auto"
+              priority
             />
           </div>
 
@@ -62,6 +66,7 @@ export default function TrustBadges() {
               title="Best of the Best"
               width={100}
               height={40}
+              priority
               className="h-auto"
             />
           </div>
@@ -73,6 +78,7 @@ export default function TrustBadges() {
               width={96}
               height={30}
               className="h-auto"
+              priority
             />
           </div>
         </div>
