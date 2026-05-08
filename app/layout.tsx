@@ -21,8 +21,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alberta Colour Painting",
-  description: "Alberta Colour Painting",
+  title: "Primo Painting",
+  description: "Primo Painting - Calgary's Premier Painting Service",
 };
 
 export default function RootLayout({
@@ -87,12 +87,12 @@ export default function RootLayout({
       "@type": "Place",
       name: "Calgary",
     },
-    telephone: "+15879666547",
+    telephone: "+14039037517",
     priceRange: "Call for Quote",
   };
   return (
     <html lang="en">
-      <Script
+      {/* <Script
         src={`https://www.googletagmanager.com/gtag/js?id=G-DVMYRWNF3T`}
         strategy="afterInteractive"
       />
@@ -125,7 +125,7 @@ export default function RootLayout({
       })(window,document,'script','dataLayer','GTM-M85752KG');
     `,
         }}
-      />
+      /> */}
 
       <Script
         type="application/ld+json"
@@ -190,10 +190,10 @@ export default function RootLayout({
       />
       <head>
         <meta name="msvalidate.01" content="DBD9A18509B447FAF5F19EC3C4B5BFC4" />
-        <meta
+        {/* <meta
           name="google-site-verification"
           content="FPojVs3HSBJsLE3Sh7FzP_jczlilyjePuAJEo7VeAo4"
-        />
+        /> */}
 
         <meta name="robots" content="index, follow" />
 
@@ -216,14 +216,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${roboto.className} antialiased`}
       >
-        <noscript>
+        {/* <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-M85752KG"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
-        </noscript>
+        </noscript> */}
         <main>
           {/* <ScrollingBanner /> */}
           <Navbar />
