@@ -1,15 +1,15 @@
-import nodemailer from 'nodemailer'
+import nodemailer from "nodemailer";
 
 export async function POST(req: any) {
   try {
-    const { name, email, phone, message } = await req.json()
+    const { name, email, phone, message } = await req.json();
 
     if (!name || !email || !message || !phone) {
       //we need too add phone to the form
       return new Response(
-        JSON.stringify({ error: 'All fields are required.' }),
-        { status: 400 }
-      )
+        JSON.stringify({ error: "All fields are required." }),
+        { status: 400 },
+      );
     }
 
     const transporter = nodemailer.createTransport({
@@ -20,28 +20,37 @@ export async function POST(req: any) {
         user: process.env.EMAIL_USERNAME,
         pass: process.env.EMAIL_PASSWORD,
       },
-    })
+    });
 
     const mailOptions = {
       from: process.env.EMAIL_USERNAME,
-      to: 'info@albertacolourpainting.com',
+      to: process.env.EMAIL_USERNAME,
       replyTo: email,
       subject: `New message from ${name}`,
       text: `You have received a new message from ${name} (${email}).\n\nMessage: ${message}`,
-      html: `<p>You have received a new message from <strong>${name}</strong> Email:${email}.Number:${phone}.</p><p><strong>Message:</strong><p>${message}</p>`,
-    }
+      // html: `<p>You have received a new message from <strong>${name}</strong> Email:${email}.Number:${phone}.</p><p><strong>Message:</strong><p>${message}</p>`,
+
+      html: `
+        <h2>New Contact Form Submission</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Message:</strong></p>
+        <p>${message}</p>
+      `,
+    };
 
     // Send the email
-    await transporter.sendMail(mailOptions)
+    await transporter.sendMail(mailOptions);
 
     return new Response(
-      JSON.stringify({ message: 'Email sent successfully!' }),
-      { status: 200 }
-    )
+      JSON.stringify({ message: "Email sent successfully!" }),
+      { status: 200 },
+    );
   } catch (error) {
     return new Response(
-      JSON.stringify({ error: 'Failed to send email. Try again later.' }),
-      { status: 500 }
-    )
+      JSON.stringify({ error: "Failed to send email. Try again later." }),
+      { status: 500 },
+    );
   }
 }

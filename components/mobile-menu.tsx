@@ -83,9 +83,9 @@ export default function MobileMenu() {
           <div className="flex justify-between m-[28px]">
             <Link href="/">
               <Image
-                src="/logo.svg"
-                alt="Alberta Color Painting"
-                title="Alberta Color Painting"
+                src="/primo-painting-calgary-logo.png"
+                alt="Primo Painting"
+                title="Primo Painting"
                 width={150}
                 height={40}
                 className="h-auto"
