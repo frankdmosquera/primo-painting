@@ -9,7 +9,7 @@ export const ExterioPaintingServiceImg = {
   alt: "Exterior Painting Service in Calgary",
 };
 export const InteriorPaintingServiceImg = {
-  src: "/interior/PXL_20220622_192016887.webp",
+  src: "/interior/strathmoore-railing-after-painting.jpg",
   alt: "Interior Painting Calgary",
 };
 export const CommercialPaintingServiceImg = {
@@ -29,7 +29,7 @@ export const GaragePaintingServiceImg = {
 // SERVICES PAGE IMAGES
 
 export const ServicesInteriorPaintingImg = {
-  src: "/interior/PXL_20220622_192016887.webp",
+  src: "/interior/strathmoore-railing-after-painting.jpg",
   alt: "Interior Painting Calgary",
 };
 export const ServicescabinetPaintingImg = {

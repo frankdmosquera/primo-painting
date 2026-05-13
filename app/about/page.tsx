@@ -45,7 +45,7 @@ export const metadata: Metadata = {
 
 export default function page() {
   return (
-    <main>
+    <>
       <StandardHero
         title="About  "
         title2="Primo Painters"
@@ -90,6 +90,6 @@ export default function page() {
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 }
