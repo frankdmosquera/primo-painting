@@ -81,7 +81,7 @@ export default function MobileMenu() {
           style={{ transform: isOpen ? "translateX(0)" : "translateX(100%)" }}
         >
           <div className="flex justify-between m-[28px]">
-            <Link href="/">
+            <Link href="/" onClick={() => setIsOpen(false)}>
               <Image
                 src="/primo-painting-calgary-logo.png"
                 alt="Primo Painting"
