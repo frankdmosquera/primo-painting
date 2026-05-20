@@ -1,4 +1,4 @@
-export default function HeroPhoneMobile() {
+export default function HeroPhoneMobileBlue() {
   return (
     <div>
       <a
@@ -19,8 +19,9 @@ export default function HeroPhoneMobile() {
               width="41.7782"
               height="40.8498"
               rx="20.4249"
-              fill="#0D378D"
-              fillOpacity="0.24"
+              // fill="#0D378D"
+              fill="#1e3a8a"
+              // fillOpacity="0.9"
               shapeRendering="crispEdges"
             />
             <rect
@@ -85,7 +86,7 @@ export default function HeroPhoneMobile() {
           </defs>
         </svg>
 
-        <span className="font-medium">403-903-7517</span>
+        <span className="font-bold text-blue-900">403-903-7517</span>
       </a>
     </div>
   );

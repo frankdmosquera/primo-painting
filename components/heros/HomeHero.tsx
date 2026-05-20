@@ -11,7 +11,9 @@ const HomeHero = () => {
     <div>
       {/* <section className="relative h-[600px] md:h-[850px] lg:h-[850px]"> */}
       <section className="">
-        <HeroPhoneMobile />
+        <div className="lg:hidden absolute top-22 tn:top-24 xsm:top-26 right-[-70] tn:right-[-64] transform -translate-x-1/2 z-10">
+          <HeroPhoneMobile />
+        </div>
         <div className="relative h-[calc(100vh-50px)] tn:h-150 xsm:h-168 sm:h-140">
           {/* <div className="relative h-full w-full"> */}
           <Image

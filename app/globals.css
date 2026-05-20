@@ -21,7 +21,7 @@
 }
 
 @theme {
-  --breakpoint-xtn: 19rem; /* 320px */
+
   --breakpoint-tn: 22rem;   /* 352px */
   --breakpoint-xsm: 25rem;   /* 400px */
   --breakpoint-sm: 40rem;   /* 640px */

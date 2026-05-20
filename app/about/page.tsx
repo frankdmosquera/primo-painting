@@ -46,6 +46,7 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <>
+      <AboutusAbout />
       <StandardHero
         title="About  "
         title2="Primo Painters"
@@ -53,7 +54,6 @@ export default function page() {
         subtitle="Bringing Colour to Calgary with Flawless Paint Jobs! "
         imageSrc={blogsBanner}
       />
-      <AboutusAbout />
       <div className="relative">
         <div className="absolute">
           <Image src={BgBackground} alt="bg-Image" />

@@ -9,25 +9,32 @@ import FivestarIcon from "./FivestarIcon";
 import WorkmanshipIcon from "./WorkmanshipIcon";
 import LicensedIcon from "./LicensedIcon";
 import { AboutUsImg } from "@/data/images";
+import HeroPhoneMobile from "../heros/HeroPhoneMobile";
+import HeroPhoneMobileBlue from "../heros/HeroPhoneMobileBlue";
 
 export default function AboutusHome() {
   return (
-    <div className="w-full lg:my-24 my-10 relative">
+    <div className="w-full  mb-10 lg:my-24 relative">
+      <div className="lg:hidden absolute  tn:top-24 xsm:top-26 right-[-70] tn:right-[-64] transform -translate-x-1/2 z-10">
+        <HeroPhoneMobileBlue />
+      </div>
       <div className="absolute top-[-390px] z-[-1]">
         <Image src={BgBackground} alt="bg-Image" />
       </div>
       <div className=" flex flex-col lg:flex-row  lg:h-[38rem]">
         {/* Left side with image */}
-        <div className="relative w-full lg:w-[50%]">
-          <div className="absolute top-10 left-0 z-50 bg-blue-900 text-white py-3 px-4">
-            <p className="text-[16px] font-semibold">10 Years of Experience</p>
+        <div className="relative w-full h-50 lg:w-[50%] bg-black">
+          <div className="absolute bottom-8 left-0 z-50 bg-blue-900 text-white py-3 px-4">
+            <p className="text-[16px] font-semibold">
+              Over 10 Years of Experience
+            </p>
           </div>
           <Image
             src={AboutUsImg.src}
             alt={AboutUsImg.alt}
-            width={600}
+            width={700}
             height={600}
-            className="w-full h-[400px] lg:h-[650px] max-sm:pr-[20px] object-cover lg:absolute z-10"
+            className="absoloute object-cover  z-10"
           />
         </div>
 
@@ -40,14 +47,28 @@ export default function AboutusHome() {
             TRUSTED BY LOCALS
           </p>
           <p className="text-black mb-6 text-[14px] lg:text-[16px]">
-            We started with a vision that something as simple as a paint job should be nothing short of extraordinary. Because the space you live or work in should reflect your vibe. And just "okay" doesn't cut it. Rookies can't  give you that same touch of perfection that only experience can bring. That's why, at Primo Painting, we take pride in our team of expert Calgary painters with years of hands-on experience handling projects of every size and style.
+            We started with a vision that something as simple as a paint job
+            should be nothing short of extraordinary. Because the space you live
+            or work in should reflect your vibe. And just "okay" doesn't cut it.
+            Rookies can't give you that same touch of perfection that only
+            experience can bring. That's why, at Primo Painting, we take pride
+            in our team of expert Calgary painters with years of hands-on
+            experience handling projects of every size and style.
           </p>
 
           <p className="text-black mb-6 text-[14px] lg:text-[16px]">
-          Our mission is simple: We don't treat walls like walls, we treat them like canvases. Every stroke we make is intentional, every colour choice is meaningful, and every result? A reflection of your style brought to life. With years of experience and expertise, we offer a wide range of painting services in Calgary for both interior and exterior spaces, turning them into eye-catching standouts.
+            Our mission is simple: We don't treat walls like walls, we treat
+            them like canvases. Every stroke we make is intentional, every
+            colour choice is meaningful, and every result? A reflection of your
+            style brought to life. With years of experience and expertise, we
+            offer a wide range of painting services in Calgary for both interior
+            and exterior spaces, turning them into eye-catching standouts.
           </p>
           <p className="text-black mb-6 text-[14px] lg:text-[16px]">
-            Bonus? We're one of the few licensed and certified painting companies in Calgary. So when you hire us, you're not just getting paint, you're getting pro results that make people say - Whoa, who did this? 
+            Bonus? We're one of the few licensed and certified painting
+            companies in Calgary. So when you hire us, you're not just getting
+            paint, you're getting pro results that make people say - Whoa, who
+            did this?
           </p>
 
           {/* <button className="learn-more-button">Learn More</button> */}

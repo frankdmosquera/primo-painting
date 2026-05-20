@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import TrustBadges from "@/components/trust-badges";
 import HeroCallToAction from "./HeroCallToAction";
 import HeroPhoneMobile from "./HeroPhoneMobile";
@@ -21,8 +20,7 @@ export default function StandardHero({
 }: HeroProps) {
   return (
     <div>
-      <section className="">
-        <HeroPhoneMobile />
+      <section>
         <div className="relative h-[calc(100vh-50px)]  sm:h-120">
           {/* <div className="relative h-full w-full"> */}
           <Image
