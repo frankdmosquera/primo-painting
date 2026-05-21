@@ -16,7 +16,7 @@ const DiscussSection = () => {
           {" "}
           {/* Margin for small screens */}
           <div className="icon mb-4">
-            <Link href="tel:+1 587-966-6547">
+            <Link href="tel:+14039037517">
               <Image
                 src={PhoneLogo}
                 alt="Call Us"
@@ -27,8 +27,8 @@ const DiscussSection = () => {
           </div>
           <h3 className="text-[#000000] md:text-4xl sm:text-[20px] font-medium cursor-pointer">
             <Link
-              aria-label="Call Alberta Global Painting at 587-466-6647"
-              href="tel:+1587-466-6647"
+              aria-label="Primo Painting at 403-903-7517"
+              href="tel:+14039037517"
             >
               CALL US
             </Link>
@@ -39,7 +39,7 @@ const DiscussSection = () => {
           {" "}
           {/* Margin for small screens */}
           <div className="icon mb-4">
-            <Link href="mailto:info@albertacolourpainting.com">
+            <Link href="mailto:info@primopainting.ca">
               <Image
                 src={EmailLogo}
                 alt="Email Us"
@@ -50,8 +50,8 @@ const DiscussSection = () => {
           </div>
           <h3 className="text-[#000000] md:text-4xl sm:text-[20px] font-medium cursor-pointer">
             <Link
-              href="mailto:primopainters.ca"
-              aria-label="Mail Alberta Global Painting at primopainters.ca"
+              href="mailto:info@primopainting.ca"
+              aria-label="Mail Primo Painting at info@primopainting.ca"
             >
               EMAIL US
             </Link>

@@ -92,11 +92,8 @@ export default function RootLayout({
   };
   return (
     <html lang="en">
+      {/* GOOGLE ANALITICS  */}
       {/* <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=G-DVMYRWNF3T`}
-        strategy="afterInteractive"
-      />
-      <Script
         id="google-analytics"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -106,55 +103,21 @@ export default function RootLayout({
         gtag('js', new Date());
         gtag('config', 'G-DVMYRWNF3T');
       `,
-        }}
-      />
-      <Script
-        id="gtm-init"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-      (function(w,d,s,l,i){
-        w[l]=w[l]||[];
-        w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
-        var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),
-            dl=l!='dataLayer' ? '&l='+l : '';
-        j.async=true;
-        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-        f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-M85752KG');
-    `,
         }}
       /> */}
 
-      {/* herererererere */}
-      {/* <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=G-DVMYRWNF3T`}
-        strategy="afterInteractive"
-      /> */}
-      {/* <Script
-        id="google-analytics"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-DVMYRWNF3T');
-      `,
-        }}
-      /> */}
+      {/* GOOGLE TAG MANAGER SCRIPT  */}
       <Script
         id="gtm-init"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5D92BKJS');
-    `,
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5D92BKJS');
+       `,
         }}
       />
 
@@ -249,15 +212,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${roboto.className} antialiased`}
       >
-        {/* <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-M85752KG"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
-        </noscript> */}
-        {/* new one */}
         {/* Google Tag Manager (noscript)  */}
         <noscript>
           <iframe
