@@ -107,6 +107,7 @@ export default function RootLayout({
       /> */}
 
       {/* GOOGLE TAG MANAGER SCRIPT  */}
+
       <Script
         id="gtm-init"
         strategy="afterInteractive"
@@ -116,7 +117,7 @@ export default function RootLayout({
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-5D92BKJS');
+        })(window,document,'script','dataLayer','GTM-18189264054');
        `,
         }}
       />
