@@ -12,7 +12,7 @@ export default function page() {
   <Script id="google-conversion-event" strategy="afterInteractive">
     {`
           gtag('event', 'conversion', {
-            'send_to': 'AW-18189264054/IYXKCLrAxbQcELbJqOFD'
+            'send_to': 'AW-18189264054/KNRCCMj2yrQcELbJqOFD'
           });
         `}
   </Script>;
