@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/dist/client/script";
 
 export const metadata: Metadata = {
   robots: {
@@ -9,13 +8,6 @@ export const metadata: Metadata = {
 };
 
 export default function page() {
-  <Script id="google-conversion-event" strategy="afterInteractive">
-    {`
-          gtag('event', 'conversion', {
-            'send_to': 'AW-18189264054/KNRCCMj2yrQcELbJqOFD'
-          });
-        `}
-  </Script>;
   return (
     <>
       <div className="min-h-screen flex flex-col items-center justify-center bg-[#0D378D] text-white px-6">

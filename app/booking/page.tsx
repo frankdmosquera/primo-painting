@@ -39,7 +39,9 @@ export const metadata: Metadata = {
 export default function bookingPage() {
   return (
     <>
-      <Calendly />
+      <div className="bg-[#0d378d]">
+        <Calendly />
+      </div>
     </>
   );
 }
