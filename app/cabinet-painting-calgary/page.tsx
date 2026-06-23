@@ -6,9 +6,7 @@ import blogsBanner from "@/public/blogs-banner.webp";
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
 import AboutUs from "@/public/services/cabinet.webp";
 import DotFranks from "@/components/ui/DotFranks";
-import {
-  ServicescabinetPaintingImg,
-} from "@/data/images";
+import { ServicescabinetPaintingImg } from "@/data/images";
 import type { Metadata, Viewport } from "next";
 export const viewport: Viewport = {
   width: "device-width",
@@ -47,15 +45,21 @@ export default function cabinetPaintingPage() {
   return (
     <>
       <ServiceHero
-        title=""
-        title2="Give Your Space a New Life with"
-        title3="Custom Cabinet Painting in Calgary"
+        title="Custom"
+        title2=" Cabinet Painting in Calgary"
+        // title3=""
         imageSrc={blogsBanner}
       />
       {/* Background Image Section */}
       <div className="relative">
         <div className="absolute top-[-100px] z-[-2]">
-          <Image src={BgBackground2} alt="bg-Image"width={400} height={300} priority />
+          <Image
+            src={BgBackground2}
+            alt="bg-Image"
+            width={400}
+            height={300}
+            priority
+          />
         </div>
       </div>
 
@@ -71,9 +75,9 @@ export default function cabinetPaintingPage() {
             <Image
               src={ServicescabinetPaintingImg.src}
               alt={ServicescabinetPaintingImg.alt}
-            
               className="md:object-cover sm:object-contain"
-              width={400} height={300}
+              width={400}
+              height={300}
               priority
             />
           </div>
@@ -115,8 +119,8 @@ export default function cabinetPaintingPage() {
             <p>
               Don't settle for outdated, dull cabinets, and elevate your space's
               vibe and feel with our top-quality cabinet painting in Calgary.
-              Contact Primo Painting today and give your space the
-              makeover it deserves!
+              Contact Primo Painting today and give your space the makeover it
+              deserves!
             </p>
           </div>
         </div>
@@ -130,7 +134,8 @@ export default function cabinetPaintingPage() {
             alt="Elegant interior with staircase"
             // fill
             className="max-sm:pr-[20px] object-cover lg:absolute  "
-            width={400} height={300} 
+            width={400}
+            height={300}
             priority
           />
         </div>

@@ -18,8 +18,7 @@ export const metadata: Metadata = {
   description:
     "Looking for the best exterior house painting in Calgary? We’re one of the top exterior painting companies, with skilled painters ready to transform your home.",
   alternates: {
-    canonical:
-      "https://www.primopainting.ca/exterior-painting-calgary",
+    canonical: "https://www.primopainting.ca/exterior-painting-calgary",
   },
   openGraph: {
     title: "Need Calgary Painters?",
@@ -40,9 +39,9 @@ export default function exteriorPaintingCalgary() {
   return (
     <>
       <ServiceHero
-        title=""
-        title2="Exterior House Painting Services"
-        title3="Built for Calgary Weather"
+        title="Exterior"
+        title2=" House Painting Services in Calgary"
+        // title3="Built for Calgary Weather"
         imageSrc={blogsBanner}
       />
       {/* Background Image Section */}
@@ -89,15 +88,12 @@ export default function exteriorPaintingCalgary() {
               home is very important.
             </p>
             <p>
-              At primo Painting, we're here to give your home that
-              fresh and transformed look so that it looks stylish,
-              well-maintained, and stands the test of time. We use premium and
-              certified paints to ensure your home's exterior meets the city’s
-              harsh climatic conditions. Our exterior{" "}
-              <a
-                href="https://www.primopainting.ca"
-                className="text-blue"
-              >
+              At primo Painting, we're here to give your home that fresh and
+              transformed look so that it looks stylish, well-maintained, and
+              stands the test of time. We use premium and certified paints to
+              ensure your home's exterior meets the city’s harsh climatic
+              conditions. Our exterior{" "}
+              <a href="https://www.primopainting.ca" className="text-blue">
                 house painting in Calgary{" "}
               </a>
               covers a wide range of services from refreshing faded walls,

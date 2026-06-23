@@ -43,9 +43,9 @@ export default function garagePaintingPage() {
   return (
     <>
       <ServiceHero
-        title="Your Car Deserves a Sleek Space Too!"
-        title2="Upgrade with Premium"
-        title3="Garage Painting In Calgary"
+        title="Upgrade"
+        title2="with Premium Garage Painting In Calgary"
+        // title3=""
         imageSrc={blogsBanner}
       />
       {/* Background Image Section */}

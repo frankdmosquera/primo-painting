@@ -18,8 +18,7 @@ export const metadata: Metadata = {
   description:
     "Primo Painting is one of the leading commercial painting companies in Calgary, providing expert interior & exterior painting with the best results.",
   alternates: {
-    canonical:
-      "https://www.primopainting.ca/commercial-painting-calgary",
+    canonical: "https://www.primopainting.ca/commercial-painting-calgary",
   },
   openGraph: {
     title: "Need Calgary Painters?",
@@ -39,16 +38,21 @@ export default function commercialPaintingCalgary() {
   return (
     <>
       <ServiceHero
-        title=""
-        title2="Commercial Painting in Calgary"
-        title3="for Office, Retail & Industrial Spaces
-"
+        title="Commercial"
+        title2="Painting in Calgary for Office & Retail"
+        // title3=" & Industrial Spaces"
         imageSrc={blogsBanner}
       />
       {/* Background Image Section */}
       <div className="relative">
         <div className="absolute top-[-100px] z-[-2]">
-          <Image src={BgBackground2} alt="bg-Image"width={400} height={300} priority />
+          <Image
+            src={BgBackground2}
+            alt="bg-Image"
+            width={400}
+            height={300}
+            priority
+          />
         </div>
       </div>
 
@@ -78,10 +82,7 @@ export default function commercialPaintingCalgary() {
               mean business! First impressions matter; a fresh, stylish paint
               job can make all the difference. If you want people to feel
               welcomed and your company to look its best, then commercial
-              <a
-                href="https://www.primopainting.ca/"
-                className="text-blue"
-              >
+              <a href="https://www.primopainting.ca/" className="text-blue">
                 {" "}
                 painting in Calgary
               </a>{" "}
@@ -98,8 +99,8 @@ export default function commercialPaintingCalgary() {
               identity.
             </p>
             <p>
-              At Primo Painting, we've worked with numerous businesses
-              of different sizes, helping them bring their brand vision to life
+              At Primo Painting, we've worked with numerous businesses of
+              different sizes, helping them bring their brand vision to life
               through high-quality commercial painting. Whether it's an office,
               retail store, restaurant, or warehouse, our commercial painters in
               Calgary use premium, long-lasting paints to create a space that
@@ -115,9 +116,10 @@ export default function commercialPaintingCalgary() {
           <Image
             src={AboutUs}
             alt="commercial painting companies"
-         
             className="max-sm:pr-[20px] object-cover lg:absolute  "
-            width={400} height={300} priority
+            width={400}
+            height={300}
+            priority
           />
         </div>
 

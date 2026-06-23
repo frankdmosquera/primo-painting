@@ -17,8 +17,7 @@ export const metadata: Metadata = {
   description:
     "Want ceiling popcorn removal services in Calgary? We transform popcorn ceilings into smooth surfaces. Contact us today to schedule your home renovation consultation!",
   alternates: {
-    canonical:
-      "https://www.primopainting.ca/popcorn-ceiling-removal-calgary",
+    canonical: "https://www.primopainting.ca/popcorn-ceiling-removal-calgary",
   },
   openGraph: {
     title: "Need Calgary Painters?",
@@ -39,10 +38,9 @@ export default function popcornCeilingRemovalPage() {
   return (
     <>
       <ServiceHero
-        title=""
-        title2="Popcorn Ceiling Removal in Calgary"
-        title3="Made Quick & Hassle-Free
-"
+        title="Hassle-Free"
+        title2="PopcornCeiling Removal in Calgary"
+        title3=""
         imageSrc={blogsBanner}
       />
       {/* Background Image Section */}
@@ -78,26 +76,26 @@ export default function popcornCeilingRemovalPage() {
               our popcorn ceiling removal in Calgary is exactly what you need!
             </p>
             <p>
-              At Primo Painting, we specialise in safe and mess-free
-              popcorn ceiling removal, leaving your space with a smooth, stylish
-              finish that quickly transforms the overall look. Whether you're
+              At Primo Painting, we specialise in safe and mess-free popcorn
+              ceiling removal, leaving your space with a smooth, stylish finish
+              that quickly transforms the overall look. Whether you're
               renovating, selling your home, or just tired of the bumpy,
               textured look, we've got you covered.
             </p>
             <p>
-              At Primo Painting, we provide complete popcorn ceiling
-              removal services in Calgary, handling everything from start to
-              finish. Our process includes removing the textured ceiling,
-              applying multiple coats of mud for a smooth finish, followed by
-              sanding, priming, and painting. Our skilled team ensures a
-              dust-free, mess-free experience, using top-quality products and
-              expert techniques to eliminate outdated textures safely. We make
-              the entire process smooth, efficient, and completely hassle-free.
+              At Primo Painting, we provide complete popcorn ceiling removal
+              services in Calgary, handling everything from start to finish. Our
+              process includes removing the textured ceiling, applying multiple
+              coats of mud for a smooth finish, followed by sanding, priming,
+              and painting. Our skilled team ensures a dust-free, mess-free
+              experience, using top-quality products and expert techniques to
+              eliminate outdated textures safely. We make the entire process
+              smooth, efficient, and completely hassle-free.
             </p>
             <p>
               We are dedicated to delivering services that exceed your
-              expectations. Contact Primo Painting today to transform
-              your space with a brand new ceiling.
+              expectations. Contact Primo Painting today to transform your space
+              with a brand new ceiling.
             </p>
           </div>
         </div>

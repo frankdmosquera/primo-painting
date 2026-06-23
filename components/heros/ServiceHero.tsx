@@ -117,14 +117,12 @@ export default function ServiceHero({
           </a>
         </div>
         <div className="relative h-full flex flex-col items-center justify-center text-center px-4 gap-4">
-          <h2 className="text-3xl md:text-6xl font-bold text-white mb-4 leading-snug">
-            {title} <br />
-            <span className="bg-reveal">{title2}</span>
-            <br />
-            <span className="text-3xl md:text-5xl text-white leading-loose">
-              {title3}
-            </span>
-          </h2>
+          <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-snug ">
+            {title}
+            <span className="bg-reveal ml-2">{title2}</span>
+
+            {/* <span className=" bg-reveal leading-loose">{title3}</span> */}
+          </h1>
 
           <div className="flex flex-col sm:flex-row gap-4 ">
             <HeroCallToAction />

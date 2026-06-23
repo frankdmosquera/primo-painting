@@ -16,8 +16,7 @@ export const metadata: Metadata = {
   description:
     "Looking for expert interior painting in Calgary? We offer professional interior house painting in Calgary for flawless home transformations.",
   alternates: {
-    canonical:
-      "https://www.primopainting.ca/interior-painting-calgary",
+    canonical: "https://www.primopainting.ca/interior-painting-calgary",
   },
   openGraph: {
     title: "Need Calgary Painters?",
@@ -39,8 +38,9 @@ export default function interiorPaintingCalgary() {
     <>
       <ServiceHero
         title="Expert "
+        // title2="Interior Painting Services in Calgary"
         title2="Interior Painting Services in Calgary"
-        title3="for Homes & Businesses"
+        // title3="for Homes & Businesses"
         imageSrc={blogsBanner}
       />
       {/* Background Image Section */}
