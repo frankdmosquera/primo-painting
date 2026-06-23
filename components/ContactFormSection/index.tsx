@@ -29,7 +29,7 @@ const validationSchema = Yup.object({
 const ContactFormSection = () => {
   const handleSubmit = async (
     values: any,
-    { setSubmitting, resetForm }: any
+    { setSubmitting, resetForm }: any,
   ) => {
     const { name, email, phone, message } = values;
 
@@ -62,7 +62,7 @@ const ContactFormSection = () => {
         "There was an issue sending your message. Please try again.",
         {
           description: "Please check your information and try again.",
-        }
+        },
       );
       setSubmitting(false);
     }
@@ -77,10 +77,7 @@ const ContactFormSection = () => {
           </h2>
           <p className="text-muted-foreground mb-4 text-black">
             Get in touch with our{" "}
-            <a
-              href="https://www.primopainters.ca/"
-              className="text-blue"
-            >
+            <a href="https://www.primopainters.ca/" className="text-blue">
               expert painters in Calgary
             </a>
             . We’d be <br />

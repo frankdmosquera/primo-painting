@@ -6,8 +6,12 @@ import blogsBanner from "@/public/blogs-banner.webp";
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
 import AboutUs from "@/public/services/exteriorAbout.webp";
 import DotFranks from "@/components/ui/DotFranks";
-import { ExterioPaintingServiceImg } from "@/data/images";
+import {
+  dramaticexteriortransformation,
+  ExterioPaintingServiceImg,
+} from "@/data/images";
 import type { Metadata, Viewport } from "next";
+import GallerySection from "@/components/gallery/GallerySection";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1.0,
@@ -59,7 +63,8 @@ export default function exteriorPaintingCalgary() {
         </header>
 
         <div className="space-y-6 ">
-          <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden">
+          <GallerySection GalleryImages={dramaticexteriortransformation} />
+          {/* <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden">
             <Image
               src={ExterioPaintingServiceImg.src}
               alt={ExterioPaintingServiceImg.alt}
@@ -67,7 +72,7 @@ export default function exteriorPaintingCalgary() {
               className="md:object-cover sm:object-contain"
               priority
             />
-          </div>
+          </div> */}
 
           <div className="space-y-4 text-[16px] text-black">
             <p>

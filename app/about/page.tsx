@@ -8,11 +8,11 @@ import blogsBanner from "@/public/blogs-banner.webp";
 import BgBackground from "@/public/about-background-vector-line.svg";
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
 import StandardHero from "@/components/heros/StandardHero";
-import OurGalleryAccordion from "@/components/gallery/GallerySection";
+import { GalleryHomeImages } from "@/data/images";
 import AboutusAbout from "@/components/AboutUs/AboutusAbout";
 import EcofriendlySection from "@/components/AboutUs/EcofriendlySection";
 import SkillPainters from "@/components/AboutUs/SkillPaintersSection";
-
+import GallerySection from "@/components/gallery/GallerySectionHome";
 import FinestPainters from "@/components/AboutUs/FinestPaintersSection";
 import CommitmentQualitySection from "@/components/AboutUs/CommitmentQualitySection";
 import { blogPosts } from "@/lib/blog-data";
@@ -70,7 +70,7 @@ export default function page() {
         <CommitmentQualitySection />
         <EcofriendlySection />
       </div>
-      <OurGalleryAccordion />
+      <GallerySection GalleryHomeImages={GalleryHomeImages} />
       <CalgaryPainting />
       <ContactFormSection />
       <section className="container mx-auto px-4 py-8 ">

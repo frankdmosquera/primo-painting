@@ -5,8 +5,16 @@ import Image from "next/image";
 import blogsBanner from "@/public/blogs-banner.webp";
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
 import AboutUs from "@/public/AboutUs.webp";
-import { InteriorPaintingServiceImg } from "@/data/images";
+// import { InteriorPaintingServiceImg } from "@/data/images";
 import type { Metadata, Viewport } from "next";
+// import { GalleryImages } from "@/data/images";
+
+import GallerySection from "@/components/gallery/GallerySection";
+import { interiorWallPainingBrownToOffWhite } from "@/data/images";
+import Calendly from "@/components/calendly";
+import ServiceBanner from "@/components/ServiceBanner/service-banner";
+import Reviews from "@/components/Reviews";
+// import { interiorWallPainingBrownToOffWhite } from "@/data/images";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1.0,
@@ -35,7 +43,7 @@ export const metadata: Metadata = {
 
 export default function interiorPaintingCalgary() {
   return (
-    <>
+    <div>
       <ServiceHero
         title="Expert "
         // title2="Interior Painting Services in Calgary"
@@ -50,7 +58,7 @@ export default function interiorPaintingCalgary() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 py-8 mt-10">
+      <div className="max-w-7xl mx-auto px-4 py-8 mt-10 ">
         <header className="mb-6">
           <h1 className="text-[26px] font-semibold text-[#0D378D]">
             Interior Painting Calgary
@@ -58,7 +66,7 @@ export default function interiorPaintingCalgary() {
         </header>
 
         <div className="space-y-6">
-          <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden">
+          {/* <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden">
             <Image
               src={InteriorPaintingServiceImg.src}
               alt={InteriorPaintingServiceImg.alt}
@@ -66,8 +74,8 @@ export default function interiorPaintingCalgary() {
               className="md:object-cover sm:object-contain"
               priority
             />
-          </div>
-
+          </div> */}
+          <GallerySection GalleryImages={interiorWallPainingBrownToOffWhite} />
           <div className="space-y-4 text-[16px] text-black">
             <p>
               Let's be honest, your home is more than just walls and a roof.
@@ -109,10 +117,13 @@ export default function interiorPaintingCalgary() {
           </div>
         </div>
       </div>
-      <HomeBanner />
-      <div className="font-normal flex flex-col  lg:flex-row w-[90%] gap-16 mx-auto py-16 lg:items-center">
+      {/* <HomeBanner /> */}
+      <Reviews />
+      <ServiceBanner />
+
+      <div className="font-normal flex flex-col  lg:flex-row w-[100%] gap-16 mx-auto py-16 lg:items-center bg-blue-100">
         {/* Left side with image */}
-        <div className="relative w-full  h-[28vw] lg:w-2/5">
+        <div className="relative w-[100vw]  h-[28vw] lg:w-2/5">
           <Image
             src={AboutUs}
             alt="interior painter calgary"
@@ -122,7 +133,7 @@ export default function interiorPaintingCalgary() {
         </div>
 
         {/* Right side with text */}
-        <div className="w-full lg:w-3/5 text-[16px] ">
+        <div className="w-full lg:w-3/5 text-[16px] px-2">
           <h3 className="lg:text-[32px] text-[24px] font-bold text-[#0D378D] mb-4">
             Beyond Just Paint, We Elevate Your Space
           </h3>
@@ -168,6 +179,6 @@ export default function interiorPaintingCalgary() {
         </div>
       </div>
       <ContactFormSection />
-    </>
+    </div>
   );
 }

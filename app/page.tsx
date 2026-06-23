@@ -9,11 +9,14 @@ import HomeBanner from "@/components/HomeBanner/home-banner";
 import Link from "next/link";
 import HomeHero from "@/components/heros/HomeHero";
 import AboutusHome from "@/components/AboutUs/AboutusHome";
-import GallerySection from "@/components/gallery/GallerySection";
+import GallerySection from "@/components/gallery/GallerySectionHome";
 import SpecialOfferWrapper from "@/components/SpecialOfferWrapper";
 import FaqSection from "@/components/Faq";
 import { blogPosts } from "@/lib/blog-data";
 import Reviews from "@/components/Reviews";
+import { GalleryHomeImages } from "@/data/images";
+import GallerySectionHome from "@/components/gallery/GallerySectionHome";
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1.0,
@@ -78,9 +81,10 @@ export default async function Home() {
           </div>
           <HomeBanner />
         </div>
-        <SpecialOfferWrapper />
-        <GallerySection />
+
+        <GallerySectionHome GalleryHomeImages={GalleryHomeImages} />
         <CalgaryPainting />
+        <SpecialOfferWrapper />
         <FaqSection />
         <section className="container mx-auto px-4 py-8 ">
           <div className="text-center  mb-10">
