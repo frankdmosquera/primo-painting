@@ -1,17 +1,15 @@
 import ContactFormSection from "@/components/ContactFormSection";
 import ServiceHero from "@/components/heros/ServiceHero";
-import HomeBanner from "@/components/HomeBanner/home-banner";
 import Image from "next/image";
 import blogsBanner from "@/public/blogs-banner.webp";
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
 import AboutUs from "@/public/services/exteriorAbout.webp";
 import DotFranks from "@/components/ui/DotFranks";
-import {
-  dramaticexteriortransformation,
-  ExterioPaintingServiceImg,
-} from "@/data/images";
+import { dramaticexteriortransformation } from "@/data/images";
 import type { Metadata, Viewport } from "next";
 import GallerySection from "@/components/gallery/GallerySection";
+import ServiceBanner from "@/components/ServiceBanner/service-banner";
+import Reviews from "@/components/Reviews";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1.0,
@@ -63,25 +61,14 @@ export default function exteriorPaintingCalgary() {
         </header>
 
         <div className="space-y-6 ">
-          <GallerySection GalleryImages={dramaticexteriortransformation} />
-          {/* <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden">
-            <Image
-              src={ExterioPaintingServiceImg.src}
-              alt={ExterioPaintingServiceImg.alt}
-              fill
-              className="md:object-cover sm:object-contain"
-              priority
-            />
-          </div> */}
-
           <div className="space-y-4 text-[16px] text-black">
-            <p>
+            <p className="hidden sm:block  ">
               Updating your home's exterior is more than just a cosmetic choice
               in Calgary's extreme climate. Frequent temperature swings and
               harsh weather conditions can quickly wear down exterior paint,
               making regular maintenance necessary.
             </p>
-            <p>
+            <p className="hidden sm:block  ">
               The summers are extremely harsh with a high UV index that results
               in the paint fading and chalking out, especially for darker
               shades. Winters in the city are no less punishing; the bone-biting
@@ -92,7 +79,7 @@ export default function exteriorPaintingCalgary() {
               choosing the right exterior painting services for your beloved
               home is very important.
             </p>
-            <p>
+            <p className=" ">
               At primo Painting, we're here to give your home that fresh and
               transformed look so that it looks stylish, well-maintained, and
               stands the test of time. We use premium and certified paints to
@@ -111,7 +98,9 @@ export default function exteriorPaintingCalgary() {
           </div>
         </div>
       </div>
-      <HomeBanner />
+      <GallerySection GalleryImages={dramaticexteriortransformation} />
+      <Reviews />
+      <ServiceBanner />
       <div className="font-normal flex flex-col  lg:flex-row w-[90%] gap-16 mx-auto py-16 lg:items-center">
         {/* Left side with image */}
         <div className="relative w-full  h-[50vw] lg:w-2/5">

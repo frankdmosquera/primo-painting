@@ -28,7 +28,7 @@ const ServiceBanner = () => {
             </p>
           </div>
 
-          <div className="flex items-center lg:justify-end justify-start">
+          <div className="flex items-center lg:justify-end justify-start mb-4">
             <Link
               href="/booking"
               className="flex items-center bg-[#0D378D] text-white pl-4 pr-2 py-3 rounded-full text-base font-medium border-2 border-[#cadbff]"

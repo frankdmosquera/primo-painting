@@ -8,6 +8,7 @@ import ScrollingBanner from "@/components/scrolling-banner";
 import Script from "next/script";
 import { Roboto } from "next/font/google";
 import { jsonLd } from "@/data/jsonLd";
+import ScrollingBannerA from "@/components/scrolling-banner-a";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
 const geistSans = Geist({
@@ -107,7 +108,7 @@ export default function RootLayout({
         </noscript>
         End Google Tag Manager (noscript)
         <main>
-          {/* <ScrollingBanner /> */}
+          <ScrollingBannerA />
           <Navbar />
           {children}
           {/* It's better to place the script tag at the bottom of the body for performance */}

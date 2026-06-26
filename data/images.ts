@@ -85,24 +85,56 @@ export const gallery1Img = {
 
 export const GalleryHomeImages = [
   {
-    src: "/galleryNew-1.webp",
-    alt: "house painting calgary",
+    src: "/gallery3.png",
+    alt: "Oak unit prior to being painted white - cabinet painting calgary",
   },
   {
     src: "/galleryHome-4.webp",
-    alt: "painting contractors calgary",
+    alt: "Oak unit after being painted white - cabinet painting calgary",
   },
   {
-    src: "/galleryNew-2.webp",
-    alt: "painting services calgary",
+    src: "/ourServices2.png",
+    alt: "house painting calgary",
   },
   {
-    src: "/galleryNew-3.webp",
-    alt: "calgary painting companies",
+    src: "/galleryNew-1.webp",
+    alt: "house painting calgary",
+  },
+
+  {
+    src: "/garage1.webp",
+    alt: "Garage with just tape and mud, ready to be finished with a fresh coat of mud and paint - garage painting calgary",
   },
   {
-    src: "/galleryHome-3.webp",
-    alt: "home painting calgary",
+    src: "/garage/20201205_105326_lxmmlz.webp",
+    alt: "Garage being painted with a fresh coat of paint - garage painting calgary",
+  },
+];
+
+export const GalleryInteriorImages = [
+  {
+    src: "/interior/strathmoore-railing-prior-to-painting.jpg",
+    alt: "stained oak railing prior to being painted white  - railing painting calgary",
+  },
+  {
+    src: "/interior/strathmoore-railing-after-painting.jpg",
+    alt: "stained oak railing after being painted white  - railing painting calgary",
+  },
+  {
+    src: "/gallery3.png",
+    alt: "Oak unit prior to being painted white - cabinet painting calgary",
+  },
+  {
+    src: "/galleryHome-4.webp",
+    alt: "Oak unit after being painted white - cabinet painting calgary",
+  },
+  {
+    src: "/drywall-repair/garage-drywall-repair-calgary.jpg",
+    alt: "",
+  },
+  {
+    src: "/drywall-repair/garage-drywall-repair-calgary-after-finished.jpg.jpg",
+    alt: "",
   },
 ];
 
@@ -233,7 +265,11 @@ export const dramaticexteriortransformation = [
     alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
   },
   {
-    src: "/painting-projects/dramatic-exterior-transformation/3.webp",
+    src: "/gallery-Page-1.png",
+    alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
+  },
+  {
+    src: "/exterior/exterior-stucco-painting-process.jpg",
     alt: "Ceiling & Interior Revamp Experts — Clean Lines, Modern Spaces",
   },
 ];

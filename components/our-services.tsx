@@ -22,7 +22,7 @@ export default function OurServices() {
   ];
 
   return (
-    <section className="py-12 text-black overflow-visible">
+    <section className="py-12 pb-0 md:pb-8 text-black overflow-visible">
       <ServiceSection
         title="Our Services"
         description="Transform Your Space  <br />with Our Expert Painting Services"
@@ -73,7 +73,7 @@ export default function OurServices() {
                 .map((service) => (
                   <Card
                     key={service.id}
-                    className="w-full md:w-2/3 xl:w-1/3  bg-[#f9f9f9] border-none rounded-lg shadow-sm pt-0"
+                    className="w-full md:w-2/3 xl:w-1/3  bg-[#f9f9f9] border-none rounded-lg shadow-sm pt-0 pb-8"
                   >
                     <CardHeader className="p-0 relative h-56 sm:h-72 md:h-80">
                       <Image

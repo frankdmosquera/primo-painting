@@ -9,13 +9,13 @@ import HomeBanner from "@/components/HomeBanner/home-banner";
 import Link from "next/link";
 import HomeHero from "@/components/heros/HomeHero";
 import AboutusHome from "@/components/AboutUs/AboutusHome";
-import GallerySection from "@/components/gallery/GallerySectionHome";
 import SpecialOfferWrapper from "@/components/SpecialOfferWrapper";
 import FaqSection from "@/components/Faq";
 import { blogPosts } from "@/lib/blog-data";
 import Reviews from "@/components/Reviews";
 import { GalleryHomeImages } from "@/data/images";
 import GallerySectionHome from "@/components/gallery/GallerySectionHome";
+import GallerySection from "@/components/gallery/GallerySection";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -82,7 +82,7 @@ export default async function Home() {
           <HomeBanner />
         </div>
 
-        <GallerySectionHome GalleryHomeImages={GalleryHomeImages} />
+        <GallerySection GalleryImages={GalleryHomeImages} />
         <CalgaryPainting />
         <SpecialOfferWrapper />
         <FaqSection />

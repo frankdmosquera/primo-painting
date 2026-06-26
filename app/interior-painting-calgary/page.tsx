@@ -1,24 +1,24 @@
 import ContactFormSection from "@/components/ContactFormSection";
 import ServiceHero from "@/components/heros/ServiceHero";
-import HomeBanner from "@/components/HomeBanner/home-banner";
 import Image from "next/image";
 import blogsBanner from "@/public/blogs-banner.webp";
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
 import AboutUs from "@/public/AboutUs.webp";
-// import { InteriorPaintingServiceImg } from "@/data/images";
-import type { Metadata, Viewport } from "next";
-// import { GalleryImages } from "@/data/images";
-
 import GallerySection from "@/components/gallery/GallerySection";
-import { interiorWallPainingBrownToOffWhite } from "@/data/images";
-import Calendly from "@/components/calendly";
+import {
+  GalleryInteriorImages,
+  interiorWallPainingBrownToOffWhite,
+} from "@/data/images";
 import ServiceBanner from "@/components/ServiceBanner/service-banner";
 import Reviews from "@/components/Reviews";
-// import { interiorWallPainingBrownToOffWhite } from "@/data/images";
+
+import type { Metadata, Viewport } from "next";
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1.0,
 };
+
 export const metadata: Metadata = {
   title: "Calgary's Top Interior Painters: Interior House Painting Services",
   description:
@@ -75,7 +75,7 @@ export default function interiorPaintingCalgary() {
               priority
             />
           </div> */}
-          <GallerySection GalleryImages={interiorWallPainingBrownToOffWhite} />
+
           <div className="space-y-4 text-[16px] text-black">
             <p>
               Let's be honest, your home is more than just walls and a roof.
@@ -94,7 +94,7 @@ export default function interiorPaintingCalgary() {
               in Calgary, ensuring that your space not only looks aesthetic but
               also feels magnetic
             </p>
-            <p>
+            <p className="hidden sm:block  ">
               Whether you're updating your living space, revamping your dining
               hall, or want to infuse a new feel into your bedroom, our skilled
               <a
@@ -108,7 +108,7 @@ export default function interiorPaintingCalgary() {
               look. We help you choose the perfect colors and finishes to
               reflect your style and create the atmosphere you want.
             </p>
-            <p>
+            <p className="hidden sm:block  ">
               Our process is quick and hassle-free, and we handle everything
               from prep work and priming to the final coat, so you can sit back
               and enjoy the transformation. Get in touch with us today, and
@@ -117,11 +117,11 @@ export default function interiorPaintingCalgary() {
           </div>
         </div>
       </div>
-      {/* <HomeBanner /> */}
+      <GallerySection GalleryImages={GalleryInteriorImages} />
       <Reviews />
       <ServiceBanner />
 
-      <div className="font-normal flex flex-col  lg:flex-row w-[100%] gap-16 mx-auto py-16 lg:items-center bg-blue-100">
+      <div className="font-normal flex flex-col  lg:flex-row w-[100%] gap-16 mx-auto py-16 lg:items-center bg-yellow-50">
         {/* Left side with image */}
         <div className="relative w-[100vw]  h-[28vw] lg:w-2/5">
           <Image
@@ -154,7 +154,7 @@ export default function interiorPaintingCalgary() {
             even more sophisticated, depending on the colors and finishes
             chosen.
           </p>
-          <p className="text-black mb-4   ">
+          <p className="text-black mb-4  hidden sm:block  ">
             We understand that choosing the right colors and finishes can be a
             bit of a task, which is why we’re here to make it easy for you.
             Whether you want to refresh your cozy living room that's been the
@@ -168,7 +168,7 @@ export default function interiorPaintingCalgary() {
             every brushstroke adds beauty, warmth, and personality to your space
             just the way you want it.
           </p>
-          <p className="text-black mb-4   ">
+          <p className="text-black mb-4 hidden sm:block ">
             From preparation to cleanup, we handle every step of the painting
             process with efficiency. We take the time to properly prepare
             surfaces, ensuring a smooth and even application, leaving your space
