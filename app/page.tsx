@@ -9,7 +9,7 @@ import HomeBanner from "@/components/HomeBanner/home-banner";
 import Link from "next/link";
 import HomeHero from "@/components/heros/HomeHero";
 import AboutusHome from "@/components/AboutUs/AboutusHome";
-import SpecialOfferWrapper from "@/components/SpecialOfferWrapper";
+// import SpecialOfferWrapper from "@/components/SpecialOfferWrapper";
 import FaqSection from "@/components/Faq";
 import { blogPosts } from "@/lib/blog-data";
 import Reviews from "@/components/Reviews";
