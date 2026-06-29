@@ -1,20 +1,29 @@
 "use client";
 
 import React, { useRef, useState, ReactNode } from "react";
-import { GalleryHomeImages } from "@/data/images";
+// import { GalleryHomeImages } from "@/data/images";
 import Image from "next/image";
 
-interface SmallGalleryWrapperProps {
+// interface SmallGalleryWrapperProps {
+//   children: ReactNode;
+// }
+type SmallGalleryWrapperProps = {
+  GalleryImages: {
+    src: string;
+    alt: string;
+  }[];
   children: ReactNode;
-}
+};
 
 export default function SmallGalleryWrapper({
   children,
+  GalleryImages,
 }: SmallGalleryWrapperProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [currentStep, setCurrentStep] = useState(0);
 
-  const numberOfImages = GalleryHomeImages.length;
+  // const numberOfImages = GalleryHomeImages.length;
+  const numberOfImages = GalleryImages.length;
 
   const handleScroll = () => {
     const container = scrollRef.current;
@@ -57,17 +66,32 @@ export default function SmallGalleryWrapper({
         >
           {children}
         </div>
+
+        {/* Progress Bar */}
+        {/* <div className="absolute bottom-0 left-0 w-full lg:hidden h-2 sm:h-3 flex mt-2 overflow-hidden">
+        {Array.from({ length: 5 }).map((_, index) => (
+          <div
+            key={index}
+            className={`h-full flex-1 transition-colors duration-300 ${
+              index === currentStep ? "bg-[#0D378D]" : "bg-gray-300"
+            }`}
+          />
+        ))}
+      </div> */}
       </div>
-      {/* thmbnails */}
-      <div className=" w-full h-8 lg:hidden flex items-center justify-center gap-3  overflow-hidden  ">
-        {GalleryHomeImages.map((img, i) => (
-          <div className="relative w-8 h-8  rounded-xl " key={i}>
+      {/* thumbnails */}
+      <div className="bg-[#0D378D] w-full lg:hidden  flex  justify-center py-1 gap-2 xsm:gap-3 md:gap-4 overflow-hidden">
+        {GalleryImages.map((img, index) => (
+          <div
+            className="relative h-10.5 w-10.5 xsm:h-11.5 xsm:w-11.5"
+            key={index}
+          >
             <Image
               src={img.src}
               alt={img.alt}
               fill
               className={`object-cover transition-opacity duration-300 rounded-xl ${
-                i === currentStep ? "opacity-100" : "opacity-50"
+                index === currentStep ? "opacity-100" : "opacity-50"
               }`}
             />
           </div>
@@ -76,4 +100,3 @@ export default function SmallGalleryWrapper({
     </>
   );
 }
-//  const numberOfImages = GalleryHomeImages.length;

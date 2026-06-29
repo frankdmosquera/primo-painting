@@ -12,7 +12,7 @@ const GallerySection = ({
   return (
     <section className="gallery-carousel">
       {/* <OurGalleryContent /> */}
-      <SmallGalleryWrapper>
+      <SmallGalleryWrapper GalleryImages={GalleryImages}>
         <GallerySlides GalleryImages={GalleryImages} />
       </SmallGalleryWrapper>
       <BigGalleryAccordion GalleryImages={GalleryImages} />
