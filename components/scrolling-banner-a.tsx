@@ -2,12 +2,10 @@
 
 import { motion } from "framer-motion";
 import {
-  Percent,
   CalendarClock,
   ClipboardPen,
   Star,
   MapPin,
-  BadgePercent,
   TicketPercent,
 } from "lucide-react";
 
@@ -26,6 +24,11 @@ const items = [
     text: "Free Estimates",
   },
   {
+    icon: TicketPercent,
+    text: " 10% OFF Interior Painting",
+    highlight: true,
+  },
+  {
     icon: Star,
     text: "5-Star Rated",
   },
@@ -37,12 +40,12 @@ const items = [
 
 export default function ScrollingBannerA() {
   return (
-    <div className="overflow-hidden border-y border-white/10 bg-[#0D378D]">
+    <div className="overflow-hidden  border-y border-white/10 bg-[#0D378D]">
       <motion.div
-        className="flex w-max"
+        className="flex w-max "
         animate={{ x: ["0%", "-50%"] }}
         transition={{
-          duration: 22,
+          duration: 20,
           ease: "linear",
           repeat: Infinity,
         }}
@@ -52,7 +55,7 @@ export default function ScrollingBannerA() {
             {items.map(({ icon: Icon, text, highlight }) => (
               <div
                 key={`${repeat}-${text}`}
-                className="mx-8 flex items-center gap-3 whitespace-nowrap py-2"
+                className="mx-8 flex items-center gap-3 whitespace-nowrap py-3 sm:py-2.5"
               >
                 <Icon
                   size={18}

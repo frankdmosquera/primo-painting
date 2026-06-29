@@ -14,7 +14,6 @@ import FaqSection from "@/components/Faq";
 import { blogPosts } from "@/lib/blog-data";
 import Reviews from "@/components/Reviews";
 import { GalleryHomeImages } from "@/data/images";
-import GallerySectionHome from "@/components/gallery/GallerySectionHome";
 import GallerySection from "@/components/gallery/GallerySection";
 
 export const viewport: Viewport = {
@@ -81,7 +80,6 @@ export default async function Home() {
           </div>
           <HomeBanner />
         </div>
-
         <GallerySection GalleryImages={GalleryHomeImages} />
         <CalgaryPainting />
         <SpecialOfferWrapper />

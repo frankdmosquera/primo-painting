@@ -4,7 +4,6 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 import { Navbar } from "@/components/Header";
 import Footer from "@/components/Footer";
-import ScrollingBanner from "@/components/scrolling-banner";
 import Script from "next/script";
 import { Roboto } from "next/font/google";
 import { jsonLd } from "@/data/jsonLd";
@@ -48,7 +47,6 @@ export default function RootLayout({
       /> */}
 
       {/* GOOGLE TAG MANAGER SCRIPT  */}
-
       <Script
         id="gtm-init"
         strategy="afterInteractive"
@@ -98,17 +96,18 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${roboto.className} antialiased`}
       >
         {/* Google Tag Manager (noscript)  */}
-        <noscript>
+        {/* <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-KVGBLC5B"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
-        </noscript>
-        End Google Tag Manager (noscript)
+        </noscript> */}
+        {/* End Google Tag Manager (noscript) */}
         <main>
           <ScrollingBannerA />
+          {/* <div className="h-10 bg-blue-600" /> */}
           <Navbar />
           {children}
           {/* It's better to place the script tag at the bottom of the body for performance */}
