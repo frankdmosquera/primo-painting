@@ -85,12 +85,12 @@ export const gallery1Img = {
 
 export const GalleryHomeImages = [
   {
-    src: "/gallery3.png",
-    alt: "Oak unit prior to being painted white - cabinet painting calgary",
-  },
-  {
     src: "/galleryHome-4.webp",
     alt: "Oak unit after being painted white - cabinet painting calgary",
+  },
+  {
+    src: "/gallery3.png",
+    alt: "Oak unit prior to being painted white - cabinet painting calgary",
   },
   {
     src: "/ourServices2.png",

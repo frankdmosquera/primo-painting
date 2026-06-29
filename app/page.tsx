@@ -74,15 +74,16 @@ export default async function Home() {
       <OurServices />
       <div className="flex flex-col ">
         <Reviews />
+        <GallerySection GalleryImages={GalleryHomeImages} />
         <div className="relative">
           <div className="absolute top-[-30px]">
             <Image src={BgBackground} alt="bg-Image" />
           </div>
           <HomeBanner />
         </div>
-        <GallerySection GalleryImages={GalleryHomeImages} />
         <CalgaryPainting />
-        <SpecialOfferWrapper />
+
+        {/* <SpecialOfferWrapper /> */}
         <FaqSection />
         <section className="container mx-auto px-4 py-8 ">
           <div className="text-center  mb-10">
