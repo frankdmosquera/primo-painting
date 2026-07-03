@@ -56,7 +56,7 @@ export default function ProjectSliderWrapper({
 
     const step = Math.min(
       Math.floor(scrollPercent / stepSize),
-      numberOfSlides - 1
+      numberOfSlides - 1,
     );
 
     setCurrentStep(step);
@@ -111,113 +111,46 @@ export default function ProjectSliderWrapper({
 
   return (
     <div className="relative">
-      {isMobile ? (
-        <>
-          {/* MOBILE DRAGGING VERSION */}
-          <div
-            ref={scrollRef}
-            onScroll={handleScroll}
-            tabIndex={0}
-            onKeyDown={(e) => {
-              if (!scrollRef.current) return;
-              if (e.key === "ArrowRight") {
-                scrollRef.current.scrollBy({ left: 100, behavior: "smooth" });
-                e.preventDefault();
-              } else if (e.key === "ArrowLeft") {
-                scrollRef.current.scrollBy({ left: -100, behavior: "smooth" });
-                e.preventDefault();
-              }
-            }}
-            className="overflow-x-auto flex snap-x snap-mandatory scroll-smooth cursor-grab active:cursor-grabbing lg:overflow-x-hidden"
-          >
-            {children.map((child, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 w-full snap-start relative h-[20rem] sm:h-[25rem] md:h-[30rem]"
-              >
-                {child}
-              </div>
-            ))}
-          </div>
-
-          {/* MOBILE Progress bar */}
-          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-3/4 flex h-2 bg-gray-300 rounded overflow-hidden">
-            {Array.from({ length: numberOfSlides }).map((_, idx) => (
-              <div
-                key={idx}
-                className={`flex-1 transition-colors duration-300 ${
-                  idx === currentStep ? "bg-blue-600" : "bg-gray-300"
-                }`}
-              />
-            ))}
-          </div>
-        </>
-      ) : (
-        <>
-          {/* DESKTOP FADE VERSION */}
-          <div className="relative w-full h-[22rem] sm:h-[28rem] md:h-[34rem] overflow-hidden">
-            {children.map((child, index) => (
-              <div
-                key={index}
-                className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                  index === currentStep ? "opacity-100 z-10" : "opacity-0 z-0"
-                }`}
-              >
-                {child}
-              </div>
-            ))}
-          </div>
-
-          {/* DESKTOP CONTROLS */}
-          <div className="">
-            <div className="flex justify-center gap-4 mt-6">
-              <ArrowLeftIcon
-                onClick={handlePrev}
-                className="w-10 h-10 text-[#0D378D] hover:text-blue-800 cursor-pointer"
-              />
-              {isPlaying ? (
-                <PauseIcon
-                  onClick={togglePlay}
-                  className="mx-6 w-10 h-10 text-[#0D378D] hover:text-blue-800 cursor-pointer"
-                />
-              ) : (
-                <PlayIcon
-                  onClick={togglePlay}
-                  className="mx-6 w-10 h-10 text-[#0D378D] hover:text-blue-800 cursor-pointer"
-                />
-              )}
-              <ArrowRightIcon
-                onClick={handleNext}
-                className="w-10 h-10 text-[#0D378D] hover:text-blue-800 cursor-pointer"
-              />
+      <div>
+        {/* DESKTOP FADE VERSION */}
+        <div className="relative w-full h-[22rem] sm:h-[22rem] md:h-[22rem] overflow-hidden">
+          {children.map((child, index) => (
+            <div
+              key={index}
+              className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                index === currentStep ? "opacity-100 z-10" : "opacity-0 z-0"
+              }`}
+            >
+              {child}
             </div>
-          </div>
+          ))}
+        </div>
 
-          {/* <div className=''>
-            <div className='flex justify-center gap-4 mt-6'>
-              <ArrowLeftCircle
-                className='w-8 h-8  hover:text-blue-800 cursor-pointer'
-                color='#0D378D'
+        {/* DESKTOP CONTROLS */}
+        <div className="">
+          <div className="flex justify-center gap-4 mt-6">
+            <ArrowLeftIcon
+              onClick={handlePrev}
+              className="w-10 h-10 text-[#0D378D] hover:text-blue-800 cursor-pointer"
+            />
+            {isPlaying ? (
+              <PauseIcon
+                onClick={togglePlay}
+                className="mx-6 w-10 h-10 text-[#0D378D] hover:text-blue-800 cursor-pointer"
               />
-              {isPlaying ? (
-                <PauseCircle
-                  className='w-8 h-8 text- hover:text-blue-800 cursor-pointer'
-                  color='#0D378D'
-                />
-              ) : (
-                <PlayCircle
-                  className='w-8 h-8  hover:text-blue-800 cursor-pointer'
-                  color='#0D378D'
-                />
-              )}
-              <ArrowRightCircle
-                className='w-8 h-8 text-[#0D378D] hover:text-blue-800 cursor-pointer'
-                // color='#0D378D'
+            ) : (
+              <PlayIcon
+                onClick={togglePlay}
+                className="mx-6 w-10 h-10 text-[#0D378D] hover:text-blue-800 cursor-pointer"
               />
-            </div>
-          </div> */}
-        </>
-      )}
+            )}
+            <ArrowRightIcon
+              onClick={handleNext}
+              className="w-10 h-10 text-[#0D378D] hover:text-blue-800 cursor-pointer"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

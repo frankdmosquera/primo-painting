@@ -1,4 +1,5 @@
 // import { GalleryHomeImages } from "@/data/images";
+import ProjectSliderWrapper from "@/app/gallery/ProjectSliderWrapper";
 import Image from "next/image";
 
 export default function BigGalleryAccordion({
@@ -7,35 +8,21 @@ export default function BigGalleryAccordion({
   GalleryImages: { src: string; alt: string }[];
 }) {
   return (
-    <div>
-      <div className="container-fluid md:mt-20 mt-10 mx-8 hidden lg:block 2xl:hidden">
-        <div className="gallery-slide-start flex overflow-x-auto space-x-4 hidden">
-          {GalleryImages.slice(0, 4)?.map((slide, i) => (
-            <div key={i} className="gallery-slide relative h-[30rem] w-[30rem]">
-              <Image
-                src={slide.src}
-                className=" absolute object-cover"
-                fill
-                alt={slide.alt}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="container-fluid md:mt-20 mt-10 mx-8 hidden 2xl:block ">
-        <div className="gallery-slide-start flex overflow-x-auto space-x-4 hidden">
-          {GalleryImages.slice(0, 6)?.map((slide, i) => (
-            <div key={i} className="gallery-slide relative h-[30rem] w-[30rem]">
-              <Image
-                src={slide.src}
-                className=" absolute object-cover"
-                fill
-                alt={slide.alt}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
+    <div className="hidden lg:block w-full h-full ">
+      {/* Slider */}
+      <ProjectSliderWrapper>
+        {GalleryImages?.map((img, index) => (
+          <div key={index} className="w-full h-full relative">
+            <Image
+              src={img.src}
+              alt={img.alt}
+              fill
+              className="object-cover"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+          </div>
+        ))}
+      </ProjectSliderWrapper>
     </div>
   );
 }

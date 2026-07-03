@@ -23,7 +23,7 @@ export default function OurServices() {
   ];
 
   return (
-    <section className="py-12  text-black overflow-visible bg-gray-50">
+    <section className="py-12  text-black overflow-visible ">
       <ServiceSection
         title="Our Services"
         description="Transform Your Space  <br />with Our Expert Painting Services"
@@ -49,7 +49,7 @@ export default function OurServices() {
                 .map((service) => (
                   <Card
                     key={service.id}
-                    className="w-full md:w-2/3 xl:w-1/3   border-none shadow-none rounded-lg  pt-0 pb-8"
+                    className="w-full md:w-2/3 xl:w-1/3    border-none shadow-none rounded-lg  pt-0 pb-8"
                   >
                     <CardContent className="p-4">
                       <CardTitle className="text-lg">{service.title}</CardTitle>
@@ -95,7 +95,7 @@ export default function OurServices() {
             </TabsTrigger>
           ))}
         </TabsList>
-        <CardFooter className="pt-4">
+        <CardFooter className="pt-4 pt-0 lg:w- lg:flex lg:justify-center lg:items-center">
           <ButtonBlue href={"/booking"} linkText="Book Now!" />
         </CardFooter>
       </Tabs>

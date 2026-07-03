@@ -45,7 +45,7 @@ export default function SmallGalleryWrapper({
 
   return (
     <>
-      <div className="relative">
+      <div className="relative lg:hidden">
         {/* Images directly rendered */}
         <div
           ref={scrollRef}

@@ -5,6 +5,7 @@ import ProjectSliderWrapper from "../ProjectSliderWrapper";
 import BackIconTop from "../BackIconTop";
 import BackToGalleryButton from "../BackToGalleryButton";
 import { Metadata } from "next";
+import ProjectSliderWrapperBackup from "../ProjectSliderWrapperBackup";
 
 export const metadata: Metadata = {
   title: "Projects | Interior Wall Painting project in Mckenzie Town",
@@ -32,7 +33,7 @@ export default function interiorWallPainingBrownToOffWhitePage() {
         </p>
 
         {/* Slider */}
-        <ProjectSliderWrapper>
+        <ProjectSliderWrapperBackup>
           {interiorWallPainingBrownToOffWhite.map((img, index) => (
             <div key={index} className="w-full h-full relative">
               <Image
@@ -44,7 +45,7 @@ export default function interiorWallPainingBrownToOffWhitePage() {
               />
             </div>
           ))}
-        </ProjectSliderWrapper>
+        </ProjectSliderWrapperBackup>
 
         {/* Full back button under the slider */}
         <BackToGalleryButton />
