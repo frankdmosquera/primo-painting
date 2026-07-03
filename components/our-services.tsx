@@ -23,7 +23,7 @@ export default function OurServices() {
   ];
 
   return (
-    <section className="py-12 pb-0 md:pb-8 text-black overflow-visible">
+    <section className="py-12  text-black overflow-visible bg-gray-50">
       <ServiceSection
         title="Our Services"
         description="Transform Your Space  <br />with Our Expert Painting Services"
@@ -31,7 +31,38 @@ export default function OurServices() {
         href="/services"
       />
 
-      <Tabs defaultValue={categories[0].value} className="w-full pt-12">
+      <Tabs
+        defaultValue={categories[0].value}
+        // className="w-full pt-12 bg-[#f9f9f9] shadow-sm"
+        className="w-full pt-4  "
+      >
+        {/* Cards */}
+        {categories.map((cat) => (
+          <TabsContent
+            key={cat.value}
+            value={cat.value}
+            className="border-none shadow-none"
+          >
+            <div className="w-full flex justify-center border-none shadow-none">
+              {services
+                .filter((s) => s.type === cat.value)
+                .map((service) => (
+                  <Card
+                    key={service.id}
+                    className="w-full md:w-2/3 xl:w-1/3   border-none shadow-none rounded-lg  pt-0 pb-8"
+                  >
+                    <CardContent className="p-4">
+                      <CardTitle className="text-lg">{service.title}</CardTitle>
+                      <p className="text-sm text-muted-foreground leading-relaxed py-2">
+                        {service.description}
+                      </p>
+                      <GallerySection GalleryImages={service.images} />
+                    </CardContent>
+                  </Card>
+                ))}
+            </div>
+          </TabsContent>
+        ))}
         <TabsList
           className="
       flex 
@@ -64,36 +95,9 @@ export default function OurServices() {
             </TabsTrigger>
           ))}
         </TabsList>
-
-        {/* Cards */}
-        {categories.map((cat) => (
-          <TabsContent key={cat.value} value={cat.value}>
-            <div className="w-full flex justify-center">
-              {services
-                .filter((s) => s.type === cat.value)
-                .map((service) => (
-                  <Card
-                    key={service.id}
-                    className="w-full md:w-2/3 xl:w-1/3  bg-[#f9f9f9] border-none rounded-lg shadow-sm pt-0 pb-8"
-                  >
-                    {/* <CardHeader className="">
-                      <GallerySection GalleryImages={service.images} />
-                    </CardHeader> */}
-                    <CardContent className="p-4">
-                      <CardTitle className="text-lg">{service.title}</CardTitle>
-                      <p className="text-sm text-muted-foreground leading-relaxed py-2">
-                        {service.description}
-                      </p>
-                      <GallerySection GalleryImages={service.images} />
-                    </CardContent>
-                    <CardFooter className="">
-                      <ButtonBlue href={"/booking"} linkText="Book Now!" />
-                    </CardFooter>
-                  </Card>
-                ))}
-            </div>
-          </TabsContent>
-        ))}
+        <CardFooter className="pt-4">
+          <ButtonBlue href={"/booking"} linkText="Book Now!" />
+        </CardFooter>
       </Tabs>
     </section>
   );

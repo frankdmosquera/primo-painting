@@ -62,7 +62,7 @@ export default function SmallGalleryWrapper({
               e.preventDefault();
             }
           }}
-          className="overflow-x-auto flex snap-x snap-mandatory scroll-smooth lg:hidden cursor-grab active:cursor-grabbing"
+          className="overflow-x-auto flex snap-x snap-mandatory scroll-smooth  cursor-grab active:cursor-grabbing"
         >
           {children}
         </div>

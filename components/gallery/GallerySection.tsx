@@ -15,7 +15,7 @@ const GallerySection = ({
       <SmallGalleryWrapper GalleryImages={GalleryImages}>
         <GallerySlides GalleryImages={GalleryImages} />
       </SmallGalleryWrapper>
-      <BigGalleryAccordion GalleryImages={GalleryImages} />
+      {/* <BigGalleryAccordion GalleryImages={GalleryImages} /> */}
     </section>
   );
 };
