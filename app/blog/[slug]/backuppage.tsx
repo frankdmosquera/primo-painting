@@ -3,7 +3,6 @@ import { blogPosts } from "@/lib/blog-data";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import React from "react";
 
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
 

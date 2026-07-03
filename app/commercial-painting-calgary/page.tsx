@@ -6,8 +6,14 @@ import blogsBanner from "@/public/blogs-banner.webp";
 import BgBackground2 from "@/public/above-gallery-bg-line.svg";
 import AboutUs from "@/public/services/comerical.webp";
 import DotFranks from "@/components/ui/DotFranks";
-import { CommercialPaintingServiceImg } from "@/data/images";
+import {
+  CommercialPaintingServiceImg,
+  GalleryCommercialImages,
+} from "@/data/images";
 import type { Metadata, Viewport } from "next";
+import GallerySection from "@/components/gallery/GallerySection";
+import Reviews from "@/components/Reviews";
+import ServiceBanner from "@/components/ServiceBanner/service-banner";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1.0,
@@ -64,7 +70,7 @@ export default function commercialPaintingCalgary() {
         </header>
 
         <div className="space-y-6">
-          <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden">
+          {/* <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden">
             <Image
               src={CommercialPaintingServiceImg.src}
               alt={CommercialPaintingServiceImg.alt}
@@ -72,7 +78,7 @@ export default function commercialPaintingCalgary() {
               className="md:object-cover sm:object-contain"
               priority
             />
-          </div>
+          </div> */}
 
           <div className="space-y-4 text-[16px] text-black">
             <p>
@@ -88,7 +94,7 @@ export default function commercialPaintingCalgary() {
               </a>{" "}
               is exactly what you need.
             </p>
-            <p>
+            <p className="hidden sm:block">
               Are you a business owner looking to elevate your commercial space
               with a paint job that brings life to your brand? No matter the
               nature of your business, a well-designed and freshly painted space
@@ -98,7 +104,7 @@ export default function commercialPaintingCalgary() {
               inspires trust, boosts productivity, and gives your brand a unique
               identity.
             </p>
-            <p>
+            <p className="hidden sm:block">
               At Primo Painting, we've worked with numerous businesses of
               different sizes, helping them bring their brand vision to life
               through high-quality commercial painting. Whether it's an office,
@@ -109,7 +115,9 @@ export default function commercialPaintingCalgary() {
           </div>
         </div>
       </div>
-      <HomeBanner />
+      <GallerySection GalleryImages={GalleryCommercialImages} />
+      <Reviews />
+      <ServiceBanner />
       <div className="font-normal flex flex-col  lg:flex-row w-[90%] gap-16 mx-auto py-16 lg:items-center">
         {/* Left side with image */}
         <div className="relative w-full  h-[50vw] lg:w-2/5">

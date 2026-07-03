@@ -32,11 +32,11 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({
             </React.Fragment>
           ))}
         </h2>
-        {href && (
+        {/* {href && (
           <div className="flex md:mt-0 mt-4">
             <ButtonBlueWithBorder href={href} linkText={buttonText} />
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );

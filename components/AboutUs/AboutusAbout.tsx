@@ -21,10 +21,10 @@ export default function AboutusHome() {
       <div className=" flex flex-col xl:flex-row xl:items-center xl:justify-center lg:gap-8 lg:px-4 w-full  mx-auto">
         {/* Left side with image */}
         <div className="relative w-full h-60 md:h-70  xl:w-2/5 bg-black">
-          <div className="lg:hidden absolute top-4 right-4 z-50">
+          <div className="lg:hidden absolute top-4 right-4 z-20">
             <HeroPhoneMobileBlue />
           </div>
-          <div className="absolute bottom-8 left-0 z-50 bg-blue-900 text-white py-3 px-4">
+          <div className="absolute bottom-8 left-0 z-20 bg-blue-900 text-white py-3 px-4">
             <p className="text-[16px] font-semibold">
               Over 10 Years of Experience
             </p>

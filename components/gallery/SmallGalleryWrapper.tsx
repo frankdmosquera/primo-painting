@@ -66,26 +66,11 @@ export default function SmallGalleryWrapper({
         >
           {children}
         </div>
-
-        {/* Progress Bar */}
-        {/* <div className="absolute bottom-0 left-0 w-full lg:hidden h-2 sm:h-3 flex mt-2 overflow-hidden">
-        {Array.from({ length: 5 }).map((_, index) => (
-          <div
-            key={index}
-            className={`h-full flex-1 transition-colors duration-300 ${
-              index === currentStep ? "bg-[#0D378D]" : "bg-gray-300"
-            }`}
-          />
-        ))}
-      </div> */}
       </div>
       {/* thumbnails */}
-      <div className="bg-[#0D378D] w-full lg:hidden  flex  justify-center py-1 gap-2 xsm:gap-3 md:gap-4 overflow-hidden">
+      <div className="bg-black w-full lg:hidden  flex  justify-center py-1 gap-2.5 xsm:gap-3 md:gap-4 overflow-hidden">
         {GalleryImages.map((img, index) => (
-          <div
-            className="relative h-10.5 w-10.5 xsm:h-11.5 xsm:w-11.5"
-            key={index}
-          >
+          <div className="relative h-9 w-9 xsm:h-11 " key={index}>
             <Image
               src={img.src}
               alt={img.alt}

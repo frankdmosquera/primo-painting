@@ -66,16 +66,6 @@ export default function interiorPaintingCalgary() {
         </header>
 
         <div className="space-y-6">
-          {/* <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden">
-            <Image
-              src={InteriorPaintingServiceImg.src}
-              alt={InteriorPaintingServiceImg.alt}
-              fill
-              className="md:object-cover sm:object-contain"
-              priority
-            />
-          </div> */}
-
           <div className="space-y-4 text-[16px] text-black">
             <p>
               Let's be honest, your home is more than just walls and a roof.

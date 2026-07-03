@@ -49,7 +49,7 @@ export const blogPosts: BlogPost[] = [
     id: 2,
     slug: "best-time-for-exterior-painting-and-how-to-do-it-right",
     title: "Best Time for Exterior Painting and How to Do It Right",
-    date: "JUL 11, 2025",
+    date: "May 11, 2026",
     thumb: thumb as any,
     alt: "best-time-for-exterior-painting-and-how-to-do-it-right",
     excerpt:

@@ -8,6 +8,7 @@ import BgBackground2 from "@/public/above-gallery-bg-line.svg";
 import { CalgaryPainting } from "@/components/calgary-painting";
 import StandardHero from "@/components/heros/StandardHero";
 import type { Metadata, Viewport } from "next";
+import Calendly from "@/components/calendly";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1.0,
@@ -41,10 +42,11 @@ export default function contactPage() {
       <StandardHero
         title=""
         title2="CONTACT US"
-        subtitle="Let’s Bring Colour to Your Home"
+        // subtitle="Let’s Bring Colour to Your Home"
         subtitle2="Get in Touch Today!"
         imageSrc={blogsBanner}
       />
+      <Calendly />
       <div className="relative">
         <div className="absolute  z-[-2]">
           <Image src={BgBackground2} alt="bg-Image" />

@@ -115,13 +115,7 @@ export default function MobileMenu() {
             >
               About
             </Link>
-            <Link
-              href="/services"
-              className="text-gray-800 text-xl font-medium"
-              onClick={() => setIsOpen(false)}
-            >
-              Services
-            </Link>
+
             <Link
               href="/gallery"
               className="text-gray-800 text-xl font-medium"
@@ -129,20 +123,7 @@ export default function MobileMenu() {
             >
               Gallery
             </Link>
-            <Link
-              href="/blogs"
-              className="text-gray-800 text-xl font-medium"
-              onClick={() => setIsOpen(false)}
-            >
-              Blog
-            </Link>
-            {/* <Link
-              href="/reviews "
-              className="text-gray-800 text-xl font-medium"
-              onClick={() => setIsOpen(false)}
-            >
-              Reviews
-            </Link> */}
+
             <Link
               href="/contact"
               className="text-gray-800 text-xl font-medium"
@@ -151,17 +132,7 @@ export default function MobileMenu() {
               Contact
             </Link>
           </nav>
-          <div className="flex flex-row gap-5 items-center justify-center mt-5">
-            <Link href="https://www.instagram.com/albertacolourpainting/">
-              <Instagram className="text-[#0D378D] text-2xl" />
-            </Link>
-            <Link href="https://www.facebook.com/albertacolourpainting">
-              <Facebook className="text-[#0D378D] text-2xl" />
-            </Link>
-            <Link href="https://www.youtube.com/@albertacolourpainting">
-              <Youtube className="text-[#0D378D] text-2xl" />
-            </Link>
-          </div>
+
           <div className="mt-auto p-6 flex flex-col space-y-4">
             <Link
               onClick={() => setIsOpen(false)}

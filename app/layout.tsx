@@ -114,18 +114,6 @@ export default function RootLayout({
         </main>
         <Toaster />
         <Footer />
-        {/* <script
-          type="module"
-          dangerouslySetInnerHTML={{
-            __html: `
-              import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
-
-              const swiper = new Swiper('.swiper-container', {
-                // Swiper configuration options
-              });
-            `,
-          }}
-        /> */}
       </body>
     </html>
   );

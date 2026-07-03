@@ -56,14 +56,7 @@ export function Navbar() {
               >
                 About
               </Link>
-              <Link
-                href="/services"
-                className={` ${
-                  currentPath == "/services" ? "text-[#0D378D]" : "text-black"
-                } hover:text-[#0D378D]  font-medium`}
-              >
-                Services
-              </Link>
+
               <Link
                 href="/gallery"
                 className={` ${
@@ -72,14 +65,7 @@ export function Navbar() {
               >
                 Gallery
               </Link>
-              <Link
-                href="/blogs"
-                className={` ${
-                  currentPath == "/blogs" ? "text-[#0D378D]" : "text-black"
-                } hover:text-[#0D378D]  font-medium`}
-              >
-                Blog
-              </Link>
+
               <Link
                 href="/booking "
                 className={` ${

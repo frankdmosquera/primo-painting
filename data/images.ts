@@ -138,6 +138,21 @@ export const GalleryInteriorImages = [
   },
 ];
 
+export const GalleryCommercialImages = [
+  {
+    src: "/commercial/commercial-painting-wherehouse.webp",
+    alt: "white and black walls in a warehouse -  Commercial Painting Service in Calgary",
+  },
+  {
+    src: "/commercial/commercial-painting-project-downtown-paint-finished.webp",
+    alt: "long wall in a commercial office space, painted white and dark blue - Commercial Painting Service in Calgary",
+  },
+  {
+    src: "/commercial/commercial-painting-wherehouse.webp",
+    alt: "white and black walls in a warehouse -  Commercial Painting Service in Calgary",
+  },
+];
+
 export const interiorWallPainingBrownToOffWhite = [
   {
     src: "/painting-projects/interior-wall-painting-brown-to-off-white/img1.webp",
