@@ -26,9 +26,9 @@ const HomeHero = () => {
       {/* here center the content */}
       <div className="absolute inset-0 flex gap-12 flex-col items-center justify-center text-center px-4">
         <h1 className="  text-3xl xsm:text-4xl  md:text-6xl font-bold text-white ">
-          EXPERT <span className="bg-reveal">CALGARY PAINTERS</span> <br />
-          <span className="block my-4 text-xl md:text-2xl text-white  font-medium">
-            for Interior and Exterior House Painting Services
+          EXPERT <span className="bg-reveal ml-2">CALGARY PAINTERS</span> <br />
+          <span className="block my-4 text-2xl md:text-2xl text-white  font-medium">
+            for Interior House Painting Services
           </span>
         </h1>
         <HeroCallToAction />

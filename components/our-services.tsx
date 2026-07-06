@@ -23,35 +23,44 @@ export default function OurServices() {
   ];
 
   return (
-    <section className="py-12  text-black overflow-visible ">
-      <ServiceSection
-        title="Our Services"
-        description="Transform Your Space  <br />with Our Expert Painting Services"
-        buttonText="Explore Our Services"
-        href="/services"
-      />
-
+    <section className="w-full   text-black overflow-visible py-8  flex flex-col lg:flex-row   items-center lg:justify-center gap-0 sm:px-20 md:px-40 xl:px-20   xl:gap-10 2xl:px-40   2xl:gap-20">
+      {/* left side  */}
+      {/* left side  */}
+      {/* left side  */}
+      <div className=" w-full   xl:w-1/2">
+        <ServiceSection
+          title="Our Services"
+          description="Transform Your Space  <br />with Our Expert Painting Services"
+          buttonText="Explore Our Services"
+          href="/services"
+        />
+        <div className="hidden lg:block mt-8">
+          <ButtonBlue href={"/booking"} linkText="Book Now!" />
+        </div>
+      </div>
+      {/* right side  */}
+      {/* right side  */}
+      {/* right side  */}
       <Tabs
         defaultValue={categories[0].value}
-        // className="w-full pt-12 bg-[#f9f9f9] shadow-sm"
-        className="w-full pt-4  "
+        className="w-full   xl:w-1/2 pt-4 "
       >
         {/* Cards */}
         {categories.map((cat) => (
           <TabsContent
             key={cat.value}
             value={cat.value}
-            className="border-none shadow-none"
+            className="w-full  border-none shadow-none "
           >
-            <div className="w-full flex justify-center border-none shadow-none">
+            <div className=" pb-2 mb-0 w-full flex justify-center border-none shadow-none">
               {services
                 .filter((s) => s.type === cat.value)
                 .map((service) => (
                   <Card
                     key={service.id}
-                    className="w-full md:w-2/3 xl:w-1/3    border-none shadow-none rounded-lg  pt-0 pb-8"
+                    className="py-0    w-full  lg:w-full   border-none shadow-none rounded-lg "
                   >
-                    <CardContent className="p-4">
+                    <CardContent className="px-4  w-full">
                       <CardTitle className="text-lg">{service.title}</CardTitle>
                       <p className="text-sm text-muted-foreground leading-relaxed py-2">
                         {service.description}
@@ -64,16 +73,8 @@ export default function OurServices() {
           </TabsContent>
         ))}
         <TabsList
-          className="
-      flex 
-      flex-wrap 
-      gap-2 
-      px-2 
-      mb-12 md:mb-16 lg:mb-8
-      w-full 
-      justify-center 
-      whitespace-nowrap
-     "
+          className=" flex  flex-wrap gap-2 px-2 mb-10 md:mb-14 lg:mb-6
+           w-full justify-center whitespace-nowrap"
           style={{ scrollBehavior: "smooth", scrollSnapType: "none" }}
         >
           {categories.map((cat) => (
@@ -95,7 +96,7 @@ export default function OurServices() {
             </TabsTrigger>
           ))}
         </TabsList>
-        <CardFooter className="pt-4 pt-0 lg:w- lg:flex lg:justify-center lg:items-center">
+        <CardFooter className="pt-4  lg:w- lg:flex lg:justify-center lg:hidden">
           <ButtonBlue href={"/booking"} linkText="Book Now!" />
         </CardFooter>
       </Tabs>

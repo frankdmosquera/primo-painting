@@ -5,7 +5,7 @@ import MobileMenu from "./mobile-menu";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
-export function Navbar() {
+export function Header() {
   const [currentPath, setCurrentPath] = React.useState("");
 
   const path = usePathname();
