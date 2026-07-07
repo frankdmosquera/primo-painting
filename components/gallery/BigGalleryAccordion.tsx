@@ -8,11 +8,11 @@ export default function BigGalleryAccordion({
   GalleryImages: { src: string; alt: string }[];
 }) {
   return (
-    <div className="hidden lg:block w-full h-full ">
+    <div className="hidden xl:flex w-full h-full ">
       {/* Slider */}
       <ProjectSliderWrapper>
         {GalleryImages?.map((img, index) => (
-          <div key={index} className="w-full h-full relative">
+          <div key={index} className="w-full h-full relative bg-red-200">
             <Image
               src={img.src}
               alt={img.alt}

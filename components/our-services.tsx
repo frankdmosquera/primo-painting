@@ -13,21 +13,12 @@ import GallerySection from "./gallery/GallerySection";
 import ButtonBlue from "./ButtonBlue";
 
 export default function OurServices() {
-  const categories = [
-    { label: "Walls", value: "walls" },
-    { label: "Ceilings", value: "ceilings" },
-    { label: "Trim & doors", value: "trim & doors" },
-    { label: "Garages", value: "garages" },
-    { label: "Cabinets", value: "cabinets" },
-    { label: "Railings", value: "railings" },
-  ];
-
   return (
-    <section className="w-full   text-black overflow-visible py-8  flex flex-col lg:flex-row   items-center lg:justify-center gap-0 sm:px-20 md:px-40 xl:px-20   xl:gap-10 2xl:px-40   2xl:gap-20">
+    <section className="w-full  text-black overflow-visible py-8  flex flex-col xl:flex-row   items-center lg:justify-center  sm:px-10 md:px-20 xl:px-5 2xl:px-20  3xl:px-40 4xl:px-50 gap-0 ">
       {/* left side  */}
       {/* left side  */}
       {/* left side  */}
-      <div className=" w-full   xl:w-1/2">
+      <div className=" w-full   xl:w-9/20">
         <ServiceSection
           title="Our Services"
           description="Transform Your Space  <br />with Our Expert Painting Services"
@@ -42,19 +33,19 @@ export default function OurServices() {
       {/* right side  */}
       {/* right side  */}
       <Tabs
-        defaultValue={categories[0].value}
-        className="w-full   xl:w-1/2 pt-4 "
+        defaultValue={services[0].type}
+        className="w-full   xl:w-11/20 pt-4 "
       >
         {/* Cards */}
-        {categories.map((cat) => (
+        {services.map((cat) => (
           <TabsContent
-            key={cat.value}
-            value={cat.value}
+            key={cat.type}
+            value={cat.type}
             className="w-full  border-none shadow-none "
           >
             <div className=" pb-2 mb-0 w-full flex justify-center border-none shadow-none">
               {services
-                .filter((s) => s.type === cat.value)
+                .filter((s) => s.type === cat.type)
                 .map((service) => (
                   <Card
                     key={service.id}
@@ -77,10 +68,10 @@ export default function OurServices() {
            w-full justify-center whitespace-nowrap"
           style={{ scrollBehavior: "smooth", scrollSnapType: "none" }}
         >
-          {categories.map((cat) => (
+          {services.map((cat) => (
             <TabsTrigger
-              key={cat.value}
-              value={cat.value}
+              key={cat.type}
+              value={cat.type}
               className="
         flex-shrink-0
         px-3 py-1
@@ -92,7 +83,8 @@ export default function OurServices() {
         data-[state=active]:text-white
       "
             >
-              {cat.label}
+              {cat.type.toUpperCase()}
+              {/* {cat.type.charAt(0).toUpperCase() + cat.type.slice(1)} */}
             </TabsTrigger>
           ))}
         </TabsList>

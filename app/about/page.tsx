@@ -2,25 +2,22 @@ import Image from "next/image";
 import { CalgaryPainting } from "@/components/calgary-painting";
 import ContactFormSection from "../../components/ContactFormSection";
 import HomeBanner from "@/components/HomeBanner/home-banner";
-import BlogGrid from "@/components/blog-grid";
 import Link from "next/link";
 import blogsBanner from "@/public/blogs-banner.webp";
 import BgBackground from "@/public/about-background-vector-line.svg";
-import BgBackground2 from "@/public/above-gallery-bg-line.svg";
 import StandardHero from "@/components/heros/StandardHero";
-import { GalleryHomeImages } from "@/data/images";
 import AboutusAbout from "@/components/AboutUs/AboutusAbout";
 import EcofriendlySection from "@/components/AboutUs/EcofriendlySection";
 import SkillPainters from "@/components/AboutUs/SkillPaintersSection";
-import GallerySection from "@/components/gallery/GallerySection";
 import FinestPainters from "@/components/AboutUs/FinestPaintersSection";
 import CommitmentQualitySection from "@/components/AboutUs/CommitmentQualitySection";
-import { blogPosts } from "@/lib/blog-data";
 import type { Metadata, Viewport } from "next";
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1.0,
 };
+
 export const metadata: Metadata = {
   title: "About Primo Painters: Your Trusted Calgary Painting Company",
   description:
@@ -70,7 +67,6 @@ export default function page() {
         <CommitmentQualitySection />
         <EcofriendlySection />
       </div>
-      <GallerySection GalleryImages={GalleryHomeImages} />
       <CalgaryPainting />
       <ContactFormSection />
       <section className="container mx-auto px-4 py-8 ">
@@ -82,8 +78,6 @@ export default function page() {
             Expert Advice, Trends & DIY Tips
           </h2>
         </div>
-        <BlogGrid posts={blogPosts?.slice(0, 3)} />
-
         <div className="flex justify-center my-7">
           <div className="bg-[#0D378D] px-2 py-2 w-30 text-center rounded-3xl cursor-pointer">
             <Link href="/blogs">View All</Link>

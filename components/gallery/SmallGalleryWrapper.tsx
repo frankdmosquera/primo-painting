@@ -45,7 +45,7 @@ export default function SmallGalleryWrapper({
 
   return (
     <>
-      <div className="relative lg:hidden">
+      <div className="relative xl:hidden">
         {/* Images directly rendered */}
         <div
           ref={scrollRef}
@@ -68,7 +68,7 @@ export default function SmallGalleryWrapper({
         </div>
       </div>
       {/* thumbnails */}
-      <div className="bg-black w-full lg:hidden  flex  justify-center py-1 gap-2.5 xsm:gap-3 md:gap-4 overflow-hidden">
+      <div className="bg-black w-full xl:hidden  flex  justify-center py-1 gap-2.5 xsm:gap-3 md:gap-4 overflow-hidden">
         {GalleryImages.map((img, index) => (
           <div className="relative h-9 w-9 xsm:h-11 " key={index}>
             <Image

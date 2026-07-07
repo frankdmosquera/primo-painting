@@ -83,7 +83,7 @@ export default function ProjectSliderWrapper({
     } else {
       const interval = setInterval(() => {
         handleNext();
-      }, 4000); // every 4 seconds
+      }, 2500); // every 4 seconds
       playIntervalRef.current = interval;
       setIsPlaying(true);
     }
@@ -110,8 +110,8 @@ export default function ProjectSliderWrapper({
   };
 
   return (
-    <div className="relative">
-      <div>
+    <div className="w-full relative">
+      <div className="w-full">
         {/* DESKTOP FADE VERSION */}
         <div className="relative w-full h-[22rem] sm:h-[22rem] md:h-[22rem] overflow-hidden">
           {children.map((child, index) => (
