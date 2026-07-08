@@ -27,7 +27,7 @@ export default function SkillPaintersSection() {
           </h2>
         </div>
 
-        <ul className="space-y-4 text-black list-disc lg:text-[16px] text-[14px]">
+        <ul className="space-y-4 text-black list-disc ">
           <li className="flex items-start gap-2 list-disc">
             <Dot className="h-5 w-5 mt-0.5 text-black " />
             <span>

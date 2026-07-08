@@ -23,7 +23,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Primo Painting",
-  description: "Primo Painting - Calgary's Premier Painting Service",
+  description: "Primo Painting - Calgary's Premier Interior Painting Service",
 };
 
 export default function RootLayout({
@@ -60,7 +60,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${roboto.className} antialiased`}
       >
-        <main>
+        <main className="text-[17px]">
           <ScrollingBannerA />
           <Header />
           {children}

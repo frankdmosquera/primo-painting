@@ -80,7 +80,10 @@ const ContactFormSection = () => {
             </h2>
             <p className="text-muted-foreground mb-4 text-black">
               Get in touch with our{" "}
-              <a href="https://www.primopainters.ca/" className="text-blue">
+              <a
+                href="https://www.primopainting.ca/booking"
+                className="text-blue"
+              >
                 expert painters in Calgary
               </a>
               . We’d be <br />

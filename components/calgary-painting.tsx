@@ -16,7 +16,7 @@ export const CalgaryPainting = () => {
               We are your Calgary painting company
             </h3>
 
-            <p className="mb-8 text-sm md:text-base">
+            <p className="mb-8 ">
               Primo Painting is your trusted partner in Calgary, offering
               detailed estimates and unparalleled painting services . As a
               leading Calgary painting company, we pride ourselves on our
@@ -62,7 +62,7 @@ export const CalgaryPainting = () => {
                     />
                   </svg>
                 </div>
-                <p className="text-sm md:text-xs">
+                <p className="text-base md:text-sm ">
                   Free Detailed <br /> Estimate
                 </p>
               </div>
@@ -93,7 +93,7 @@ export const CalgaryPainting = () => {
                     />
                   </svg>
                 </div>
-                <p className="text-sm md:text-xs">
+                <p className="text-base md:text-sm ">
                   Skilled Professional <br /> Painters
                 </p>
               </div>
@@ -114,7 +114,7 @@ export const CalgaryPainting = () => {
                     />
                   </svg>
                 </div>
-                <p className="text-sm md:text-xs">
+                <p className="text-base md:text-sm ">
                   Licensed Insured <br />
                   Eco-Friendly
                 </p>
@@ -134,7 +134,7 @@ export const CalgaryPainting = () => {
                     />
                   </svg>
                 </div>
-                <p className="text-sm md:text-xs">
+                <p className="text-base md:text-sm ">
                   Reputation For High <br /> Quality
                 </p>
               </div>
@@ -143,7 +143,7 @@ export const CalgaryPainting = () => {
             <div className="flex lg:mt-10 mt-5">
               <Link
                 href="/booking"
-                className="flex items-center gap-2 border-2 border-white rounded-full pl-3 pr-1.5 py-2  text-sm md:text-base font-medium hover:bg-blue-800 transition-colors cursor-pointer"
+                className="flex items-center gap-2 border-2 border-white rounded-full pl-3 pr-1.5 py-2  text-base md:text-sm  font-medium hover:bg-blue-800 transition-colors cursor-pointer"
               >
                 Book Your Estimate Today
                 <svg

@@ -9,7 +9,7 @@ export default function EcofriendlySection() {
         <BgLines />
       </div>
       <div className="grid md:grid-cols-2 gap-8 items-center relative mt-10 my-3.5">
-        <div className="space-y-6 ">
+        <div className="space-y-6 text-justify">
           <div className="space-y-2">
             <p className="text-[22px]  font-medium text-black">
               Eco-Friendly Approach

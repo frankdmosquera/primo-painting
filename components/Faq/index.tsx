@@ -2,34 +2,43 @@
 import React, { useState } from "react";
 import { Accordion, AccordionItem } from "@heroui/react";
 import { Plus, Minus } from "lucide-react";
+import Link from "next/link";
 
 const FaqSection = () => {
   const [selected, setSelected] = useState(null);
   const faqItems = [
     {
-      title: "How much does a painting project cost?",
+      title: "Do you repair walls before painting?",
       content:
-        "While we cannot provide a fixed estimate for our painting services, the cost depends on factors such as the size of the project, the type of paint, surface preparation requirements, and more. For more details about our painting services in Calgary, feel free to reach out to us through our registered contact details.",
+        "Yes. We repair everything from nail holes, dents, and cracks to larger drywall damage before painting. Minor repairs are often included, while extensive repairs or large holes may require additional time and materials and will be reflected in your estimate. Proper surface preparation is essential for achieving a smooth, professional finish.",
     },
     {
-      title: "How long does a typical painting job take?",
+      title: "How much does interior painting cost?",
       content:
-        "Most interior projects take a few days, while exterior jobs depend on weather conditions. We'll give you a timeline during our consultation.",
+        "The cost of interior painting depends on the size of your home, the condition of the walls, the number of rooms, ceiling height, and the amount of preparation required. We provide free, no-obligation estimates for all interior painting projects in Calgary.",
+      bookOption: true,
     },
     {
-      title: "Is your company licensed and insured?",
+      title: "How long does an interior painting project take?",
       content:
-        "Indeed, our painting company in Calgary is licensed and insured, ensuring undeniable trust and a strong commitment to quality, so you can feel confident and have peace of mind.",
+        "Most interior painting projects take between one and five days, depending on the size of the job. Surface preparation, drying times, repairs, and the number of coats required can all affect the schedule.",
     },
     {
       title: "What type of paint do you use?",
       content:
-        "We use high-quality, durable paints from trusted brands. We can also recommend low-VOC and eco-friendly options.",
+        "We use premium-quality, low-VOC paints from trusted brands such as Benjamin Moore, Sherwin-Williams, and Cloverdale Paint. These products provide excellent coverage, durability, and a beautiful finish while helping maintain healthier indoor air quality.",
     },
     {
-      title: "How do I book a painting service in Calgary?",
+      title: "Do I need to move my furniture before you arrive?",
       content:
-        "You can contact us by phone or email to schedule a consultation or simply fill out the form on our website. We’ll discuss your needs and provide a free estimate",
+        "Yes. We ask that all furniture, decorations, electronics, and other personal belongings be moved before we arrive. If a large or heavy item requires a small adjustment, we're happy to lend a hand when possible, but moving furniture is not included as part of our painting service.",
+    },
+
+    {
+      title: "How do I book an interior painting estimate?",
+      content:
+        "Booking is easy. Simply use our online booking system or contact us by phone or email to schedule your free interior painting estimate in Calgary.",
+      bookOption: true,
     },
   ];
   return (
@@ -74,6 +83,16 @@ const FaqSection = () => {
                   <p className="text-[16px] font-normal  max-sm:text-[16px]  text-[#2c2323]">
                     {item?.content}
                   </p>
+                  {item?.bookOption && (
+                    <div className="mt-4">
+                      <Link
+                        href="/booking"
+                        className="inline-block bg-[#0D378D] text-white py-2 px-4 rounded-full hover:bg-[#0A2A6B] transition-colors"
+                      >
+                        Book Your Estimate
+                      </Link>
+                    </div>
+                  )}
                 </AccordionItem>
               ))}
             </Accordion>

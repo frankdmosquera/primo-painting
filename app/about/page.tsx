@@ -69,21 +69,6 @@ export default function page() {
       </div>
       <CalgaryPainting />
       <ContactFormSection />
-      {/* <section className="container mx-auto px-4 py-8 ">
-        <div className="text-center  mb-10">
-          <h4 className=" text-[22px] text-black font-semibold ont-medium">
-            Our Blog
-          </h4>
-          <h2 className="text-[#0D378D] lg:text-[36px]  text-[26px] font-medium">
-            Expert Advice, Trends & DIY Tips
-          </h2>
-        </div>
-        <div className="flex justify-center my-7">
-          <div className="bg-[#0D378D] px-2 py-2 w-30 text-center rounded-3xl cursor-pointer">
-            <Link href="/blogs">View All</Link>
-          </div>
-        </div>
-      </section> */}
     </>
   );
 }

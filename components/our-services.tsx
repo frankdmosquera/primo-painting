@@ -45,8 +45,10 @@ export default function OurServices() {
                     className="py-0    w-full  lg:w-full   border-none shadow-none rounded-lg "
                   >
                     <CardContent className="px-4  w-full">
-                      <CardTitle className="text-xl">{service.title}</CardTitle>
-                      <p className="text-sm text-muted-foreground leading-relaxed py-2">
+                      <CardTitle className="text-2xl">
+                        {service.title}
+                      </CardTitle>
+                      <p className=" text-muted-foreground leading-relaxed py-2">
                         {service.description}
                       </p>
                       <GallerySection GalleryImages={service.images} />

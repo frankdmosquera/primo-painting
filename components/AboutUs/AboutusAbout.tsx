@@ -22,9 +22,7 @@ export default function AboutusHome() {
             <HeroPhoneMobileBlue />
           </div>
           <div className="absolute bottom-8 left-0 z-20 bg-blue-900 text-white py-3 px-4">
-            <p className="text-[16px] font-semibold">
-              Over 10 Years of Experience
-            </p>
+            <p className=" font-semibold">Over 10 Years of Experience</p>
           </div>
           <Image
             src={AboutUsImg.src}
@@ -42,7 +40,7 @@ export default function AboutusHome() {
             <br />
             TRUSTED BY LOCALS
           </p>
-          <p className="text-black mb-6 text-[14px] lg:text-[16px]">
+          <p className="text-black mb-6 ">
             We started with a vision that something as simple as a paint job
             should be nothing short of extraordinary. Because the space you live
             or work in should reflect your vibe. And just "okay" doesn't cut it.
@@ -52,7 +50,7 @@ export default function AboutusHome() {
             experience handling projects of every size and style.
           </p>
 
-          <p className="text-black mb-6 text-[14px] lg:text-[16px]">
+          <p className="text-black mb-6 ">
             Our mission is simple: We don't treat walls like walls, we treat
             them like canvases. Every stroke we make is intentional, every
             colour choice is meaningful, and every result? A reflection of your
@@ -60,7 +58,7 @@ export default function AboutusHome() {
             offer a wide range of painting services in Calgary for both interior
             and exterior spaces, turning them into eye-catching standouts.
           </p>
-          <p className="text-black mb-6 text-[14px] lg:text-[16px]">
+          <p className="text-black mb-6 ">
             Bonus? We're one of the few licensed and certified painting
             companies in Calgary. So when you hire us, you're not just getting
             paint, you're getting pro results that make people say - Whoa, who
@@ -94,7 +92,7 @@ export default function AboutusHome() {
               <h3 className=" lg:text-[24px]  text-[20px] font-semibold text-[#0D378D] mb-3 ">
                 Premium Materials
               </h3>
-              <p className=" lg:text-[16px] text-[14px] text-black">
+              <p className=" text-black">
                 We use only high-quality paints and materials, combined with
                 skilled techniques, to ensure a stunning finish.
               </p>
@@ -108,7 +106,7 @@ export default function AboutusHome() {
               <h3 className="lg:text-[24px]  text-[20px]  font-semibold text-[#0D378D] mb-3">
                 Attention to Detail
               </h3>
-              <p className="lg:text-[16px] text-[14px] text-black">
+              <p className=" text-black">
                 From crisp lines to smooth coatings, our painters in Calgary
                 focus on every little detail to deliver perfection in every
                 project.
@@ -120,10 +118,10 @@ export default function AboutusHome() {
               <div className="text-[#0D378D] mb-4">
                 <FivestarIcon />
               </div>
-              <h3 className="lg:text-[24px]  text-[20px]  font-semibold text-[#0D378D] mb-3">
+              <h3 className=" lg:text-[24px]  text-[20px]  font-semibold text-[#0D378D] mb-3">
                 Proven Customer Satisfaction
               </h3>
-              <p className="lg:text-[16px] text-[14px] text-black">
+              <p className="text-black">
                 Our clients love our work, and it shows in our glowing reviews,
                 repeat business, and word-of-mouth referrals.
               </p>
@@ -137,7 +135,7 @@ export default function AboutusHome() {
               <h3 className="lg:text-[24px]  text-[20px]  font-semibold text-[#0D378D] mb-3">
                 Licensed & Trusted
               </h3>
-              <p className="lg:text-[16px] text-[14px] text-black">
+              <p className=" text-black">
                 As one of the few fully licensed and certified painting
                 companies in Calgary, we back our work with professionalism and
                 credibility.

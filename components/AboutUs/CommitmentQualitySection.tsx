@@ -26,7 +26,7 @@ export default function CommitmentQualitySection() {
           </h2>
         </div>
 
-        <div className="space-y-4 text-black lg:text-[16px] text-[14px]">
+        <div className="space-y-4 text-black ">
           <p>
             At Primo Painting, we're committed to making a positive impact on
             the environment. That's why we use zero to low-VOC paints, creating
