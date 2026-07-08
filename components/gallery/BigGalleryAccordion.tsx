@@ -1,6 +1,7 @@
 // import { GalleryHomeImages } from "@/data/images";
-import ProjectSliderWrapper from "@/app/gallery/ProjectSliderWrapper";
+// import ProjectSliderWrapper from "@/app/gallery/ProjectSliderWrapper";
 import Image from "next/image";
+import ProjectSliderWrapper from "./ProjectSliderWrapper";
 
 export default function BigGalleryAccordion({
   GalleryImages,

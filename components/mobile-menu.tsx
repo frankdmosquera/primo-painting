@@ -116,13 +116,13 @@ export default function MobileMenu() {
               About
             </Link>
 
-            <Link
+            {/* <Link
               href="/gallery"
               className="text-gray-800 text-xl font-medium"
               onClick={() => setIsOpen(false)}
             >
               Gallery
-            </Link>
+            </Link> */}
 
             <Link
               href="/contact"

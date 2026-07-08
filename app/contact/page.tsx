@@ -1,10 +1,9 @@
 import Image from "next/image";
-import React from "react";
 import ContactForm from "./ContactForm";
 import GoogleMap from "./GoogleMap";
 import DiscussSection from "./DiscussSection";
-import blogsBanner from "@/public/blogs-banner.webp";
-import BgBackground2 from "@/public/above-gallery-bg-line.svg";
+import blogsBanner from "@/public/banners/blogs-banner.webp";
+import BgBackground2 from "@/public/SVGs/above-gallery-bg-line.svg";
 import { CalgaryPainting } from "@/components/calgary-painting";
 import StandardHero from "@/components/heros/StandardHero";
 import type { Metadata, Viewport } from "next";

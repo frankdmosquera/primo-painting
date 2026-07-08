@@ -5,6 +5,7 @@ import { Button } from "../ui/button";
 import { toast } from "sonner";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import BgLines from "../BgLines";
 
 interface ContactFormValues {
   name: string;
@@ -69,126 +70,130 @@ const ContactFormSection = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8  max-w-7xl">
-      <div className="grid md:grid-cols-2 gap-8 lg:my-10 my-0">
-        <div className="flex flex-col justify-center w-full">
-          <h2 className="text-[26px] lg:text-[45px] font-medium lg:leading-15 text-[#0D378D] uppercase mb-2">
-            Have a project in <br /> mind or have <br /> questions?
-          </h2>
-          <p className="text-muted-foreground mb-4 text-black">
-            Get in touch with our{" "}
-            <a href="https://www.primopainters.ca/" className="text-blue">
-              expert painters in Calgary
-            </a>
-            . We’d be <br />
-            happy to help bring your vision to life!
-          </p>
-        </div>
+    <>
+      {" "}
+      <div className="container mx-auto px-4 py-8  max-w-7xl ">
+        <div className="grid md:grid-cols-2 gap-8 lg:my-10 my-0 ">
+          <div className="flex flex-col justify-center w-full">
+            <h2 className="text-[26px] lg:text-[45px] font-medium lg:leading-15 text-[#0D378D] uppercase mb-2">
+              Have a project in <br /> mind or have <br /> questions?
+            </h2>
+            <p className="text-muted-foreground mb-4 text-black">
+              Get in touch with our{" "}
+              <a href="https://www.primopainters.ca/" className="text-blue">
+                expert painters in Calgary
+              </a>
+              . We’d be <br />
+              happy to help bring your vision to life!
+            </p>
+          </div>
 
-        <div className="w-full mx-auto">
-          <Formik
-            initialValues={{
-              name: "",
-              email: "",
-              phone: "+1", // Default value with country code
-              message: "",
-            }}
-            validationSchema={validationSchema}
-            onSubmit={handleSubmit}
-          >
-            {({
-              isSubmitting,
-              values,
-              handleChange,
-              handleBlur,
-              setFieldValue,
-            }) => (
-              <Form className="space-y-14 shadow-2xl p-5">
-                <div className="grid grid-cols-1 gap-8">
-                  <div className="flex flex-col ">
-                    <Field
-                      name="name"
-                      type="text"
-                      value={values.name}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      className="border-0 bg-[#F3F3F3] text-black p-2"
-                      placeholder="Name"
-                    />
-                    <ErrorMessage
-                      name="name"
-                      component="div"
-                      className="text-red-600 text-sm mt-1"
-                    />
+          <div className="w-full mx-auto  relative z-5 bg-white">
+            <Formik
+              initialValues={{
+                name: "",
+                email: "",
+                phone: "+1", // Default value with country code
+                message: "",
+              }}
+              validationSchema={validationSchema}
+              onSubmit={handleSubmit}
+              className="w-full "
+            >
+              {({
+                isSubmitting,
+                values,
+                handleChange,
+                handleBlur,
+                setFieldValue,
+              }) => (
+                <Form className="space-y-14 shadow-2xl p-5 ">
+                  <div className="grid grid-cols-1 gap-8">
+                    <div className="flex flex-col ">
+                      <Field
+                        name="name"
+                        type="text"
+                        value={values.name}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        className="border-0 bg-[#F3F3F3] text-black p-2"
+                        placeholder="Name"
+                      />
+                      <ErrorMessage
+                        name="name"
+                        component="div"
+                        className="text-red-600 text-sm mt-1"
+                      />
+                    </div>
+                    <div className="flex flex-col">
+                      <Field
+                        name="email"
+                        type="email"
+                        value={values.email}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        className="border-0 bg-[#F3F3F3] text-black p-2"
+                        placeholder="Email Address"
+                      />
+                      <ErrorMessage
+                        name="email"
+                        component="div"
+                        className="text-red-600 text-sm mt-1"
+                      />
+                    </div>
+                    <div className="flex flex-col">
+                      <Field
+                        name="phone"
+                        type="text"
+                        placeholder="Phone Number"
+                        className="border-0 bg-[#F3F3F3] text-black p-2"
+                        value={values.phone}
+                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                          const value = e.target.value;
+                          if (/^\+1\s?[0-9]{0,15}$/.test(value)) {
+                            setFieldValue("phone", value);
+                          }
+                        }}
+                        // onBlur={handleBlur}
+                      />
+                      <ErrorMessage
+                        name="phone"
+                        component="div"
+                        className="text-red-600 text-sm mt-1"
+                      />
+                    </div>
+                    <div className="flex flex-col">
+                      <Field
+                        as="textarea"
+                        name="message"
+                        value={values.message}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        className="border-0 bg-[#F3F3F3] text-black p-2"
+                        placeholder="Message"
+                        rows={4}
+                      />
+                      <ErrorMessage
+                        name="message"
+                        component="div"
+                        className="text-red-600 text-sm mt-1"
+                      />
+                    </div>
+                    <Button
+                      type="submit"
+                      className="w-full bg-[#0D378D] hover:bg-primary/90 text-white cursor-pointer"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? "Sending..." : "Submit"}
+                    </Button>
                   </div>
-                  <div className="flex flex-col">
-                    <Field
-                      name="email"
-                      type="email"
-                      value={values.email}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      className="border-0 bg-[#F3F3F3] text-black p-2"
-                      placeholder="Email Address"
-                    />
-                    <ErrorMessage
-                      name="email"
-                      component="div"
-                      className="text-red-600 text-sm mt-1"
-                    />
-                  </div>
-                  <div className="flex flex-col">
-                    <Field
-                      name="phone"
-                      type="text"
-                      placeholder="Phone Number"
-                      className="border-0 bg-[#F3F3F3] text-black p-2"
-                      value={values.phone}
-                      onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-                        const value = e.target.value;
-                        if (/^\+1\s?[0-9]{0,15}$/.test(value)) {
-                          setFieldValue("phone", value);
-                        }
-                      }}
-                      // onBlur={handleBlur}
-                    />
-                    <ErrorMessage
-                      name="phone"
-                      component="div"
-                      className="text-red-600 text-sm mt-1"
-                    />
-                  </div>
-                  <div className="flex flex-col">
-                    <Field
-                      as="textarea"
-                      name="message"
-                      value={values.message}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      className="border-0 bg-[#F3F3F3] text-black p-2"
-                      placeholder="Message"
-                      rows={4}
-                    />
-                    <ErrorMessage
-                      name="message"
-                      component="div"
-                      className="text-red-600 text-sm mt-1"
-                    />
-                  </div>
-                  <Button
-                    type="submit"
-                    className="w-full bg-[#0D378D] hover:bg-primary/90 text-white cursor-pointer"
-                    disabled={isSubmitting}
-                  >
-                    {isSubmitting ? "Sending..." : "Submit"}
-                  </Button>
-                </div>
-              </Form>
-            )}
-          </Formik>
+                </Form>
+              )}
+            </Formik>
+          </div>
         </div>
-      </div>
-    </div>
+      </div>{" "}
+    </>
   );
 };
 

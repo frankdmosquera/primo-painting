@@ -1,13 +1,6 @@
 import ServiceSection from "./service-section";
-import Link from "next/link";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardFooter, CardTitle } from "@/components/ui/card";
 import { services } from "@/data/serviceData";
 import GallerySection from "./gallery/GallerySection";
 import ButtonBlue from "./ButtonBlue";
@@ -52,7 +45,7 @@ export default function OurServices() {
                     className="py-0    w-full  lg:w-full   border-none shadow-none rounded-lg "
                   >
                     <CardContent className="px-4  w-full">
-                      <CardTitle className="text-lg">{service.title}</CardTitle>
+                      <CardTitle className="text-xl">{service.title}</CardTitle>
                       <p className="text-sm text-muted-foreground leading-relaxed py-2">
                         {service.description}
                       </p>
@@ -88,7 +81,7 @@ export default function OurServices() {
             </TabsTrigger>
           ))}
         </TabsList>
-        <CardFooter className="pt-4  lg:w- lg:flex lg:justify-center lg:hidden">
+        <CardFooter className="pt-12  lg:w- lg:flex lg:justify-center lg:hidden">
           <ButtonBlue href={"/booking"} linkText="Book Now!" />
         </CardFooter>
       </Tabs>

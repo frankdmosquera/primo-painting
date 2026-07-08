@@ -68,15 +68,15 @@ export default function SmallGalleryWrapper({
         </div>
       </div>
       {/* thumbnails */}
-      <div className="bg-black w-full xl:hidden  flex  justify-center py-1 gap-2.5 xsm:gap-3 md:gap-4 overflow-hidden">
+      <div className="bg-black w-full xl:hidden  flex  justify-center px-1 py-1 gap-2 xsm:gap-3 md:gap-4 overflow-hidden">
         {GalleryImages.map((img, index) => (
-          <div className="relative h-9 w-9 xsm:h-11 " key={index}>
+          <div className="relative h-7 w-7 xsm:h-11 " key={index}>
             <Image
               src={img.src}
               alt={img.alt}
               fill
               className={`object-cover transition-opacity duration-300 rounded-xl ${
-                index === currentStep ? "opacity-100" : "opacity-50"
+                index === currentStep ? "opacity-100" : "opacity-40"
               }`}
             />
           </div>

@@ -1,6 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import Image from "next/image";
-import BgBackground from "@/public/about-background-vector-line.svg";
 import OurServices from "@/components/our-services";
 import { CalgaryPainting } from "@/components/calgary-painting";
 import ContactFormSection from "@/components/ContactFormSection";
@@ -9,6 +7,8 @@ import AboutusHome from "@/components/AboutUs/AboutusHome";
 import FaqSection from "@/components/Faq";
 import Reviews from "@/components/Reviews";
 import ServiceBanner from "@/components/ServiceBanner/service-banner";
+import BgBackground from "@/components/BgBackground";
+import BgLines from "@/components/BgLines";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -59,18 +59,22 @@ export default async function Home() {
   return (
     <>
       <HomeHero />
-      <AboutusHome />
+      {/* <AboutusHome /> */}
+      {/* <div className="relative ">
+        <BgLines />
+      </div> */}
       <OurServices />
       <div className="flex flex-col ">
         <Reviews />
-        <div className="relative">
-          <div className="absolute top-[-30px]">
-            <Image src={BgBackground} alt="bg-Image" />
-          </div>
-          <ServiceBanner />
+        <div className="relative top-[100px]">
+          <BgLines />
         </div>
+        <ServiceBanner />
         <CalgaryPainting />
         <FaqSection />
+        <div className="relative ">
+          <BgLines />
+        </div>
         <ContactFormSection />
       </div>
     </>

@@ -18,7 +18,7 @@ export function Header() {
 
   return (
     <>
-      <header className="py-2 px-4 md:px-8 lg:sticky bg-white top-0 z-[99999] shadow-lg">
+      <header className="py-2 px-4 md:px-8  xl:px-16 lg:sticky bg-white top-0 z-[99999] shadow-lg">
         <div className=" mx-auto flex items-center  justify-between">
           <div className="flex items-center">
             <Link href="/">
@@ -57,14 +57,14 @@ export function Header() {
                 About
               </Link>
 
-              <Link
+              {/* <Link
                 href="/gallery"
                 className={` ${
                   currentPath == "/gallery" ? "text-[#0D378D]" : "text-black"
                 } hover:text-[#0D378D]  font-medium`}
               >
                 Gallery
-              </Link>
+              </Link> */}
 
               <Link
                 href="/booking "
@@ -86,7 +86,7 @@ export function Header() {
           </div>
 
           <div className="flex items-center space-x-4 btn-img-nav max-xl:hidden">
-            <div className="flex items-center">
+            {/* <div className="flex items-center">
               <div className="bg-blue-100 rounded-full p-2 mr-2 border-2 shadow-2xl">
                 <Link
                   href="tel:+14039037517"
@@ -120,7 +120,7 @@ export function Header() {
               >
                 <span className="text-black font-medium">403-903-7517</span>
               </Link>
-            </div>
+            </div> */}
             <Link
               href="/booking"
               className="bg-[#0D378D] aj-button text-white border-4 border-[#CADBFF] px-8 py-1 rounded-4xl font-medium hover:bg-[#0D378D] transition-colors cursor-pointer"

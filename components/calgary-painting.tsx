@@ -17,15 +17,9 @@ export const CalgaryPainting = () => {
             </h3>
 
             <p className="mb-8 text-sm md:text-base">
-              Primo Painting is your trusted partner in Calgary,
-              offering detailed estimates and unparalleled{" "}
-              <a
-                href="https://www.albertacolourpainting.com/services"
-                // className="text-blue"
-              >
-                painting services
-              </a>
-              . As a leading Calgary painting company, we pride ourselves on our
+              Primo Painting is your trusted partner in Calgary, offering
+              detailed estimates and unparalleled painting services . As a
+              leading Calgary painting company, we pride ourselves on our
               professional and skilled Calgary painters.
             </p>
 

@@ -1,22 +1,19 @@
 import Image from "next/image";
 
-import BgBackground from "@/public/about-background-vector-line.svg";
-
-// import WorkmanshipIcon from './WorkmanshipIcon'
-// import MaterialsIcon from './MaterialsIcon'
 import TeamIcon from "./TeamIcon";
 import FivestarIcon from "./FivestarIcon";
 import WorkmanshipIcon from "./WorkmanshipIcon";
 import LicensedIcon from "./LicensedIcon";
 import { AboutUsImg } from "@/data/images";
-import HeroPhoneMobile from "../heros/HeroPhoneMobile";
+
 import HeroPhoneMobileBlue from "../heros/HeroPhoneMobileBlue";
+import BgBackground from "../BgBackground";
 
 export default function AboutusHome() {
   return (
     <div className="w-full  mb-10 lg:my-12 relative">
       <div className="absolute top-[-390px] z-[-1]">
-        <Image src={BgBackground} alt="bg-Image" />
+        <BgBackground />
       </div>
       <div className=" flex flex-col xl:flex-row xl:items-center xl:justify-center lg:gap-8 lg:px-4 w-full  mx-auto">
         {/* Left side with image */}
@@ -77,7 +74,7 @@ export default function AboutusHome() {
       {/* Why Choose Us Section */}
       <div className="bg-[#E2E7F1] py-20 lg:px-4 px-10 relative">
         <div className="absolute top-[-490px]">
-          <Image src={BgBackground} alt="bg-Image" />
+          <BgBackground />
         </div>
         <div className="max-w-6xl mx-auto">
           <h2 className="lg:text-[36px] text-[25px] font-bold text-[#0D378D] text-center mb-12">

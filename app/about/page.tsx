@@ -3,8 +3,7 @@ import { CalgaryPainting } from "@/components/calgary-painting";
 import ContactFormSection from "../../components/ContactFormSection";
 import HomeBanner from "@/components/HomeBanner/home-banner";
 import Link from "next/link";
-import blogsBanner from "@/public/blogs-banner.webp";
-import BgBackground from "@/public/about-background-vector-line.svg";
+import blogsBanner from "@/public/banners/blogs-banner.webp";
 import StandardHero from "@/components/heros/StandardHero";
 import AboutusAbout from "@/components/AboutUs/AboutusAbout";
 import EcofriendlySection from "@/components/AboutUs/EcofriendlySection";
@@ -12,6 +11,7 @@ import SkillPainters from "@/components/AboutUs/SkillPaintersSection";
 import FinestPainters from "@/components/AboutUs/FinestPaintersSection";
 import CommitmentQualitySection from "@/components/AboutUs/CommitmentQualitySection";
 import type { Metadata, Viewport } from "next";
+import BgBackground from "@/components/BgBackground";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -53,7 +53,7 @@ export default function page() {
       />
       <div className="relative">
         <div className="absolute">
-          <Image src={BgBackground} alt="bg-Image" />
+          <BgBackground />
         </div>
       </div>
       <div className="container mx-auto max-w-7xl px-4">
@@ -69,7 +69,7 @@ export default function page() {
       </div>
       <CalgaryPainting />
       <ContactFormSection />
-      <section className="container mx-auto px-4 py-8 ">
+      {/* <section className="container mx-auto px-4 py-8 ">
         <div className="text-center  mb-10">
           <h4 className=" text-[22px] text-black font-semibold ont-medium">
             Our Blog
@@ -83,7 +83,7 @@ export default function page() {
             <Link href="/blogs">View All</Link>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

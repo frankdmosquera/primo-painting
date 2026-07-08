@@ -1,6 +1,6 @@
 import Image from "next/image";
-import googleLogo from "@/public/googleLogo.svg";
-import logo3 from "@/public/logo3.svg";
+import googleLogo from "@/public/SVGs/googleLogo.svg";
+import logo3 from "@/public/SVGs/logo3.svg";
 
 export default function TrustBadges() {
   return (

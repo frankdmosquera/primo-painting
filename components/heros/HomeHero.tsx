@@ -1,5 +1,4 @@
 import TrustBadges from "../trust-badges";
-import HeroPhoneMobile from "./HeroPhoneMobile";
 import Image from "next/image";
 
 import "./hero.css";

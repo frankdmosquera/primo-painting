@@ -60,7 +60,7 @@ export default function Footer() {
               </Link>
               {/* </div> */}
               <p className="text-sm text-white leading-relaxed mt-10">
-                We offer professional exterior and interior painting services in
+                We offer professional interior house painting services in
                 Calgary and surroundings.
               </p>
             </div>

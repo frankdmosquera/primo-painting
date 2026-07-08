@@ -1,7 +1,10 @@
 import {
-  ceilinginteriorrevampexperts,
+  cabinetPaintingImages,
+  ceilingPaintingImages,
   GalleryInteriorImages,
-  moderngaragerefresh,
+  garagePaintingImages,
+  trimAndDoorPaintingImages,
+  wallPaintingImages,
 } from "./images";
 
 export const services = [
@@ -19,7 +22,7 @@ export const services = [
     title: "Wall Painting",
     description:
       "Professional wall painting in Calgary for living rooms, bedrooms, hallways, and more. We deliver smooth finishes, clean lines, and long-lasting results.",
-    images: GalleryInteriorImages,
+    images: wallPaintingImages,
   },
   {
     id: "2",
@@ -27,7 +30,7 @@ export const services = [
     title: "Ceiling Painting",
     description:
       "Brighten your home with expert ceiling painting in Calgary. We eliminate roller marks, cover stains, and create smooth, even finishes.",
-    images: ceilinginteriorrevampexperts,
+    images: ceilingPaintingImages,
   },
   {
     id: "3",
@@ -35,7 +38,7 @@ export const services = [
     title: "Trim & Doors Painting",
     description:
       "Professional trim and door painting in Calgary. We create crisp lines and durable finishes that enhance the look of your interior spaces.",
-    images: GalleryInteriorImages,
+    images: trimAndDoorPaintingImages,
   },
   {
     id: "4",
@@ -43,7 +46,7 @@ export const services = [
     title: "Garage Painting",
     description:
       "Refresh your garage with professional painting in Calgary. We paint walls, ceilings, and trim to create a cleaner, brighter, and more durable space.",
-    images: moderngaragerefresh,
+    images: garagePaintingImages,
   },
 
   {
@@ -52,6 +55,6 @@ export const services = [
     title: "Cabinet Painting",
     description:
       "Transform your kitchen or bathroom with cabinet painting in Calgary. Get a modern, factory-like finish without the cost of replacing your cabinets.",
-    images: GalleryInteriorImages,
+    images: cabinetPaintingImages,
   },
 ];

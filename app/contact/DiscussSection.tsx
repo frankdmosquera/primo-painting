@@ -1,7 +1,7 @@
 "use client";
-import EmailLogo from "../../public/Email-Logo.webp";
-import PhoneLogo from "../../public/Call-Phone.webp";
-import DirectionLogo from "../../public/Direction-logo.webp";
+import EmailLogo from "../../public/icons/Email-Logo.webp";
+import PhoneLogo from "../../public/icons/Call-Phone.png";
+import DirectionLogo from "../../public/icons/Direction-logo.webp";
 import Image from "next/image";
 import Link from "next/link";
 

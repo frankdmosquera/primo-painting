@@ -1,7 +1,7 @@
 import { Dot } from "lucide-react";
 import Image from "next/image";
-import service2 from "@/public/service2.webp";
-import BgLines from "../ui/BgLines";
+import service2 from "@/public/about/service2.webp";
+import BgLines from "../BgLines";
 
 export default function CommitmentQualitySection() {
   return (
