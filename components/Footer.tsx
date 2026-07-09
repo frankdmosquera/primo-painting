@@ -55,13 +55,13 @@ export default function Footer() {
                   width={180}
                   height={60}
                   className="object-contain"
-                  src="/primo-painting-calgary-logo.png"
+                  src="/primo-painters-logo.png"
                 />
               </Link>
               {/* </div> */}
               <p className="text-sm text-white leading-relaxed mt-10">
-                We offer professional interior house painting services in
-                Calgary and surroundings.
+                We offer professional interior house painting services in South
+                Calgary.
               </p>
             </div>
 
@@ -126,7 +126,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="border-t  mt-8 pt-4 text-center text-xs text-gray-700">
-            <p className="text-white">© 2026 Primo Painting.</p>
+            <p className="text-white">© 2026 Primo Painters Calgary.</p>
           </div>
         </div>
       </div>

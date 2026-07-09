@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Facebook, Instagram, X, Youtube } from "lucide-react";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import { logoImg } from "@/data/images";
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -83,11 +84,11 @@ export default function MobileMenu() {
           <div className="flex justify-between m-[28px]">
             <Link href="/" onClick={() => setIsOpen(false)}>
               <Image
-                src="/primo-painting-calgary-logo.png"
-                alt="Primo Painting"
+                src={logoImg.src}
+                alt={logoImg.alt}
                 title="Primo Painting"
-                width={150}
-                height={40}
+                width={130}
+                height={60}
                 className="h-auto"
               />
             </Link>

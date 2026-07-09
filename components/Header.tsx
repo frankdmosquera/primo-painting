@@ -4,6 +4,7 @@ import Link from "next/link";
 import MobileMenu from "./mobile-menu";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { logoImg } from "@/data/images";
 
 export function Header() {
   const [currentPath, setCurrentPath] = React.useState("");
@@ -18,16 +19,16 @@ export function Header() {
 
   return (
     <>
-      <header className="py-2 px-4 md:px-8  xl:px-16 lg:sticky bg-white top-0 z-[99999] shadow-lg">
+      <header className="py-1 px-4 md:px-8  xl:px-16 lg:sticky bg-white top-0 z-[99999] shadow-lg">
         <div className=" mx-auto flex items-center  justify-between">
           <div className="flex items-center">
             <Link href="/">
               <Image
                 // src="/logo.svg"
-                src="/primo-painting-calgary-logo.png"
-                alt="Primo Painting"
+                src={logoImg.src}
+                alt={logoImg.alt}
                 title="Primo Painting"
-                width={150}
+                width={130}
                 height={60}
                 // className="h-auto"
                 priority

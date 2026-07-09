@@ -1,3 +1,11 @@
+// Logo
+// Logo
+
+export const logoImg = {
+  src: "/primo-painters-logo.png",
+  alt: "Primo Painters Calgary - logo",
+};
+
 // BgBackgrounds
 // BgBackgrounds
 export const BgBackgroundImg = {

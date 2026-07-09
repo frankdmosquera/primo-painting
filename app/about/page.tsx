@@ -21,21 +21,21 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "About Primo Painters: Your Trusted Calgary Painting Company",
   description:
-    "Our expert painters deliver top-quality interior, exterior & wallpaper removal services for your home or business. We've got all your painting needs covered.",
+    "Our expert Interior painters deliver top-quality interior services for your home or business. learn about primo painters, your trusted interior painting company in calgary",
   alternates: {
-    canonical: "https://www.primopainting.ca/about",
+    canonical: "https://www.primopainters.ca/about",
   },
   openGraph: {
-    title: "Need Calgary Painters?",
+    title: "Need CalgaryInterior Painters?",
     description:
       "Book your free estimate today with Primo Painters, the top-rated painting company in Calgary.",
     images: [
-      {
-        url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
-      },
+      // {
+      //   url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
+      // },
     ],
-    url: "https://www.primopainting.ca/about",
-    siteName: "Primo Painting",
+    url: "https://www.primopainters.ca/about",
+    siteName: "Primo Painters",
     type: "website",
   },
 };

@@ -5,7 +5,6 @@ import { Button } from "../ui/button";
 import { toast } from "sonner";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import BgLines from "../BgLines";
 
 interface ContactFormValues {
   name: string;
@@ -78,16 +77,15 @@ const ContactFormSection = () => {
             <h2 className="text-[26px] lg:text-[45px] font-medium lg:leading-15 text-[#0D378D] uppercase mb-2">
               Have a project in <br /> mind or have <br /> questions?
             </h2>
-            <p className="text-muted-foreground mb-4 text-black">
+            <p className="text-muted-foreground mb-4 text-black text-justify">
               Get in touch with our{" "}
               <a
-                href="https://www.primopainting.ca/booking"
+                href="https://www.primopainters.ca/booking"
                 className="text-blue"
               >
-                expert painters in Calgary
+                expert interior painters in Calgary
               </a>
-              . We’d be <br />
-              happy to help bring your vision to life!
+              . We’d be happy to help bring your vision to life!
             </p>
           </div>
 

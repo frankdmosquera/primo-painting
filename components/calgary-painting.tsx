@@ -12,20 +12,19 @@ export const CalgaryPainting = () => {
         {/* Left Section */}
         <div className="bg-[#0D378D] text-white p-8 md:p-12 py-30 max-sm:py-10 lg:p-16 flex flex-col justify-center md:w-1/2">
           <div className="max-w-6xl mx-auto">
-            <h3 className="text-2xl md:text-4xl  font-bold mb-6 uppercase">
-              We are your Calgary painting company
+            <h3 className="text-2xl md:text-4xl font-bold mb-6 uppercase">
+              Interior Painting Done Right
             </h3>
-
-            <p className="mb-8 ">
-              Primo Painting is your trusted partner in Calgary, offering
-              detailed estimates and unparalleled painting services . As a
-              leading Calgary painting company, we pride ourselves on our
-              professional and skilled Calgary painters.
+            <p className="mb-8">
+              Primo Painters is a small, locally owned interior painting company
+              proudly serving Calgary. We focus on quality over volume, giving
+              every project the time and attention it deserves while offering
+              honest, competitive prices.
             </p>
 
-            <h2 className="text-xl md:text-2xl font-bold mb-10 uppercase">
+            <h4 className="text-xl md:text-2xl font-bold mb-10 uppercase">
               Our touch of paint makes a difference!
-            </h2>
+            </h4>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-1 pt-4  col-span-2">
               <div className="text-center">
                 <div className=" p-3 rounded-full  mx-auto mb-2 flex items-center justify-center">

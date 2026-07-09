@@ -18,13 +18,13 @@ const ServiceBanner = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 px-6 sm:px-12 z-20 relative">
           <div className="text-white col-span-2">
-            <h3 className="text-3xl lg:text-[36px] sm:text-[16px] font-medium mb-4 uppercase">
-              Ready to Transform Your Space?
+            <h3 className="text-2xl  font-medium mb-4 uppercase">
+              Ready to Transform Your Interior Space?
             </h3>
-            <p className="font-extralight lg:text-[16px] sm:text-[12px]">
-              Get professional advice, a free quote, and a flawless finish for
-              your space. Book a consultation with our expert painters in
-              Calgary today.
+            <p className="font-extralight ">
+              Get professional advice, a free quote, and a flawless finish with
+              Primo Painters. Book a consultation with our expert interior
+              painters in Calgary today.
             </p>
           </div>
 
@@ -33,9 +33,7 @@ const ServiceBanner = () => {
               href="/booking"
               className="flex items-center bg-[#0D378D] text-white pl-4 pr-2 py-3 rounded-full text-base font-medium border-2 border-[#cadbff]"
             >
-              <span className="mr-2 lg:text-[16px] text-[14px] md:text-[10px]">
-                Schedule a Consultation
-              </span>
+              <span className="mr-2 ">Schedule a Consultation</span>
               <svg
                 width="31"
                 height="31"

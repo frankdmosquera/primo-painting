@@ -34,9 +34,11 @@ export default function AboutusHome() {
 
         {/* Right side with text */}
         <div className="w-full xl:max-w-2xl   bg-white xl:w-4/5 px-4 py-8 flex flex-col justify-center ">
-          <p className="text-black text-[22px]  font-semibold mb-2">About Us</p>
+          <p className="text-black text-[22px]  font-semibold mb-2">
+            About Primo Painters
+          </p>
           <p className="lg:text-[36px] text-[26px] font-bold text-[#0D378D] mb-4">
-            EXPERT CALGARY PAINTERS
+            EXPERT CALGARY INTERIOR PAINTERS
             <br />
             TRUSTED BY LOCALS
           </p>
@@ -55,14 +57,8 @@ export default function AboutusHome() {
             them like canvases. Every stroke we make is intentional, every
             colour choice is meaningful, and every result? A reflection of your
             style brought to life. With years of experience and expertise, we
-            offer a wide range of painting services in Calgary for both interior
-            and exterior spaces, turning them into eye-catching standouts.
-          </p>
-          <p className="text-black mb-6 ">
-            Bonus? We're one of the few licensed and certified painting
-            companies in Calgary. So when you hire us, you're not just getting
-            paint, you're getting pro results that make people say - Whoa, who
-            did this?
+            offer a wide range of interior painting services in Calgary, turning
+            spaces into eye-catching standouts.
           </p>
 
           {/* <button className="learn-more-button">Learn More</button> */}
@@ -79,7 +75,8 @@ export default function AboutusHome() {
             WHY CHOOSE US?
           </h2>
           <p className="lg:text-[24px] text-[20px] font-bold text-[#0D378D] text-center mb-12">
-            What Makes Us One of the Best Painting Companies in Calgary?
+            What Makes Us One of the Best Interior Painting Companies in
+            Calgary?
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-16 xl:gap-24">
             {/* Workmanship */}
@@ -107,9 +104,9 @@ export default function AboutusHome() {
                 Attention to Detail
               </h3>
               <p className=" text-black">
-                From crisp lines to smooth coatings, our painters in Calgary
-                focus on every little detail to deliver perfection in every
-                project.
+                From crisp lines to smooth coatings, our interior painters in
+                Calgary focus on every little detail to deliver perfection in
+                every project.
               </p>
             </div>
 

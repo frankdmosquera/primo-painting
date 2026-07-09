@@ -60,7 +60,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${roboto.className} antialiased`}
       >
-        <main className="text-[17px]">
+        <main className="text-[17px] 3xl:text-base ">
           <ScrollingBannerA />
           <Header />
           {children}

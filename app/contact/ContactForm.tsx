@@ -104,12 +104,12 @@ const ContactForm = () => {
             style={{ fontWeight: "500" }}
           >
             <span className="mr-2">
-              <Link href="mailto:info@primopainting.ca">
+              <Link href="mailto:info@primopainters.ca">
                 <Image src={email} alt="email" />
               </Link>
             </span>
-            <Link href="mailto:info@primopainting.ca">
-              info@primopainting.ca
+            <Link href="mailto:info@primopainters.ca">
+              info@primopainters.ca
             </Link>
           </p>
           <p
@@ -119,7 +119,7 @@ const ContactForm = () => {
             <span className="mr-2 w-[30px] h-[25px]">
               <Image src={location} alt="location" />
             </span>
-            370 Brightonstone Green SE, Calgary, AB T2Z 0H1, Canada
+            217 Legacy Reach Cres SE SE, Calgary, AB, T2X 5A7, Canada
           </p>
         </div>
 

@@ -12,7 +12,7 @@ import {
 const items = [
   {
     icon: TicketPercent,
-    text: "10% OFF Interior Painting",
+    text: "15% OFF Interior Painting",
     highlight: true,
   },
   {

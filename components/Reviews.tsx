@@ -16,7 +16,7 @@ const Reviews = () => {
             isButton={true}
           />
           <p className="container max-w-7xl mx-auto px-4 text-black py-5">
-            See why Primo Painting is a trusted choice for professional interior
+            See why Primo Painters is a trusted choice for professional interior
             painting in Calgary.
             <span className="hidden">
               Our happy customers share their experiences, praising our quality
@@ -26,9 +26,9 @@ const Reviews = () => {
             </span>
           </p>
         </div>
-        <div className="max-w-[1600px] mx-auto">
+        {/* <div className="max-w-[1600px] mx-auto">
           <GoogleReviews />
-        </div>
+        </div> */}
       </div>
       <ScrollingBannerA />
     </>
