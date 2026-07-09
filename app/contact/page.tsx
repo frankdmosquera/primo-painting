@@ -14,23 +14,23 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Contact Primo Painting | Get a Free Painting Estimate",
+  title: "Contact Primo Painters| Get a Free Painting Estimate",
   description:
     "Contact us today for a free painting estimate! Get expert interior, exterior, or commercial painting services tailored to your needs in Calgary.",
   alternates: {
-    canonical: "https://primopainting.ca/contact",
+    canonical: "https://www.primopainters.ca/contact",
   },
   openGraph: {
     title: "Need Calgary Painters?",
     description:
-      "Book your free estimate today with Primo Painting, the top-rated painting company in Calgary.",
+      "Book your free estimate today with Primo Painters, the top-rated painting company in Calgary.",
     images: [
-      {
-        url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
-      },
+      // {
+      //   url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
+      // },
     ],
-    url: "https://primopainting.ca/contact",
-    siteName: "Primo Painting",
+    url: "https://www.primopainters.ca/contact",
+    siteName: "Primo Painters",
     type: "website",
   },
 };

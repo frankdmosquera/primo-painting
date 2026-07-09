@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     description:
       "Book your free estimate today with Primo Painters, the top-rated painting company in Calgary.",
     images: [
-      {
-        url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
-      },
+      // {
+      //   url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
+      // },
     ],
     url: "https://www.primopainters.ca",
     siteName: "Primo Painters",

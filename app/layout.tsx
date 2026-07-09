@@ -22,8 +22,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Primo Painting",
-  description: "Primo Painting - Calgary's Premier Interior Painting Service",
+  title: "Primo Painters - Calgary's Premier Interior Painting Service",
+  description:
+    "Primo Painters is Calgary's leading interior painting service, delivering exceptional craftsmanship and attention to detail. Our team of skilled painters transforms your spaces with precision and care, ensuring a flawless finish every time. Trust Primo Painters for all your interior painting needs in Calgary.",
 };
 
 export default function RootLayout({

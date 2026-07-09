@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title:
     "Expert Calgary Painters for Exteriod and Interior House Painting Services",
   description:
-    "Looking for affordable Calgary painters? Our top-rated house painting company in Calgary offers professional exterior and  interior painting services to meet all your needs.",
+    "Looking for affordable Calgary painters? Our top-rated interior house painting company in Calgary offers professional interior painting services to meet all your needs.",
   keywords: [
     "calgary painters",
     "interior painting",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     "interior painting contractors calgary",
   ],
   alternates: {
-    canonical: "https://www.primopainting.ca",
+    canonical: "https://www.primopainters.ca",
   },
   robots: {
     index: true,
@@ -43,14 +43,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Need Calgary Interior Painters?",
     description:
-      "Book your free estimate today with Primo Painting, the top-rated painting company in Calgary.",
+      "Book your free estimate today with Primo Painters, the top-rated painting company in Calgary.",
     images: [
-      {
-        url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
-      },
+      // {
+      //   url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
+      // },
     ],
-    url: "https://www.primopainting.ca",
-    siteName: "Primo Painting",
+    url: "https://www.primopainters.ca",
+    siteName: "Primo Painters",
     type: "website",
   },
 };
