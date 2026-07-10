@@ -5,7 +5,7 @@ import { Plus, Minus } from "lucide-react";
 import Link from "next/link";
 
 const FaqSection = () => {
-  const [selected, setSelected] = useState(null);
+  // const [selected, setSelected] = useState(-1);
   const faqItems = [
     {
       title: "Do you repair walls before painting?",
@@ -58,9 +58,9 @@ const FaqSection = () => {
             <Accordion variant="splitted" className="">
               {faqItems.map((item, index) => (
                 <AccordionItem
-                  onClick={() =>
-                    selected !== index ? setSelected(index) : setSelected(null)
-                  }
+                  // onClick={() =>
+                  //   selected !== index ? setSelected(index) : setSelected(-1)
+                  // }
                   indicator={({ isOpen }) =>
                     isOpen ? (
                       <Minus className="w-8 h-8 p-1  text-[#0D378D] border-2 border-[#0D378D66] rounded-full text-2xl" />

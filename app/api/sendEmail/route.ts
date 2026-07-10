@@ -28,7 +28,6 @@ export async function POST(req: any) {
       replyTo: email,
       subject: `New message from ${name}`,
       text: `You have received a new message from ${name} (${email}).\n\nMessage: ${message}`,
-      // html: `<p>You have received a new message from <strong>${name}</strong> Email:${email}.Number:${phone}.</p><p><strong>Message:</strong><p>${message}</p>`,
 
       html: `
         <h2>New Contact Form Submission</h2>

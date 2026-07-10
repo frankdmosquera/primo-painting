@@ -1,98 +1,28 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
-<url>
-<loc>https://www.primopainting.ca/</loc>
-<lastmod>2026-05-08T01:14:25+00:00</lastmod>
-<priority>1.00</priority>
-</url>
-<url>
-<loc>https://www.primopainting.ca/about</loc>
-<lastmod>2026-05-08T01:14:25+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.primopainting.ca/services</loc>
-<lastmod>2026-05-08T01:14:25+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.primopainting.ca/gallery</loc>
-<lastmod>2026-05-08T01:14:25+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.primopainting.ca/blogs</loc>
-<lastmod>2026-05-08T01:14:25+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.primopainting.ca/booking</loc>
-<lastmod>2026-05-08T01:14:25+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.primopainting.ca/contact</loc>
-<lastmod>2026-05-08T01:14:25+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.primopainting.ca/interior-painting-calgary</loc>
-<lastmod>2026-05-08T01:14:25+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.primopainting.ca/blog/cabinet-painting-tips-every-homeowner-should-know</loc>
-<lastmod>2026-05-08T01:14:25+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.primopainting.ca/blog/best-time-for-exterior-painting-and-how-to-do-it-right</loc>
-<lastmod>2026-05-08T01:14:25+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.primopainting.ca/exterior-painting-calgary</loc>
-<lastmod>2026-05-08T01:14:25+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.primopainting.ca/commercial-painting-calgary</loc>
-<lastmod>2026-05-08T01:14:25+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.primopainting.ca/popcorn-ceiling-removal-calgary</loc>
-<lastmod>2026-05-08T01:14:25+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.primopainting.ca/cabinet-painting-calgary</loc>
-<lastmod>2026-05-08T01:14:25+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.primopainting.ca/garage-painting-calgary</loc>
-<lastmod>2026-05-08T01:14:25+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.primopainting.ca/gallery/interior-wall-paining-brown-to-off-white</loc>
-<lastmod>2026-05-08T01:14:25+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.primopainting.ca/gallery/ceiling-interior-revamp-experts</loc>
-<lastmod>2026-05-08T01:14:25+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.primopainting.ca/gallery/modern-garage-refresh</loc>
-<lastmod>2026-05-08T01:14:25+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.primopainting.ca/gallery/dramatic-exterior-transformation</loc>
-<lastmod>2026-05-08T01:14:25+00:00</lastmod>
-<priority>0.64</priority>
-</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+       <loc>https://www.primopainters.ca/</loc>
+       <lastmod>2026-07-10T20:01:33+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>1.0000</priority>
+  </url>
+  <url>
+       <loc>https://www.primopainters.ca/about</loc>
+       <lastmod>2026-07-10T20:01:33+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.primopainters.ca/booking</loc>
+       <lastmod>2026-07-10T20:01:33+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.primopainters.ca/contact</loc>
+       <lastmod>2026-07-10T20:01:33+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
 </urlset>

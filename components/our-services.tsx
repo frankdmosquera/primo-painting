@@ -14,7 +14,7 @@ export default function OurServices() {
       <div className=" w-full   xl:w-9/20">
         <ServiceSection
           title="Our Services"
-          description="Transform Your Space  <br />with Our Expert Painting Services"
+          description="Transform Your Interiors  <br />with Our Expert Painting Services"
           buttonText="Explore Our Services"
           href="/services"
         />
