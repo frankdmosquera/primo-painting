@@ -28,7 +28,7 @@ export default function CommitmentQualitySection() {
 
         <div className="space-y-4 text-black ">
           <p>
-            At Primo Painting, we're committed to making a positive impact on
+            At Primo Painters, we're committed to making a positive impact on
             the environment. That's why we use zero to low-VOC paints, creating
             healthier spaces for our clients, painters, and the planet!
           </p>
@@ -39,7 +39,7 @@ export default function CommitmentQualitySection() {
             garbage, cardboard, and plastics,
           </p>
           <p>
-            Our painting company in Calgary focuses on making a clean and green
+            Our interior painters in Calgary focuses on making a clean and green
             impact on the environment while ensuring perfection in every project
             that we undertake.
           </p>

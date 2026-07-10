@@ -38,27 +38,24 @@ export default function AboutusHome() {
             About Primo Painters
           </p>
           <p className="lg:text-[36px] text-[26px] font-bold text-[#0D378D] mb-4">
-            EXPERT CALGARY INTERIOR PAINTERS
+            INTERIOR PAINTING SPECIALISTS
             <br />
             TRUSTED BY LOCALS
           </p>
-          <p className="text-black mb-6 ">
-            We started with a vision that something as simple as a paint job
-            should be nothing short of extraordinary. Because the space you live
-            or work in should reflect your vibe. And just "okay" doesn't cut it.
-            Rookies can't give you that same touch of perfection that only
-            experience can bring. That's why, at Primo Painting, we take pride
-            in our team of expert Calgary painters with years of hands-on
-            experience handling projects of every size and style.
+          <p className="text-black mb-6">
+            Primo Painters is a locally owned painting company specializing
+            exclusively in interior residential painting throughout Calgary. By
+            focusing on one thing and doing it well, we're able to deliver
+            consistent results, cleaner workmanship, and a smoother experience
+            from start to finish.
           </p>
 
-          <p className="text-black mb-6 ">
-            Our mission is simple: We don't treat walls like walls, we treat
-            them like canvases. Every stroke we make is intentional, every
-            colour choice is meaningful, and every result? A reflection of your
-            style brought to life. With years of experience and expertise, we
-            offer a wide range of interior painting services in Calgary, turning
-            spaces into eye-catching standouts.
+          <p className="text-black mb-6">
+            As a small team, we keep our overhead low and our standards high.
+            That means competitive pricing, clear communication, efficient
+            scheduling, and careful attention to every room we paint. Whether
+            you're refreshing a single bedroom or repainting your entire home,
+            our goal is simple: quality work that's done right the first time.
           </p>
 
           {/* <button className="learn-more-button">Learn More</button> */}
@@ -72,14 +69,10 @@ export default function AboutusHome() {
         </div>
         <div className="max-w-6xl mx-auto">
           <h2 className="lg:text-[36px] text-[25px] font-bold text-[#0D378D] text-center mb-12">
-            WHY CHOOSE US?
+            WHY HOMEOWNERS CHOOSE PRIMO PAINTERS
           </h2>
-          <p className="lg:text-[24px] text-[20px] font-bold text-[#0D378D] text-center mb-12">
-            What Makes Us One of the Best Interior Painting Companies in
-            Calgary?
-          </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-16 xl:gap-24">
-            {/* Workmanship */}
+            {/* Local owned */}
             <div className="flex flex-col  text-start">
               <div className="text-[#0D378D] mb-4">
                 <div className="flex text-start">
@@ -87,40 +80,40 @@ export default function AboutusHome() {
                 </div>
               </div>
               <h3 className=" lg:text-[24px]  text-[20px] font-semibold text-[#0D378D] mb-3 ">
-                Premium Materials
+                Small Local Team
               </h3>
               <p className=" text-black">
-                We use only high-quality paints and materials, combined with
-                skilled techniques, to ensure a stunning finish.
+                As a locally owned Calgary business, we take on a limited number
+                of projects so every home receives the attention it deserves.
               </p>
             </div>
 
-            {/* Quality Materials */}
+            {/* Honest Pricing */}
             <div className="flex flex-col ">
               <div className="text-[#0D378D] mb-4">
                 <TeamIcon />
               </div>
               <h3 className="lg:text-[24px]  text-[20px]  font-semibold text-[#0D378D] mb-3">
-                Attention to Detail
+                Honest Competitive Pricing
               </h3>
               <p className=" text-black">
-                From crisp lines to smooth coatings, our interior painters in
-                Calgary focus on every little detail to deliver perfection in
-                every project.
+                No inflated estimates or unnecessary upselling. We provide fair
+                pricing, detailed quotes, and excellent value for professional
+                interior painting.
               </p>
             </div>
 
-            {/* Team */}
+            {/* Quality Workmanship*/}
             <div className="flex flex-col ">
               <div className="text-[#0D378D] mb-4">
                 <FivestarIcon />
               </div>
               <h3 className=" lg:text-[24px]  text-[20px]  font-semibold text-[#0D378D] mb-3">
-                Proven Customer Satisfaction
+                Quality Workmanship
               </h3>
               <p className="text-black">
-                Our clients love our work, and it shows in our glowing reviews,
-                repeat business, and word-of-mouth referrals.
+                From careful preparation to clean lines and smooth finishes, we
+                take pride in delivering results that look great and last.
               </p>
             </div>
 
@@ -130,12 +123,12 @@ export default function AboutusHome() {
                 <LicensedIcon />
               </div>
               <h3 className="lg:text-[24px]  text-[20px]  font-semibold text-[#0D378D] mb-3">
-                Licensed & Trusted
+                Reliable & Professional
               </h3>
               <p className=" text-black">
-                As one of the few fully licensed and certified painting
-                companies in Calgary, we back our work with professionalism and
-                credibility.
+                We show up on time, protect your home, keep the workspace clean,
+                and complete projects efficiently with clear communication
+                throughout.
               </p>
             </div>
           </div>

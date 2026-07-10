@@ -48,7 +48,7 @@ export default function SkillPaintersSection() {
         </ul>
 
         <div className="pt-4">
-          <p className="lg:text-[20px] text-[18px] text-black">
+          <p className=" text-black">
             Our commitment to excellence means that every home we paint is
             treated with care and precision, leaving behind a space you’ll love.
           </p>

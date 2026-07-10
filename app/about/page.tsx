@@ -19,14 +19,14 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "About Primo Painters: Your Trusted Calgary Painting Company",
+  title: "About Primo Painters: Your Trusted Calgary Interior Painters",
   description:
     "Our expert Interior painters deliver top-quality interior services for your home or business. learn about primo painters, your trusted interior painting company in calgary",
   alternates: {
     canonical: "https://www.primopainters.ca/about",
   },
   openGraph: {
-    title: "Need CalgaryInterior Painters?",
+    title: "Need Calgary Interior Painters?",
     description:
       "Book your free estimate today with Primo Painters, the top-rated painting company in Calgary.",
     images: [
