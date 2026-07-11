@@ -13,7 +13,7 @@ export const services = [
     type: "interiors",
     title: "Interior Painting",
     description:
-      "Give your interior spaces a fresh, durable finish with our Calgary painting services. We restore worn surfaces while enhancing the appearance of your home.",
+      "Repaint your room or your entire home—we deliver smooth finishes, crisp lines, and meticulous attention to detail from preparation to final coat.",
     images: GalleryInteriorImages,
   },
   {

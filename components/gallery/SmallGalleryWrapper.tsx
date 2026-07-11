@@ -70,7 +70,7 @@ export default function SmallGalleryWrapper({
       {/* thumbnails */}
       <div className="bg-black w-full xl:hidden  flex  justify-center px-1 py-1 gap-2 xsm:gap-3 md:gap-4 overflow-hidden">
         {GalleryImages.map((img, index) => (
-          <div className="relative h-7 w-7 xsm:h-11 " key={index}>
+          <div className="relative h-5 w-5 xsm:h-6 xsm:w-6 " key={index}>
             <Image
               src={img.src}
               alt={img.alt}

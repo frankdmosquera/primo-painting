@@ -12,12 +12,18 @@ export default function OurServices() {
       {/* left side  */}
       {/* left side  */}
       <div className=" w-full   xl:w-9/20">
-        <ServiceSection
-          title="Our Services"
-          description="Transform Your Interiors  <br />with Our Expert Painting Services"
-          buttonText="Explore Our Services"
-          href="/services"
-        />
+        <div className="text-xl container max-w-7xl mx-auto px-4">
+          <h2 className=" xsm:text-2xl text-black font-medium ">
+            House Painting Services
+          </h2>
+          <div className="flex flex-col justify-between  md:flex-row">
+            <p className="text-[#0D378D]  font-semibold  uppercase ">
+              Beautiful interior painting with meticulous workmanship and
+              premium finishes.
+            </p>
+          </div>
+        </div>
+
         <div className="hidden lg:block mt-8">
           <ButtonBlue href={"/booking"} linkText="Book Now!" />
         </div>
@@ -34,6 +40,7 @@ export default function OurServices() {
           <TabsContent
             key={cat.type}
             value={cat.type}
+            // forceMount
             className="w-full  border-none shadow-none "
           >
             <div className=" pb-2 mb-0 w-full flex justify-center border-none shadow-none">
@@ -46,7 +53,7 @@ export default function OurServices() {
                   >
                     <CardContent className="px-4  w-full">
                       <CardTitle className="text-2xl">
-                        {service.title}
+                        <h3> {service.title}</h3>
                       </CardTitle>
                       <p className=" text-muted-foreground leading-relaxed py-2">
                         {service.description}

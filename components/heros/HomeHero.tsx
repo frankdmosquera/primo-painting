@@ -8,7 +8,7 @@ import HeroPhoneMobile from "./HeroPhoneMobile";
 
 const HomeHero = () => {
   return (
-    <section className="relative h-[28rem] tn:h-[32rem] xsm:h-[34rem] md:h-[36rem] lg:h-[38rem]">
+    <section className="relative h-[32rem] tn:h-[32rem] xsm:h-[34rem] md:h-[36rem] lg:h-[38rem]">
       <Image
         src={HeroHomeImg.src}
         alt={HeroHomeImg.alt}
@@ -20,7 +20,7 @@ const HomeHero = () => {
 
       <div className="absolute inset-0 bg-black/20"></div>
       {/* here center the content */}
-      <div className=" absolute px-4 py-4 tn:py-6 sm:py-8 md:py-10 lg:py-12  xl:py-20 inset-0 flex  flex-col items-center justify-between text-center ">
+      <div className=" absolute px-4 py-8  sm:py-10 md:py-12 lg:py-16  xl:py-20 inset-0 flex  flex-col items-center justify-between text-center ">
         <div className="">
           <h1 className="  text-3xl xsm:text-4xl  md:text-5xl lg:text-6xl font-bold text-white ">
             CALGARY'S

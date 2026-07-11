@@ -1,20 +1,13 @@
 import React from "react";
-import ButtonBlue from "./ButtonBlue";
-import ButtonBlueWithBorder from "./ButtonBlueWithBorder";
 
 interface ServiceSectionProps {
   title: string;
   description: string;
-  buttonText: string;
-  isButton?: boolean;
-  href?: string;
 }
 
 const ServiceSection: React.FC<ServiceSectionProps> = ({
   title,
   description,
-  buttonText,
-  href,
 }) => {
   const descriptionLines = description.split("<br />");
 
