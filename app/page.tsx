@@ -3,11 +3,9 @@ import OurServices from "@/components/our-services";
 import { CalgaryPainting } from "@/components/calgary-painting";
 import ContactFormSection from "@/components/ContactFormSection";
 import HomeHero from "@/components/heros/HomeHero";
-import AboutusHome from "@/components/AboutUs/AboutusHome";
 import FaqSection from "@/components/Faq";
 import Reviews from "@/components/Reviews";
 import ServiceBanner from "@/components/ServiceBanner/service-banner";
-import BgBackground from "@/components/BgBackground";
 import BgLines from "@/components/BgLines";
 
 export const viewport: Viewport = {
@@ -59,10 +57,6 @@ export default async function Home() {
   return (
     <>
       <HomeHero />
-      {/* <AboutusHome /> */}
-      {/* <div className="relative ">
-        <BgLines />
-      </div> */}
       <OurServices />
       <div className="flex flex-col ">
         <Reviews />

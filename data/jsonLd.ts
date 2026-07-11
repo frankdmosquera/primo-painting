@@ -1,65 +1,49 @@
+import { siteConfig } from "./siteConfig";
+
 export const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "HousePainter",
+  "@type": ["LocalBusiness", "HousePainter"],
 
-  "@id": "https://www.primopainting.ca/#business",
+  "@id": `${siteConfig.business.website}/#business`,
 
-  name: "Primo Painting",
+  name: siteConfig.business.name,
 
-  url: "https://www.primopainting.ca/",
+  url: siteConfig.business.website,
 
-  image: [
-    "https://www.primopainting.ca/logo.svg",
-    // "https://www.primopainting.ca/images/best-of-the-best-homestars-award-winner-2024-white-version.png",
-    // "https://www.primopainting.ca/images/bbb-A+-alberta-colour-painting.webp",
-    // "https://www.primopainting.ca/images/google-reviews-4.9-rating.png",
-  ],
+  logo: `${siteConfig.business.website}${siteConfig.branding.logo}`,
 
-  logo: "https://www.primopainting.ca/logo.svg",
+  image: [`${siteConfig.business.website}${siteConfig.branding.logo}`],
 
   description:
-    "Primo Painting provides professional interior and exterior painting services in Calgary and surrounding areas.",
+    "Primo Painters provides professional interior house painting services in Calgary. We specialize in painting walls, ceilings, trim, doors, cabinets and other interior spaces with clean workmanship, attention to detail, and free estimates.",
 
-  telephone: "+1-403-903-7517",
+  telephone: siteConfig.business.phone,
 
-  email: "info@primopainting.ca",
+  email: siteConfig.business.email,
 
-  priceRange: "$$",
+  priceRange: siteConfig.business.priceRange,
 
   address: {
     "@type": "PostalAddress",
-    streetAddress: "370 Brightonstone Green SE",
-    addressLocality: "Calgary",
-    addressRegion: "AB",
-    postalCode: "T2Z 0H1",
-    addressCountry: "CA",
+    streetAddress: siteConfig.location.address.street,
+    addressLocality: siteConfig.location.address.city,
+    addressRegion: siteConfig.location.address.province,
+    postalCode: siteConfig.location.address.postalCode,
+    addressCountry: siteConfig.location.address.country,
   },
 
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 50.9240786,
-    longitude: -113.9533784,
+    latitude: siteConfig.location.coordinates.latitude,
+    longitude: siteConfig.location.coordinates.longitude,
   },
 
-  hasMap:
-    "https://www.google.com/maps/place/Primo+Painting/@50.924082,-113.9533784,17z/",
+  hasMap: siteConfig.location.googleMaps,
 
   areaServed: [
     {
       "@type": "City",
-      name: "Calgary",
-    },
-    {
-      "@type": "City",
-      name: "Airdrie",
-    },
-    {
-      "@type": "City",
-      name: "Chestermere",
-    },
-    {
-      "@type": "City",
-      name: "Okotoks",
+      name: siteConfig.location.serviceArea,
     },
   ],
 
@@ -86,32 +70,47 @@ export const jsonLd = {
 
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "122",
+    ratingValue: String(siteConfig.reviews.rating),
+    reviewCount: String(siteConfig.reviews.reviewCount),
   },
 
-  sameAs: [
-    // "https://www.instagram.com/albertacolourpaintingltd/",
-    // "https://www.facebook.com/albertacolourpainting/",
-    "https://www.youtube.com/@Primo-Painting",
-  ],
-
-  foundingLocation: {
-    "@type": "Place",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Calgary",
-      addressRegion: "AB",
-      addressCountry: "CA",
-    },
-  },
+  sameAs: [siteConfig.social.googleBusiness, siteConfig.social.youtube].filter(
+    Boolean,
+  ),
 
   serviceType: [
+    "Interior House Painting",
     "Interior Painting",
-    "Exterior Painting",
-    "Residential Painting",
-    "Commercial Painting",
+    "Residential Interior Painting",
+    "Wall Painting",
+    "Ceiling Painting",
+    "Trim Painting",
+    "Door Painting",
+    "Garage Painting",
     "Cabinet Painting",
-    "Drywall Repair",
+    "Built-in Cabinet Painting",
+    "Baseboard Painting",
+    "Railing Painting",
   ],
+
+  knowsAbout: [
+    "Interior House Painting",
+    "Interior Painting",
+    "Wall Painting",
+    "Ceiling Painting",
+    "Trim Painting",
+    "Door Painting",
+    "Garage Painting",
+    "Cabinet Painting",
+    "Built-in Cabinet Painting",
+    "Baseboard Painting",
+    "Railing Painting",
+    "Residential Painting",
+  ],
+
+  inLanguage: "en-CA",
+
+  currenciesAccepted: "CAD",
+
+  paymentAccepted: ["Cash", "Credit Card", "Debit Card", "E-Transfer"],
 };

@@ -1,8 +1,10 @@
+import { siteConfig } from "@/data/siteConfig";
+
 export default function HeroPhoneMobile() {
   return (
     <div>
       <a
-        href="tel:14039037517"
+        href={`tel:${siteConfig.business.phone}`}
         className="flex items-center   text-white rounded-full p-2"
       >
         <svg
@@ -85,7 +87,7 @@ export default function HeroPhoneMobile() {
           </defs>
         </svg>
 
-        <span className="font-medium">403-903-7517</span>
+        <span className="font-medium">{siteConfig.business.phone}</span>
       </a>
     </div>
   );

@@ -1,16 +1,20 @@
+import { siteConfig } from "@/data/siteConfig";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
 import { Toaster } from "@/components/ui/sonner";
-// import { Navbar } from "@/components/Header";
 import Footer from "@/components/Footer";
-import Script from "next/script";
 import { Roboto } from "next/font/google";
 import { jsonLd } from "@/data/jsonLd";
 import ScrollingBannerA from "@/components/scrolling-banner-a";
 import { Header } from "@/components/Header";
 
-const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -21,10 +25,67 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// export const metadata: Metadata = {
+//   title: "Calgary Interior Painters | Primo Painters",
+//   description:
+//     "Primo Painters provides professional interior painting services in Calgary. We paint walls, ceilings, trim, doors, cabinets and more for homeowners, delivering clean workmanship and free estimates.",
+// };
+
 export const metadata: Metadata = {
-  title: "Primo Painters - Calgary's Premier Interior Painting Service",
+  metadataBase: new URL(siteConfig.business.website),
+
+  title: "Calgary Interior Painters | Primo Painters",
+
   description:
-    "Primo Painters is Calgary's leading interior painting service, delivering exceptional craftsmanship and attention to detail. Our team of skilled painters transforms your spaces with precision and care, ensuring a flawless finish every time. Trust Primo Painters for all your interior painting needs in Calgary.",
+    "Primo Painters provides professional interior painting services in Calgary. We paint walls, ceilings, trim, doors, cabinets and more for homeowners, delivering clean workmanship and free estimates.",
+
+  applicationName: siteConfig.business.applicationName,
+
+  category: "Home Services",
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    title: "Calgary Interior Painters | Primo Painters",
+
+    description:
+      "Professional interior house painting services in Calgary for walls, ceilings, trim, doors and more.",
+
+    url: "/",
+
+    siteName: siteConfig.business.name,
+
+    locale: "en_CA",
+
+    type: "website",
+
+    images: [
+      {
+        url: siteConfig.branding.ogImage,
+        width: 1200,
+        height: 630,
+        alt: `${siteConfig.business.name} - Calgary Interior Painters`,
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Calgary Interior Painters | Primo Painters",
+
+    description:
+      "Professional interior house painting services in Calgary for walls, ceilings, trim, doors and more.",
+
+    images: [siteConfig.branding.ogImage],
+  },
 };
 
 export default function RootLayout({
@@ -35,7 +96,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="msvalidate.01" content="DBD9A18509B447FAF5F19EC3C4B5BFC4" />
+        {/* <meta name="msvalidate.01" content="DBD9A18509B447FAF5F19EC3C4B5BFC4" /> */}
         <meta name="robots" content="index, follow" />
         <link
           rel="stylesheet"
