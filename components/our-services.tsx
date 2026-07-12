@@ -16,16 +16,14 @@ export default function OurServices() {
           <h2 className=" xsm:text-2xl text-black font-medium ">
             House Painting Services
           </h2>
-          <div className="flex flex-col justify-between  md:flex-row">
-            <p className="text-[#0D378D]  font-semibold  uppercase ">
-              Beautiful interior painting with meticulous workmanship and
-              premium finishes.
-            </p>
-          </div>
-        </div>
 
-        <div className="hidden lg:block mt-8">
-          <ButtonBlue href={"/booking"} linkText="Book Now!" />
+          <p className="lg:w-4/5 text-[#0D378D]  font-semibold  uppercase  ">
+            Beautiful interior painting with meticulous workmanship and premium
+            finishes.
+          </p>
+          <div className="hidden lg:block mt-8">
+            <ButtonBlue href={"/booking"} linkText="Book Now!" />
+          </div>
         </div>
       </div>
       {/* right side  */}

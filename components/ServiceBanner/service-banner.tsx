@@ -22,9 +22,8 @@ const ServiceBanner = () => {
               Ready to Transform Your Interior Space?
             </h3>
             <p className="font-extralight ">
-              Get professional advice, a free quote, and a flawless finish with
-              Primo Painters. Book a consultation with our expert interior
-              painters in Calgary today.
+              Whether you're painting one room or your entire home, we're here
+              to make the process simple, stress-free, and beautifully finished.
             </p>
           </div>
 
@@ -33,7 +32,7 @@ const ServiceBanner = () => {
               href="/booking"
               className="flex items-center bg-[#0D378D] text-white pl-4 pr-2 py-3 rounded-full text-base font-medium border-2 border-[#cadbff]"
             >
-              <span className="mr-2 ">Schedule a Consultation</span>
+              <span className="mr-2 ">Book Your Free Estimate</span>
               <svg
                 width="31"
                 height="31"
