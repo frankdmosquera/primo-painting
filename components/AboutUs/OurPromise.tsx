@@ -31,7 +31,7 @@ export default function OurPromise() {
           Our Promise
         </p>
 
-        <h2 className="text-3xl lg:text-5xl font-bold mt-3">
+        <h2 className="text-3xl text-[#0D378D] lg:text-5xl font-bold mt-3">
           What You Can Expect From Every Project
         </h2>
         <p className="mt-6 text-gray-700 leading-8">
