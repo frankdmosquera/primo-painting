@@ -58,9 +58,6 @@ export default function AboutusHome() {
           {/* <button className="learn-more-button">Learn More</button> */}
         </div>
       </div>
-
-      {/* Why Choose Us Section */}
-      <WhyChooseUs />
     </div>
   );
 }

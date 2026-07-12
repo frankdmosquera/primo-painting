@@ -21,13 +21,13 @@ export default function StandardHero({
   return (
     <div>
       <section>
-        <div className="relative h-[calc(100vh-50px)]  sm:h-120">
+        <div className="relative h-[30rem]  ">
           {/* <div className="relative h-full w-full"> */}
           <Image
             src={imageSrc}
             alt="Hero Image"
             fill
-            className="object-cover brightness-75 w-full h-auto"
+            className="object-cover brightness-90 w-full h-auto"
             priority
             //sizes="100vw"
           />

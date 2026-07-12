@@ -1,8 +1,6 @@
-import Image from "next/image";
 import { CalgaryPainting } from "@/components/calgary-painting";
 import ContactFormSection from "../../components/ContactFormSection";
 import HomeBanner from "@/components/HomeBanner/home-banner";
-import Link from "next/link";
 import blogsBanner from "@/public/banners/blogs-banner.webp";
 import StandardHero from "@/components/heros/StandardHero";
 import AboutusAbout from "@/components/AboutUs/AboutusAbout";
@@ -12,6 +10,14 @@ import FinestPainters from "@/components/AboutUs/FinestPaintersSection";
 import CommitmentQualitySection from "@/components/AboutUs/CommitmentQualitySection";
 import type { Metadata, Viewport } from "next";
 import BgBackground from "@/components/BgBackground";
+import { siteConfig } from "@/data/siteConfig";
+import WhyChooseUs from "@/components/whyChooseUs";
+import AboutHero from "@/components/AboutUs/AboutHero";
+import OurStory from "@/components/AboutUs/OurStoy";
+import OurProcess from "@/components/AboutUs/OurProcess";
+import OurPromise from "@/components/AboutUs/OurPromise";
+import ServingCalgary from "@/components/AboutUs/ServingCalgary";
+import ServiceBanner from "@/components/ServiceBanner/service-banner";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -19,56 +25,44 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "About Primo Painters: Your Trusted Calgary Interior Painters",
+  title: "About Primo Painters | Calgary Interior Painting Company",
+
   description:
-    "Our expert Interior painters deliver top-quality interior services for your home or business. learn about primo painters, your trusted interior painting company in calgary",
+    "Learn about Primo Painters, a locally owned Calgary interior painting company dedicated to meticulous workmanship, honest pricing, and exceptional customer service.",
+
   alternates: {
-    canonical: "https://www.primopainters.ca/about",
+    canonical: "/about",
   },
+
   openGraph: {
-    title: "Need Calgary Interior Painters?",
+    title: "About Primo Painters | Calgary Interior Painting Company",
+
     description:
-      "Book your free estimate today with Primo Painters, the top-rated painting company in Calgary.",
-    images: [
-      // {
-      //   url: "https://res.cloudinary.com/alberta-colour-painting/image/upload/v1672799089/home/awards/best-of-the-best-award-homestars-winner-2022-white-version_psaofg.webp",
-      // },
-    ],
-    url: "https://www.primopainters.ca/about",
-    siteName: "Primo Painters",
-    type: "website",
+      "Learn about Primo Painters and why Calgary homeowners trust us for professional interior painting.",
+
+    url: "/about",
+  },
+
+  twitter: {
+    title: "About Primo Painters | Calgary Interior Painting Company",
+
+    description:
+      "Learn about Primo Painters and why Calgary homeowners trust us for professional interior painting.",
   },
 };
 
 export default function page() {
   return (
     <>
-      <AboutusAbout />
-      <StandardHero
-        title="About  "
-        title2="Primo Painters"
-        // subtitle='Your Trusted, Skilled, and Eco-Friendly Painting Experts'
-        subtitle="Bringing Colour to Calgary with Flawless Paint Jobs! "
-        imageSrc={blogsBanner}
-      />
-      <div className="relative">
-        <div className="absolute">
-          <BgBackground />
-        </div>
+      <AboutHero />
+      <OurStory />
+      <OurProcess />
+
+      <OurPromise />
+      <ServingCalgary />
+      <div className="pb-8">
+        <ServiceBanner />
       </div>
-      <div className="container mx-auto max-w-7xl px-4">
-        <SkillPainters />
-        <FinestPainters />
-      </div>
-      <div className="max-sm:my-10">
-        <HomeBanner />
-      </div>
-      <div className="container mx-auto max-w-7xl px-4">
-        <CommitmentQualitySection />
-        <EcofriendlySection />
-      </div>
-      <CalgaryPainting />
-      <ContactFormSection />
     </>
   );
 }

@@ -6,14 +6,12 @@ import ScrollingBannerA from "./scrolling-banner-a";
 const Reviews = () => {
   return (
     <>
-      <div className="bg-blue-50 py-12">
+      <div className=" py-12">
         {/* <ReviewsCarousel newestGoogleReviews={newestGoogleReviews} /> */}
         <div className=" px-8 lg:px-24 pb-6 lg:mb-20 lg:mt-20 ">
           <ServiceSection
             title="What Our Clients Say"
             description="Reviews from Our Satisfied <br /> Customers"
-            buttonText="Read More Reviews"
-            isButton={true}
           />
           <p className="container max-w-7xl mx-auto px-4 text-black py-5">
             See why Primo Painters is a trusted choice for professional interior

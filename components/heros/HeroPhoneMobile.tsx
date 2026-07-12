@@ -87,7 +87,7 @@ export default function HeroPhoneMobile() {
           </defs>
         </svg>
 
-        <span className="font-medium">{siteConfig.business.phone}</span>
+        <span className="font-medium hidden ">{siteConfig.business.phone}</span>
       </a>
     </div>
   );

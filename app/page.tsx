@@ -1,9 +1,7 @@
-import { siteConfig } from "@/data/siteConfig";
 import { faqJsonLd } from "@/data/faqJsonLd";
 import type { Metadata, Viewport } from "next";
 import OurServices from "@/components/our-services";
 import { CalgaryPainting } from "@/components/calgary-painting";
-import ContactFormSection from "@/components/ContactFormSection";
 import HomeHero from "@/components/heros/HomeHero";
 import FaqSection from "@/components/Faq";
 import Reviews from "@/components/Reviews";
@@ -16,6 +14,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1.0,
 };
+
 export const metadata: Metadata = {
   title: "Calgary Interior House Painters | Primo Painters",
 
@@ -26,11 +25,6 @@ export const metadata: Metadata = {
     canonical: "/",
   },
 
-  robots: {
-    index: true,
-    follow: true,
-  },
-
   openGraph: {
     title: "Calgary Interior House Painters | Primo Painters",
 
@@ -38,32 +32,13 @@ export const metadata: Metadata = {
       "Professional interior house painting in Calgary for walls, ceilings, trim, doors, garages, and more.",
 
     url: "/",
-
-    siteName: siteConfig.business.name,
-
-    type: "website",
-
-    locale: "en_CA",
-
-    images: [
-      {
-        url: siteConfig.branding.ogImage,
-        width: 1200,
-        height: 630,
-        alt: `${siteConfig.business.name} - Calgary Interior House Painters`,
-      },
-    ],
   },
 
   twitter: {
-    card: "summary_large_image",
-
     title: "Calgary Interior House Painters | Primo Painters",
 
     description:
-      "Professional interior house painting in Calgary for walls, ceilings, trim, doors, cabinets, and more.",
-
-    images: [siteConfig.branding.ogImage],
+      "Professional interior house painting in Calgary for walls, ceilings, trim, doors, garages, and more.",
   },
 };
 

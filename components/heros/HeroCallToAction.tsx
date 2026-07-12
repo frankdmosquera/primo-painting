@@ -13,7 +13,7 @@ export default function HeroCallToAction() {
         href="/booking"
         className="bg-[#0D378D] hover:bg-primary/90 text-white px-4 py-2 border-2 border-white rounded-full font-medium flex items-center justify-center"
       >
-        Get a Free Quote
+        Book Your Free Estimate
         <span className="ml-2 bg-white rounded-full p-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -29,14 +29,6 @@ export default function HeroCallToAction() {
           </svg>
         </span>
       </Link>
-      {pathname !== "/contact" && (
-        <Link
-          href="/contact"
-          className="hidden bg-transparent border-2 border-white text-white px-10 py-3 rounded-full font-medium hover:bg-white hover:text-gray-800 transition-colors cursor-pointer"
-        >
-          Questions?
-        </Link>
-      )}
     </div>
   );
 }
