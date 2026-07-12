@@ -76,7 +76,7 @@ export default function ContactPage() {
           // sizes="100vw"
         />
 
-        <div className="absolute inset-0 bg-black/70"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
         {/* here center the content */}
         <div className=" absolute px-3 tn:px-6 md:px-12 gap-20  xl:gap-24  bottom-4 inset-0 flex  flex-col items-center justify-center text-center ">
           <div className="">
