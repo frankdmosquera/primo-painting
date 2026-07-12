@@ -23,8 +23,9 @@ export default function AboutHero() {
             <span className="bg-reveal ml-2">Primo Painters</span>{" "}
           </h1>
           <p className="block mt-3  text-white   font-medium   xsm:text-lg ">
-            A locally owned Calgary interior painting company committed to
-            meticulous workmanship, honest pricing, and respect for your home.
+            Primo Painters is a locally owned Calgary interior painting company
+            dedicated to meticulous workmanship, honest pricing, and respect for
+            every home we paint.
           </p>
         </div>
         <div className="flex flex-col gap-2">

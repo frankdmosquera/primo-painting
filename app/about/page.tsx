@@ -1,17 +1,4 @@
-import { CalgaryPainting } from "@/components/calgary-painting";
-import ContactFormSection from "../../components/ContactFormSection";
-import HomeBanner from "@/components/HomeBanner/home-banner";
-import blogsBanner from "@/public/banners/blogs-banner.webp";
-import StandardHero from "@/components/heros/StandardHero";
-import AboutusAbout from "@/components/AboutUs/AboutusAbout";
-import EcofriendlySection from "@/components/AboutUs/EcofriendlySection";
-import SkillPainters from "@/components/AboutUs/SkillPaintersSection";
-import FinestPainters from "@/components/AboutUs/FinestPaintersSection";
-import CommitmentQualitySection from "@/components/AboutUs/CommitmentQualitySection";
 import type { Metadata, Viewport } from "next";
-import BgBackground from "@/components/BgBackground";
-import { siteConfig } from "@/data/siteConfig";
-import WhyChooseUs from "@/components/whyChooseUs";
 import AboutHero from "@/components/AboutUs/AboutHero";
 import OurStory from "@/components/AboutUs/OurStoy";
 import OurProcess from "@/components/AboutUs/OurProcess";
@@ -57,7 +44,6 @@ export default function page() {
       <AboutHero />
       <OurStory />
       <OurProcess />
-
       <OurPromise />
       <ServingCalgary />
       <div className="pb-8">

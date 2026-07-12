@@ -11,16 +11,15 @@ export default function ServingCalgary() {
         </h2>
 
         <p className="mt-8 text-lg leading-8 text-gray-100">
-          Primo Painters proudly serves homeowners throughout Calgary with
-          professional interior painting services. Whether you're refreshing a
-          single room or transforming your entire home, we're committed to
-          delivering meticulous workmanship, honest communication, and beautiful
-          results that last.
+          Primo Painters proudly provides professional interior painting
+          services throughout Calgary, helping homeowners refresh everything
+          from a single room to an entire home.
         </p>
 
         <p className="mt-6 text-lg leading-8 text-gray-100">
-          From walls and ceilings to trim, doors, cabinets, and garages, we help
-          Calgary homeowners create interior spaces they're proud to call home.
+          Whether you're updating walls, ceilings, trim, doors, cabinets, or
+          garages, our focus is always the same: meticulous workmanship, honest
+          communication, and beautiful results that last.
         </p>
       </div>
     </section>

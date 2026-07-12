@@ -34,11 +34,10 @@ export default function OurPromise() {
         <h2 className="text-3xl lg:text-5xl font-bold mt-3">
           What You Can Expect From Every Project
         </h2>
-
         <p className="mt-6 text-gray-700 leading-8">
-          Every home is different, but our commitment remains the same. These
-          are the principles that guide every interior painting project we
-          complete throughout Calgary.
+          Every project completed by Primo Painters reflects our commitment to
+          delivering professional interior painting services Calgary homeowners
+          can rely on.
         </p>
       </div>
 

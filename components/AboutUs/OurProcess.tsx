@@ -42,7 +42,7 @@ export default function OurProcess() {
             Our Process
           </p>
 
-          <h2 className="text-3xl lg:text-5xl font-bold text-black mt-3">
+          <h2 className="text-3xl lg:text-5xl  font-bold text-black mt-3">
             A Simple Process Designed Around Your Home
           </h2>
 
@@ -69,7 +69,9 @@ export default function OurProcess() {
                 STEP {step.number}
               </span>
 
-              <h3 className="text-2xl font-semibold mt-3 mb-4">{step.title}</h3>
+              <h3 className="text-2xl font-semibold text-[#0D378D] mt-3 mb-4">
+                {step.title}
+              </h3>
 
               <p className="text-gray-600 leading-7">{step.description}</p>
             </div>

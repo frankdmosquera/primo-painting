@@ -21,7 +21,7 @@ export const HeroHomeImg = {
 };
 
 export const AboutUsImg = {
-  src: "/AboutUs.webp",
+  src: "/about/AboutUs.webp",
   alt: "calgary painters",
 };
 
