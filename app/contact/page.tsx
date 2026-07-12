@@ -144,7 +144,7 @@ export default function ContactPage() {
           <Image src={BgBackground2} alt="" aria-hidden="true" />
         </div>
 
-        <ContactForm />
+        <ContactForm showContactInfo={false} />
       </div>
 
       {/* Google Map */}
