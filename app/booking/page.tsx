@@ -85,32 +85,6 @@ export default function BookingPage() {
       <section className="bg-[#0D378D] pb-12">
         <Calendly />
       </section>
-      <section className="py-20 px-4">
-        <div className="container max-w-4xl mx-auto">
-          <div className="bg-[#F7F8FA] rounded-xl p-10 border border-gray-200">
-            <h2 className="text-3xl text-[#0D378D] font-bold text-center">
-              Before Your Estimate
-            </h2>
-
-            <p className="text-center text-gray-600 mt-4 mb-10">
-              Here's what you can expect when we visit your home.
-            </p>
-
-            <div className="space-y-6">
-              {reminders.map((item) => (
-                <div key={item} className="flex items-start gap-4">
-                  <CheckCircle2
-                    className="text-[#0D378D] mt-1 flex-shrink-0"
-                    size={22}
-                  />
-
-                  <p className="text-gray-700 leading-7">{item}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

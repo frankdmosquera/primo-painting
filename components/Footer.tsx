@@ -60,7 +60,7 @@ export default function Footer() {
               </Link>
               {/* </div> */}
               <p className="text-sm text-white leading-relaxed mt-10">
-                We offer professional interior house painting services in South
+                We offer professional interior house painting services in
                 Calgary.
               </p>
             </div>
@@ -104,19 +104,19 @@ export default function Footer() {
                 <Link target="_blank" href="https://g.co/kgs/Wm9YRbr"></Link>
                 <div className="flex flex-row gap-5 mt-2">
                   <Link
-                    href="https://www.instagram.com/@Primo-Painting"
+                    href="https://www.instagram.com/@Primo-Painters"
                     aria-label="Visit Primo Painting on Instagram"
                   >
                     <Instagram className="text-[#0D378D] text-2xl" />
                   </Link>
                   <Link
-                    href="https://www.facebook.com/@Primo-Painting"
+                    href="https://www.facebook.com/@Primo-Painters"
                     aria-label="Visit Primo Painting on Facebook"
                   >
                     <Facebook className="text-[#0D378D] text-2xl" />
                   </Link>
                   <Link
-                    href="https://www.youtube.com/@Primo-Painting"
+                    href="https://www.youtube.com/@Primo-Painters"
                     aria-label="Visit Primo Painting on YouTube"
                   >
                     <Youtube className="text-[#0D378D] text-2xl" />

@@ -76,12 +76,12 @@ export default function ContactPage() {
           // sizes="100vw"
         />
 
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/65"></div>
         {/* here center the content */}
         <div className=" absolute px-3 tn:px-6 md:px-12 gap-20  xl:gap-24  bottom-4 inset-0 flex  flex-col items-center justify-center text-center ">
           <div className="">
             <h1 className="  text-3xl xsm:text-4xl  md:text-5xl lg:text-6xl font-bold text-white ">
-              Conatact
+              Contact
               <span className="bg-reveal ml-2">Primo Painters</span>{" "}
             </h1>
             <p className="block mt-3  text-white   font-medium   xsm:text-lg ">
@@ -97,6 +97,7 @@ export default function ContactPage() {
              </div> */}
         </div>
       </section>
+
       {/* ContactOptions  */}
       <section className="py-12 px-4 bg-white">
         <div className="container max-w-4xl mx-auto text-center">
@@ -121,8 +122,9 @@ export default function ContactPage() {
           <Image src={BgBackground2} alt="" aria-hidden="true" />
         </div>
       </div>
-      {/* ContactFormIntro */}
-      <section className="pt-20 pb-8 px-4">
+
+      {/* ContactForm*/}
+      <section className="pt-20 pb-8 px-4 w-full">
         <div className="container max-w-3xl mx-auto text-center">
           <p className="uppercase tracking-[0.25em] text-[#0D378D] font-semibold">
             Prefer Email?
@@ -131,21 +133,19 @@ export default function ContactPage() {
           <h2 className="text-3xl lg:text-5xl font-bold mt-3 text-black">
             Send Us a Message
           </h2>
-
           <p className="mt-6 text-lg text-gray-700 leading-8">
             Whether you're planning a single room or your entire home, we're
             happy to answer your questions and help you get started.
           </p>
         </div>
-      </section>
-      {/* Contact Form */}
-      <div className="relative">
-        <div className="absolute top-[800px] -z-10">
-          <Image src={BgBackground2} alt="" aria-hidden="true" />
+        {/* Contact Form */}
+        <div className="relative w-full">
+          <div className="absolute top-[800px] -z-10">
+            <Image src={BgBackground2} alt="" aria-hidden="true" />
+          </div>
+          <ContactForm showContactInfo={false} />
         </div>
-
-        <ContactForm showContactInfo={false} />
-      </div>
+      </section>
 
       {/* Google Map */}
       <GoogleMap />

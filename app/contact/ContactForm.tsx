@@ -78,62 +78,11 @@ const ContactForm = ({ showContactInfo }: ContactFormProps) => {
         GET IN TOUCH
       </p>
       <div
-        className="grid md:grid-cols-2 gap-12 text-center"
+        className="flex gap-12 justify-center text-center"
         style={{ textAlign: "left" }}
       >
-        {/* Contact Info Section */}
-        {showContactInfo && (
-          <div className="w-full md:w-full lg:w-[60%] lg:ml-[5em]">
-            <h2 className="text-[#0D378D] lg:text-4xl text-2xl font-semibold tracking-normal ">
-              HAVE A PROJECT IN MIND OR NEED A QUOTE?
-            </h2>
-            <h3 className="text-base sm:text-sm lg:mt-12 md:mt-8 mt-4 lg:mb-12 md:mb-10   font-medium mb-6 text-[#000000]">
-              Get in touch with our expert painters in Calgary. We’d be happy to
-              help bring your vision to life!
-            </h3>
-            <p
-              className="text-[16px] mb-6 text-[#000000] flex flex-row items-center"
-              style={{ fontWeight: "500" }}
-            >
-              <span className="mr-2">
-                <Link href="tel:+14039037517">
-                  <Image src={phone} alt="phone" />
-                </Link>
-              </span>
-              <Link href="tel:+14039037517">+1 403-903-7517</Link>
-            </p>
-            <p
-              className="text-base mb-6 text-black flex flex-row items-center"
-              style={{ fontWeight: "500" }}
-            >
-              <span className="mr-2">
-                <Link href="mailto:info@primopainters.ca">
-                  <Image src={email} alt="email" />
-                </Link>
-              </span>
-              <Link href="mailto:info@primopainters.ca">
-                info@primopainters.ca
-              </Link>
-            </p>
-            <p
-              className="text-base mb-6 text-black flex flex-row items-center"
-              style={{ fontWeight: "500" }}
-            >
-              <span className="mr-2 w-[30px] h-[25px]">
-                <Image src={location} alt="location" />
-              </span>
-              217 Legacy Reach Cres SE SE, Calgary, AB, T2X 5A7, Canada
-            </p>
-          </div>
-        )}
-        {/* Contact Form Section */}
-        {/* Contact Form Section */}
-        {/* Contact Form Section */}
-        {/* Contact Form Section */}
-        {/* Contact Form Section */}
-
-        {/* Contact Form Section */}
-        <div className="contact-form w-full md:w-full lg:w-[90%] shadow-lg rounded-lg p-6 lg:mt-[-30px] md:mt-[-30px] mt-[-70px] bg-white">
+        {/* contact form  */}
+        <div className="contact-form w-full md:max-w-2xl lg:w-[90%] shadow-lg rounded-lg p-6 lg:mt-[-30px] md:mt-[-30px] mt-[-70px] bg-white">
           <Formik<ContactFormValues>
             initialValues={{
               name: "",

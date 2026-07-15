@@ -5,6 +5,7 @@ import OurProcess from "@/components/AboutUs/OurProcess";
 import OurPromise from "@/components/AboutUs/OurPromise";
 import ServingCalgary from "@/components/AboutUs/ServingCalgary";
 import ServiceBanner from "@/components/ServiceBanner/service-banner";
+import ScrollingBannerA from "@/components/scrolling-banner-a";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -46,6 +47,7 @@ export default function page() {
       <OurProcess />
       <OurPromise />
       <ServingCalgary />
+      <ScrollingBannerA />
       <div className="pb-8">
         <ServiceBanner />
       </div>
