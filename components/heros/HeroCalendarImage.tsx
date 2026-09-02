@@ -18,7 +18,7 @@ export function HeroCalendarImage() {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="mx-auto relative w-36  flex flex-col items-center banimate-book-pulse "
+        className="mx-auto relative w-36  flex flex-col items-center animate-book-pulse "
       >
         <Image
           src={"/svgs/calendar-rounded-0d378d-final.svg"}
