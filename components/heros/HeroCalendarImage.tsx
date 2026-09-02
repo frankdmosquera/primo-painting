@@ -21,7 +21,7 @@ export function HeroCalendarImage() {
         className="mx-auto relative w-36  flex flex-col items-center animate-book-pulse "
       >
         <Image
-          src={"/svgs/calendar-rounded-0d378d-final.svg"}
+          src={"/SVGs/calendar-rounded-0d378d-final.svg"}
           width={100}
           height={100}
           alt=""
