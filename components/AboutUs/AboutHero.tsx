@@ -1,6 +1,7 @@
 import { AboutUsImg } from "@/data/images";
 import Image from "next/image";
 import HeroCallToAction from "../heros/HeroCallToAction";
+import { HeroHomeButtons } from "../heros/HeroHomeButtons";
 
 export default function AboutHero() {
   return (
@@ -28,12 +29,7 @@ export default function AboutHero() {
             every home we paint.
           </p>
         </div>
-        <div className="flex flex-col gap-2">
-          <HeroCallToAction />
-        </div>
-        {/* <div className="">
-          <TrustBadges />
-        </div> */}
+        <HeroHomeButtons />
       </div>
     </section>
   );

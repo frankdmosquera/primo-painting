@@ -1,34 +1,83 @@
 "use client";
 
-import Link from "next/link";
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import { PopupModal } from "react-calendly";
+import { ClipboardList, MessageCircleQuestion, PhoneCall } from "lucide-react";
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "../ui/sheet";
+import ContactFormSection from "../ContactFormSection";
+import { siteConfig } from "@/data/siteConfig";
 
-import { usePathname } from "next/navigation";
+const secondaryPillClass =
+  "inline-flex cursor-pointer items-center gap-2 rounded-full bg-white text-[#0D378D] px-4 py-2 font-medium shadow-lg hover:bg-gray-100";
 
 export default function HeroCallToAction() {
-  const pathname = usePathname();
+  const [showCallForm, setShowCallForm] = useState(false);
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
-    <div className="flex flex-col justify-center justify-items-center sm:flex-row gap-4">
-      <Link
-        href="/booking"
-        className="bg-[#0D378D] hover:bg-primary/90 text-white px-4 py-2 border-2 border-white rounded-full font-medium flex items-center justify-center"
+    <div className="flex flex-col items-center gap-2">
+      <button
+        onClick={() => setIsCalendlyOpen(true)}
+        className="mx-auto w-38 flex flex-col items-center animate-book-pulse will-change-transform [backface-visibility:hidden]"
       >
-        Book Your Free Estimate
-        <span className="ml-2 bg-white rounded-full p-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="15"
-            height="14"
-            viewBox="0 0 15 14"
-            fill="none"
-          >
-            <path
-              d="M14.5 0.999999C14.5 0.447714 14.0523 -8.61581e-07 13.5 -1.11446e-06L4.5 -3.13672e-07C3.94772 -6.50847e-07 3.5 0.447715 3.5 0.999999C3.5 1.55228 3.94772 2 4.5 2L12.5 2L12.5 10C12.5 10.5523 12.9477 11 13.5 11C14.0523 11 14.5 10.5523 14.5 10L14.5 0.999999ZM2.20711 13.7071L14.2071 1.70711L12.7929 0.292893L0.792893 12.2929L2.20711 13.7071Z"
-              fill="#0D378D"
-            />
-          </svg>
-        </span>
-      </Link>
+        <Image
+          src="/SVGs/calendar-img-flat-bottom.svg"
+          width={150}
+          height={150}
+          alt=""
+          unoptimized
+          className="h-auto w-full"
+        />
+        <div className="mt-0 pt-0 relative pb-1 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md rounded-t-none text-sm font-medium bg-[#0D378D] text-white shadow-xs hover:bg-[#0D378D]/90 h-9 px-4 py-2 text-2xl -translate-y-0.5">
+          Book Now
+        </div>
+      </button>
+
+      {!showCallForm && (
+        <div
+          onClick={() => setShowCallForm(true)}
+          className={`mt-8 ${secondaryPillClass}`}
+        >
+          <MessageCircleQuestion className="size-4" />
+          <span>Questions?</span>
+        </div>
+      )}
+
+      {showCallForm && (
+        <div className="mt-8 flex justify-center gap-4">
+          <a href={`tel:${siteConfig.business.phone}`} className={secondaryPillClass}>
+            <PhoneCall className="size-4" />
+            Call
+          </a>
+          <Sheet>
+            <SheetTrigger className={secondaryPillClass}>
+              <ClipboardList className="size-4" />
+              <span>Form</span>
+            </SheetTrigger>
+            <SheetContent side="left" className="overflow-y-auto">
+              <SheetTitle className="sr-only">
+                Contact Primo Painters
+              </SheetTitle>
+              <ContactFormSection />
+            </SheetContent>
+          </Sheet>
+        </div>
+      )}
+
+      {mounted && (
+        <PopupModal
+          url="https://calendly.com/primo-painting/30min?hide_gdpr_banner=1"
+          open={isCalendlyOpen}
+          onModalClose={() => setIsCalendlyOpen(false)}
+          rootElement={document.body}
+        />
+      )}
     </div>
   );
 }

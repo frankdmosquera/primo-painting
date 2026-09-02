@@ -10,6 +10,7 @@ import GoogleMap from "./GoogleMap";
 import StandardHero from "@/components/heros/StandardHero";
 import { siteConfig } from "@/data/siteConfig";
 import HeroCallToAction from "@/components/heros/HeroCallToAction";
+import { HeroHomeButtons } from "@/components/heros/HeroHomeButtons";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -89,12 +90,7 @@ export default function ContactPage() {
               your interior painting project.
             </p>
           </div>
-          <div className="flex flex-col gap-2">
-            <HeroCallToAction />
-          </div>
-          {/* <div className="">
-               <TrustBadges />
-             </div> */}
+          <HeroHomeButtons />
         </div>
       </section>
 

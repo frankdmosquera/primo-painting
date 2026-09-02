@@ -21,6 +21,16 @@
 }
 
 @theme {
+  --animate-book-pulse: book-pulse 2.4s ease-in-out infinite;
+
+  @keyframes book-pulse {
+    0%, 100% {
+      transform: scale(1) translateZ(0);
+    }
+    50% {
+      transform: scale(1.01) translateZ(0);
+    }
+  }
 
   --breakpoint-tn: 22rem;   /* 350px */
   --breakpoint-xsm: 25rem;   /* 400px */
@@ -71,4 +81,25 @@ body {
 }
 .embla__slide.is-selected {
   opacity: 1 !important;
+}
+
+/* Darker backdrop */
+.calendly-overlay {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+/* Make close button visible against light backgrounds */
+.calendly-popup-close {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendly-popup-close svg {
+  fill: white !important;
+  stroke: white !important;
 }
